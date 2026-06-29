@@ -1,6 +1,6 @@
-$\color{green}{[Grounded\ answer]}$ = Claim is supported by the brief.
-$\color{red}{[Mistake]}$ = Claim about the brief but wrong.
-$\color{orange}{[Drift]}$ = Claim sourced from training/outside knowledge.
+$\color{green}{[Grounded\ answer]}$ = Claim is supported by the brief.  
+$\color{red}{[Mistake]}$ = Claim about the brief but wrong.  
+$\color{orange}{[Drift]}$ = Claim sourced from training/outside knowledge.  
 
 # Seed 1
 ## Q1
