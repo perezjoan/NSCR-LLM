@@ -747,7 +747,7 @@ Food Retail Accessibility:
 
  $\color{orange}{[\text{On foot, you can reach a significant amount of food retail}]}$ . The area offers access to:
 
-    $\color{green}{[\text{Convenience stores: 4 locations}]}$  (convenience stores)
+   $\color{green}{[\text{Convenience stores: 4 locations}]}$  (convenience stores)
     $\color{green}{[\text{Fast Food: 1 location}]}$ 
     $\color{green}{[\text{Shelter: 8 locations}]}$ 
     $\color{green}{[\text{Hardware: 1 location}]}$ 
