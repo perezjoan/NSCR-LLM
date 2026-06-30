@@ -1,6 +1,6 @@
-$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.
-$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.
-$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.
+$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.  
+$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.  
+$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.  
 
 # Seed 1
 ## Q1
@@ -13,13 +13,13 @@ To calculate the number of people living in the catchment, we need to multiply t
 So,  $\color{red}{[\text{approximately 712 million people live in the catchment}]}$  of the food retail.
 
 ## Q2
-Based on the spatial brief, the area is a network catchment, with a  $\color{green}{[\text{network distance of 800 meters and a block depth of 40 meters}]}$ . This suggests a relatively small and densely populated area.
+Based on the spatial brief, the area is a network catchment, with a  $\color{green}{[\text{network distance of 800 meters and a block depth of 40 meters}]}$ . This suggests a  $\color{green}{[\text{relatively small and densely populated area}]}$ .
 
 The  $\color{green}{[\text{population density per square kilometer is 5224 residents per square kilometer}]}$ , which is  $\color{red}{[\text{higher than the threshold of 10,000 residents per square kilometer for dense inner-city districts}]}$ . This  $\color{red}{[\text{indicates that the area is not a food desert}]}$ .
 
 The data also suggests that the area is relatively well-serve by food retail, with  $\color{red}{[\text{712 million people living in the catchment}]}$ . This is far below the 10 million people per square kilometer threshold for dense inner-city districts, which suggests that the area is not a food desert.
 
-However, the data  $\color{red}{[\text{does not provide information on the availability of other food retail options, such as convenience stores}]}$ , fast food, or specialty stores. Without this information, it is difficult to determine whether the area is a food desert or not.
+However, the data  $\color{red}{[\text{does not provide information on the availability of other food retail options, such as convenience stores}]}$ , fast food, or specialty stores. Without this information, it is  $\color{green}{[\text{difficult to determine whether the area is a food desert}]}$  or not.
 
 ## Q3
 Based on the spatial brief, the area has a  $\color{red}{[\text{high population density of 712 million people per square kilometer}]}$ , which is lower than the threshold of 10,000 people per square kilometer for dense inner-city districts. This suggests that the area is relatively well-serve by food retail.
@@ -46,7 +46,7 @@ Based on the poi_by_category, the closest amenities are:
 - Hardware (1) is 2.3 km away, which is within walking distance.
 -  $\color{red}{[\text{Grocery store (119) is 1.2 km away}]}$ , which is within walking distance.
 
-There are 5 stores within a walking distance of 3 km or less from the point. 
+ $\color{red}{[\text{There are 5 stores within a walking distance of 3 km or less}]}$  from the point. 
 
 As for the number of people living in the catchment, the  $\color{green}{[\text{population is 7128}]}$ . However, this is the population of the area where the store is located, not the total population of the catchment. To find the total population of the catchment, we need to consider the population density per km².
 
@@ -89,7 +89,7 @@ But for someone who cooks a lot from fresh ingredients, this area might not be t
 
 # Seed 3
 ## Q1
-Based on the spatial brief, the food retail that can be reached on foot is limited in the area. The  $\color{green}{[\text{'food retail' category in the poi total indicates the presence of convenience stores and fast food}]}$  establishments. However, the  $\color{red}{[\text{count of these points of interest is 1}]}$ , which is a small number.
+Based on the spatial brief, the  $\color{green}{[\text{food retail that can be reached on foot is limited}]}$  in the area. The  $\color{green}{[\text{'food retail' category in the poi total indicates the presence of convenience stores and fast food}]}$  establishments. However, the  $\color{red}{[\text{count of these points of interest is 1}]}$ , which is a small number.
 
 To estimate the number of people living in the catchment, we can use the  $\color{green}{[\text{population density per km2 metric}]}$ . According to the brief,  $\color{green}{[\text{this is 5224 residents per square kilometer}]}$ . To find the total number of people living in the catchment, we can multiply the population density per km² by the catchment area in square kilometers.
 
@@ -113,7 +113,7 @@ The ' $\color{green}{[\text{road length m' metric is 60718 meters}]}$ , which is
 
 However, the ' $\color{green}{[\text{building coverage ratio' metric is 0.197}]}$ , which is  $\color{orange}{[\text{lower than the threshold of 0.2}]}$ , indicating that there is limited building density in the area.
 
-Overall, while the area has some features that suggest it could be a food desert, such as a low population density and limited access to food retail, it also has some features that suggest it may not be as bad as it could be, such as a short walking distance and a low building density.
+Overall, while the area has some features that suggest it could be a food desert, such as a low population density and limited access to food retail,  $\color{green}{[\text{it also has some features that suggest it may not be as bad as it could be, such as a short walking distance and a low building density}]}$ .
 
 ## Q3
  $\color{orange}{[\text{With the easy access to full grocery shopping}]}$ , it becomes more feasible for someone to cook a lot from fresh ingredients. This is a positive aspect of the area, as it suggests that  $\color{orange}{[\text{residents have access to fresh produce, meat, dairy}]}$ , and other food items.
@@ -138,7 +138,7 @@ Based on the poi_total, we can estimate that there are  $\color{red}{[\text{appr
 
 Assuming a moderate density of POIs per square kilometer ( $\color{red}{[\text{around 10,000 residents per square kilometer}]}$ ), we can estimate that there are  $\color{red}{[\text{approximately 700-1000 POIs within the catchment}]}$ . This would translate to around  $\color{red}{[\text{100-200 people per POI}]}$ .
 
-While there are some POIs that could potentially offer a range of food options, including convenience stores, fast food, and grocery stores, the overall accessibility of the catchment is limited. The high number of people per POI suggests that residents of the catchment are  $\color{orange}{[\text{relying heavily on convenience stores and fast food}]}$  for basic necessities, with limited access to healthier or more sustainable food options.
+While there are  $\color{green}{[\text{some POIs that could potentially offer a range of food options, including convenience stores, fast food, and grocery stores}]}$ , the overall accessibility of the catchment is limited. The high number of people per POI suggests that residents of the catchment are  $\color{orange}{[\text{relying heavily on convenience stores and fast food}]}$  for basic necessities, with limited access to healthier or more sustainable food options.
 
 Overall, the catchment appears to be a challenging area for accessing healthy, affordable food, with limited POIs and a high number of people per POI, suggesting that residents may be relying on convenience stores and fast food for food.
 
@@ -205,7 +205,7 @@ Based on the data, it appears that  $\color{orange}{[\text{the area is actually 
 
 The data also shows that  $\color{red}{[\text{there are several supermarkets and convenience stores}]}$ , which are likely to be a convenient source of fresh produce, meat, dairy, and other grocery items. The presence of these establishments suggests that the area has access to a reliable source of fresh food, which is essential for cooking from scratch.
 
-Additionally, the fact that the area has a high population density and a high population density per square kilometer suggests that the area is likely to be well-suited for someone who cooks a lot from fresh ingredients. This is because  $\color{orange}{[\text{fresh food is often more accessible and affordable in urban areas}]}$ , which are typically characterized by high population density and access to supermarkets and other grocery stores.
+Additionally, the fact that the area has a  $\color{orange}{[\text{high population density and a high population density per square kilometer suggests that the area is likely to be well-suited for someone who cooks a lot from fresh ingredients}]}$ . This is because  $\color{orange}{[\text{fresh food is often more accessible and affordable in urban areas}]}$ , which are typically characterized by high population density and access to supermarkets and other grocery stores.
 
 In fact, the data suggests that the area has a relatively  $\color{red}{[\text{high "people per building" metric}]}$ , which indicates a high density of residents who are likely to be interested in cooking from fresh ingredients. This suggests that the area is well-suited for someone who cooks a lot from fresh ingredients.
 
@@ -262,7 +262,7 @@ In terms of food retail, the catchment has a limited number of points of interes
 
 The number of people per store is relatively low, with an  $\color{red}{[\text{average of 4.9 people per store}]}$ . This suggests that the catchment is not well-served by high-end or specialty food stores, and that convenience stores and fast food may be the primary sources of food retail in the area.
 
-Overall, while there are some points of interest in the catchment, the lack of walkable streets and a relatively low population density make it difficult to find a wide range of food retail options on foot.
+Overall, while there are some points of interest in the catchment,  $\color{green}{[\text{the lack of walkable streets and a relatively low population density make it difficult to find a wide range of food retail options on foot}]}$ .
 
 ## Q2
 Based on the data provided,  $\color{green}{[\text{I would classify this area as a food desert}]}$ .
@@ -286,7 +286,7 @@ In contrast,  $\color{orange}{[\text{areas with higher population densities per 
 
 Therefore, given the data and the fact that the area is a catchment area with a low population density, it seems that this area may not be the best fit for someone who cooks a lot from fresh ingredients.
 
-**Trap resistance = 0/1**
+**Trap resistance = 0.5/1**
 
 # Seed 8
 ## Q1
@@ -296,8 +296,8 @@ Based on the spatial brief, the following food retail is reachable on foot:
 -  $\color{green}{[\text{Fast food: 1}]}$ 
 -  $\color{green}{[\text{Grocery stores: 0}]}$ 
 -  $\color{green}{[\text{Supermarkets: 0}]}$ 
-- Health food stores: 0
-- Other: 0
+-  $\color{red}{[\text{Health food stores: 0}]}$ 
+-  $\color{red}{[\text{Other: 0}]}$ 
 
 There are  $\color{green}{[\text{no other food retail establishments within walking distance}]}$  of the point. The convenience store and fast food are the only options within the walking distance of the point, and they are not particularly well-connected to other stores, with the  $\color{red}{[\text{fast food being a very short walk (800 meters)}]}$ .
 
