@@ -470,7 +470,7 @@ Supporting Factors (Reasons it could be good):
 
 Limiting Factors (Reasons for caution):
 
-   Limited Supermarket Presence: The spatial  $\color{orange}{[\text{brief doesn’t confirm easy access to supermarkets}]}$ . It states “reachable on foot within network\_distance\_m,” implying that a supermarket might be a considerable walk away for some residents.
+   Limited Supermarket Presence: The spatial  $\color{green}{[\text{brief doesn’t confirm easy access to supermarkets}]}$ . It states “reachable on foot within network\_distance\_m,” implying that a supermarket might be a considerable walk away for some residents.
    Building Coverage Ratio: A  $\color{green}{[\text{low building coverage ratio (0.197)}]}$  suggests a significant amount of open space, which could mean supermarkets are located further away or are not immediately apparent.
    POI Density – Limited Variety: While there are  $\color{green}{[\text{119 POIs, the focus on convenience stores and other non-food retailers}]}$  suggests a lack of dedicated grocery options.
    Reliance on Convenience Stores: Even if a supermarket is reachable, the  $\color{orange}{[\text{prevalence of convenience stores raises concerns about price and selection}]}$ .
@@ -481,7 +481,7 @@ For someone who cooks frequently from fresh ingredients, this area is potentiall
 
 To truly assess the suitability, a more detailed analysis of supermarket locations beyond the catchment area and an understanding of local pricing would be required.
 
-Trap resistance = 0/1
+Trap resistance = 0.5/1
 
 # Seed 10
 ## Q1
