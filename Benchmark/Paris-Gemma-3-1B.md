@@ -813,7 +813,7 @@ Based on the provided data and the spatial brief, here’s a breakdown of daily 
 
 Daily Services within a Short Walk (Estimated):
 
-    $\color{red}{[\text{Food: 113}]}$  (clothing)
+$\color{red}{[\text{Food: 113}]}$  (clothing)
     $\color{green}{[\text{Bicycle Parking: 82}]}$ 
     $\color{green}{[\text{Restaurant: 79}]}$ 
     $\color{green}{[\text{Bench: 54}]}$ 
@@ -961,7 +961,7 @@ This location absolutely has the potential to be a fantastic fit for a young fam
 
 Recommendations for Further Consideration:
 
-    $\color{orange}{[\text{Investigate Local Amenities}]}$ :  See if there are any local community centers, playgrounds, or family-friendly cafes nearby.
+$\color{orange}{[\text{Investigate Local Amenities}]}$ :  See if there are any local community centers, playgrounds, or family-friendly cafes nearby.
    Explore Green Spaces:  Look for opportunities to create or enhance gardens or green spaces within the area.
    Promote a Neighborhood Feel:  Encourage local businesses to offer family-friendly offerings and create a sense of community through events.
 
@@ -977,7 +977,7 @@ Based on the provided information and the spatial brief, here’s a breakdown:
 
 Daily Services within a Short Walk:
 
-    $\color{red}{[\text{Clothing: 113 points of interest}]}$  (clothes)
+$\color{red}{[\text{Clothing: 113 points of interest}]}$  (clothes)
     $\color{green}{[\text{Bicycle Parking: 82 points of interest}]}$  (bicycle parking)
     $\color{green}{[\text{Restaurant: 79 points of interest}]}$  (restaurants)
     $\color{green}{[\text{Bench: 54 points of interest}]}$  (benches)
@@ -1083,7 +1083,7 @@ The Île-de-France location demonstrates elements of a 15-minute city – it off
 
 Missing Elements (Key for Improvement):
 
-    $\color{orange}{[\text{Co-location of Services}]}$ :  More frequent co-location of services (e.g., a grocery store with a bakery, a clothing shop with a coffee shop)
+$\color{orange}{[\text{Co-location of Services}]}$ :  More frequent co-location of services (e.g., a grocery store with a bakery, a clothing shop with a coffee shop)
    Pedestrian-Oriented Design: Prioritize pedestrian-friendly streets, wider sidewalks, and well-placed public spaces.
    Public Transit Integration:  Consider integrating a better network of  $\color{orange}{[\text{bike-sharing, scooter-sharing}]}$ , and public transport options.
    Community-Building Spaces: Create more public plazas,  $\color{orange}{[\text{community gardens}]}$ , or shared workspaces to encourage interaction.
@@ -1126,7 +1126,7 @@ Based on the provided data, here’s a breakdown of the daily services accessibl
 
 Daily Services Accessible within a 15-Minute Walk:
 
-    $\color{red}{[\text{Food: 113}]}$  (clothing)
+$\color{red}{[\text{Food: 113}]}$  (clothing)
     $\color{green}{[\text{Bicycle Parking: 82}]}$  (bicycle parking)
     $\color{green}{[\text{Restaurant: 79}]}$ 
     $\color{green}{[\text{Bench: 54}]}$ 
@@ -1360,7 +1360,7 @@ Here’s a breakdown of potential benefits & drawbacks:
 
 Potential Benefits:
 
-    $\color{orange}{[\text{More Privacy}]}$ : Compared to the central core, it offers a noticeable degree of privacy.
+$\color{orange}{[\text{More Privacy}]}$ : Compared to the central core, it offers a noticeable degree of privacy.
     $\color{orange}{[\text{Safer Streets: The lower density often translates to slightly safer streets}]}$ .
    Good for Active Families: Offers space for outdoor activities and a bit of a “family-friendly” vibe.
 
@@ -1372,7 +1372,7 @@ Potential Drawbacks:
 
 Recommendations for Enhancement:
 
-    $\color{orange}{[\text{Add a Community Centre}]}$ : This is a must. A well-equipped community centre would be invaluable.
+ $\color{orange}{[\text{Add a Community Centre}]}$ : This is a must. A well-equipped community centre would be invaluable.
    More Local Shops & Services: Incorporate a small number of local shops and services to boost the local economy.
    Community Gardens: Small, communal garden spaces would foster a sense of community.
    Outdoor Play Areas: More dedicated green spaces for kids' play.
@@ -1392,7 +1392,7 @@ Based on the provided data and the spatial brief, here’s a breakdown:
 
 Daily Services within a Short Walk:
 
-    $\color{red}{[\text{Clothing: 113 points of interest}]}$  (clothes)
+$\color{red}{[\text{Clothing: 113 points of interest}]}$  (clothes)
     $\color{green}{[\text{Bicycle Parking: 82 points of interest}]}$  (bicycle parking)
     $\color{green}{[\text{Restaurant: 79 points of interest}]}$  (restaurants)
     $\color{green}{[\text{Bench: 54 points of interest}]}$  (benches)
@@ -1633,7 +1633,7 @@ Why It’s a Good Fit for a Young Family:
 
 Contrast with the Ideal for a Young Family:
 
-    $\color{orange}{[\text{Overcrowding: The biggest drawback is the lack of integration}]}$ .  It's a good neighborhood, but it lacks the seamless blend of residential, commercial, and community services that’s essential for a truly family-friendly environment.
+ $\color{orange}{[\text{Overcrowding: The biggest drawback is the lack of integration}]}$ .  It's a good neighborhood, but it lacks the seamless blend of residential, commercial, and community services that’s essential for a truly family-friendly environment.
    Limited Active Play: There’s  $\color{orange}{[\text{less opportunity for kids to engage in active play}]}$  – think parks, playgrounds, or safe outdoor spaces.
    Lack of "Place":  The area feels more like a collection of individual properties rather than a cohesive neighborhood. There's a feeling of "just a neighborhood" rather than a neighborhood with a strong sense of identity.
     $\color{orange}{[\text{Potential for Isolation}]}$ : The lower density might lead to a feeling of isolation, especially if you’re actively seeking neighborhood connections.
