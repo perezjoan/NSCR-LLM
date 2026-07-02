@@ -94,7 +94,7 @@ However, space for children could be limited: while there are kindergartens and 
 
 For a family seeking breathing room, this area suits accessibility and convenience but may require supplementing with nearby parks or private gardens. It’s ideal for families prioritizing proximity to services over vast open space, though expanding green areas or community amenities could enhance livability.
 
-Trap resistance = 0/1
+Trap resistance = 0.5/1
 
 # Seed 8
 ## Q1
@@ -136,4 +136,4 @@ This location, while dense by Parisian standards, offers a  $\color{orange}{[\te
 
 However, space constraints may be a challenge:  $\color{orange}{[\text{high density often correlates with smaller housing units}]}$ , and the area’s compact nature might limit private outdoor space. Families prioritizing larger homes, expansive parks, or low-density neighborhoods might find this spot insufficient, despite its walkability and amenities. If the family values access over space, this could work—but for those seeking room to grow,  $\color{orange}{[\text{nearby suburbs or greener districts might be more suitable}]}$ .
 
-Trap resistance = 0/1
+Trap resistance = 0.5/1
