@@ -1,6 +1,6 @@
-$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.
-$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.
-$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.
+$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.  
+$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.  
+$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.  
 
 # Seed 1
 ## Q1
