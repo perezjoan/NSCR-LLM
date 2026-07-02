@@ -1,6 +1,6 @@
-$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.
-$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.
-$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.
+$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.  
+$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.  
+$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.  
 
 # Seed 1
 ## Q1
@@ -42,7 +42,7 @@ Ultimately, this location might suit a young family who:
 
 If the family requires more space or a more suburban setting, they might want to explore other options in the outskirts of Paris or in surrounding cities.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 2
 ## Q1
@@ -69,13 +69,13 @@ Based on the data provided, this location in Paris appears to be a well-connecte
 
 However, to fully satisfy the 15-minute city ideal, several aspects need to be considered:
 
-1. **Comprehensive mix of services**: While there are a variety of shops, restaurants, and leisure activities, the area could benefit from a more comprehensive mix of services, such as:
-	* A  $\color{green}{[\text{larger variety of grocery stores (beyond supermarkets and bakeries)}]}$ 
-	* A wider range of healthcare services, including  $\color{orange}{[\text{hospitals or larger medical centers}]}$ 
-	* More community facilities, such as  $\color{orange}{[\text{community centers, libraries, or youth centers}]}$ 
-2. **Density and accessibility**: The area's density is high, but some services, like the  $\color{red}{[\text{school and fitness center, might be located a short walk away}]}$  from the central part of the catchment. While this is still within the 15-minute walk threshold, it's essential to consider the overall distribution of services within the area.
-3. **Equity and accessibility**: With a  $\color{green}{[\text{population density of approximately 26,800 residents per square kilometer}]}$ , the area is already quite dense. However, it's essential to ensure that the services and amenities are accessible to all residents, regardless of age, ability, or socioeconomic status.
-4. **Pedestrian infrastructure and safety**: While  $\color{green}{[\text{the road density is high}]}$ , the area's walkability could be improved by ensuring that pedestrian infrastructure, such as sidewalks, crosswalks, and pedestrianized zones, are well-maintained and prioritized.
+1. Comprehensive mix of services: While there are a variety of shops, restaurants, and leisure activities, the area could benefit from a more comprehensive mix of services, such as:
+	 A  $\color{green}{[\text{larger variety of grocery stores (beyond supermarkets and bakeries)}]}$ 
+	 A wider range of healthcare services, including  $\color{orange}{[\text{hospitals or larger medical centers}]}$ 
+	 More community facilities, such as  $\color{orange}{[\text{community centers, libraries, or youth centers}]}$ 
+2. Density and accessibility: The area's density is high, but some services, like the  $\color{red}{[\text{school and fitness center, might be located a short walk away}]}$  from the central part of the catchment. While this is still within the 15-minute walk threshold, it's essential to consider the overall distribution of services within the area.
+3. Equity and accessibility: With a  $\color{green}{[\text{population density of approximately 26,800 residents per square kilometer}]}$ , the area is already quite dense. However, it's essential to ensure that the services and amenities are accessible to all residents, regardless of age, ability, or socioeconomic status.
+4. Pedestrian infrastructure and safety: While  $\color{green}{[\text{the road density is high}]}$ , the area's walkability could be improved by ensuring that pedestrian infrastructure, such as sidewalks, crosswalks, and pedestrianized zones, are well-maintained and prioritized.
 
 Overall, this location in Paris appears to be a good example of a 15-minute city, but it could benefit from a more comprehensive mix of services, better distribution of amenities, and improved pedestrian infrastructure to ensure that all residents have access to the services they need within a 15-minute walk.
 
@@ -86,14 +86,14 @@ The  $\color{red}{[\text{presence of a school and a prep school}]}$  suggests th
 
 However, it's essential to consider the following factors:
 
-1. **Space**: While the area is relatively calmer, the  $\color{green}{[\text{density is still high, with approximately 26,800 residents per square kilometer}]}$ . This might not provide the same level of spaciousness as a suburban area.
-2. **Affordability**:  $\color{orange}{[\text{Central Paris is generally more expensive than the surrounding suburbs}]}$ , so the cost of living, housing, and transportation might be a challenge for young families.
-3. **Noise and pollution**: Although this corner of central Paris is relatively calmer, it's still a urban area, and noise and air pollution levels might be higher than in suburban areas.
-4. **Access to green spaces**: The presence of parks and playgrounds is a plus, but the area's density and urban nature might make it challenging to find large, quiet green spaces for children to play and relax.
+1. Space: While the area is relatively calmer, the  $\color{green}{[\text{density is still high, with approximately 26,800 residents per square kilometer}]}$ . This might not provide the same level of spaciousness as a suburban area.
+2. Affordability:  $\color{orange}{[\text{Central Paris is generally more expensive than the surrounding suburbs}]}$ , so the cost of living, housing, and transportation might be a challenge for young families.
+3. Noise and pollution: Although this corner of central Paris is relatively calmer, it's still a urban area, and noise and air pollution levels might be higher than in suburban areas.
+4. Access to green spaces: The presence of parks and playgrounds is a plus, but the area's density and urban nature might make it challenging to find large, quiet green spaces for children to play and relax.
 
 Ultimately, this location could be a great choice for a young family looking for space and a more relaxed pace of life in central Paris. However, it's essential to weigh the pros and cons and consider the specific needs and preferences of the family.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 3
 ## Q1
@@ -101,14 +101,14 @@ Based on the provided spatial brief, this location appears to be a densely popul
 
 Within a short walk (approximately 400 meters), residents have access to a wide range of daily services, including:
 
-* Grocery shopping: Several shops, including  $\color{green}{[\text{bakeries, cafes, and convenience stores}]}$ , are available for daily essentials.
-* Food and drink:  $\color{green}{[\text{Restaurants, cafes, and bars are plentiful}]}$ , catering to different tastes and budgets.
-* Healthcare: Several medical facilities, including  $\color{green}{[\text{pharmacies, doctors, and dentists}]}$ , are within walking distance.
-* Education:  $\color{red}{[\text{A school is located in the area}]}$ .
-* Leisure:  $\color{green}{[\text{Parks, benches, and public art}]}$  are available for recreation.
-* Shopping: A variety of shops, including  $\color{green}{[\text{clothing stores, opticians, and florists}]}$ , are accessible.
-* Financial services:  $\color{green}{[\text{Banks and ATMs}]}$  are within walking distance.
-* Community facilities:  $\color{green}{[\text{A community center and social facilities}]}$  are available.
+ Grocery shopping: Several shops, including  $\color{green}{[\text{bakeries, cafes, and convenience stores}]}$ , are available for daily essentials.
+ Food and drink:  $\color{green}{[\text{Restaurants, cafes, and bars are plentiful}]}$ , catering to different tastes and budgets.
+ Healthcare: Several medical facilities, including  $\color{green}{[\text{pharmacies, doctors, and dentists}]}$ , are within walking distance.
+ Education:  $\color{red}{[\text{A school is located in the area}]}$ .
+ Leisure:  $\color{green}{[\text{Parks, benches, and public art}]}$  are available for recreation.
+ Shopping: A variety of shops, including  $\color{green}{[\text{clothing stores, opticians, and florists}]}$ , are accessible.
+ Financial services:  $\color{green}{[\text{Banks and ATMs}]}$  are within walking distance.
+ Community facilities:  $\color{green}{[\text{A community center and social facilities}]}$  are available.
 
 The high population density and the variety of services available suggest that this location is highly walkable. The presence of a school, healthcare facilities, and community centers indicates a well-rounded and livable neighborhood. The  $\color{green}{[\text{density of points of interest (115 per 1000 residents)}]}$  is also indicative of a vibrant and lively area.
 
@@ -125,9 +125,9 @@ Furthermore, the brief  $\color{green}{[\text{does not provide information on th
 
 Overall, this location appears to be a good starting point for the 15-minute city ideal, but further investigation and analysis would be needed to fully assess its strengths and weaknesses. To fully satisfy the 15-minute city ideal, the location may need to address the following:
 
-*  $\color{orange}{[\text{Increase the number of schools and educational facilities}]}$  to meet the needs of residents.
-* Enhance the range and quality of healthcare services available.
-* Improve public transportation options to facilitate access to a wider range of services and amenities.
+  $\color{orange}{[\text{Increase the number of schools and educational facilities}]}$  to meet the needs of residents.
+ Enhance the range and quality of healthcare services available.
+ Improve public transportation options to facilitate access to a wider range of services and amenities.
 
 By addressing these gaps, the location can better meet the needs of residents and provide a more comprehensive and livable environment that aligns with the 15-minute city ideal.
 
@@ -142,14 +142,14 @@ Furthermore, the  $\color{orange}{[\text{15-minute city ideal emphasizes walkabi
 
 Considering these factors, this location may suit a young family looking for space, but it's essential to weigh the pros and cons. They should also consider factors like:
 
-* The availability of green spaces and parks for children to play and explore.
-* The proximity to other amenities, such as parks, playgrounds, and recreational facilities, which may not be as abundant in this area.
-* The overall sense of community and social connections, which may be less pronounced in a lower-density area.
-* The potential for future development and gentrification, which could impact the area's character and livability.
+ The availability of green spaces and parks for children to play and explore.
+ The proximity to other amenities, such as parks, playgrounds, and recreational facilities, which may not be as abundant in this area.
+ The overall sense of community and social connections, which may be less pronounced in a lower-density area.
+ The potential for future development and gentrification, which could impact the area's character and livability.
 
 Ultimately, this location may be an attractive option for young families seeking space and a calmer atmosphere, but it's crucial to carefully weigh the trade-offs and consider the needs and priorities of the family.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 4
 ## Q1
@@ -159,15 +159,15 @@ The brief indicates that there are  $\color{green}{[\text{971 points of interest
 
 Some specific services that are within a short walk include:
 
-*  $\color{green}{[\text{113 clothes shops}]}$ , suggesting a good selection of clothing and fashion options
-*  $\color{green}{[\text{79 restaurants}]}$ , offering a variety of dining options
-*  $\color{green}{[\text{47 cafes}]}$ , providing a range of coffee shops and casual dining
-*  $\color{green}{[\text{54 benches}]}$ , suggesting a well-maintained public space
-*  $\color{green}{[\text{20 opticians and 19 jewelers}]}$ , indicating access to healthcare and luxury goods
-*  $\color{green}{[\text{9 pharmacies}]}$ , ensuring residents have access to healthcare services
-*  $\color{green}{[\text{5 schools}]}$ , indicating that education is accessible within the area
-*  $\color{red}{[\text{2 banks}]}$ , providing financial services
-*  $\color{red}{[\text{2 kindergartens}]}$ , suggesting childcare options are available
+  $\color{green}{[\text{113 clothes shops}]}$ , suggesting a good selection of clothing and fashion options
+  $\color{green}{[\text{79 restaurants}]}$ , offering a variety of dining options
+  $\color{green}{[\text{47 cafes}]}$ , providing a range of coffee shops and casual dining
+  $\color{green}{[\text{54 benches}]}$ , suggesting a well-maintained public space
+  $\color{green}{[\text{20 opticians and 19 jewelers}]}$ , indicating access to healthcare and luxury goods
+  $\color{green}{[\text{9 pharmacies}]}$ , ensuring residents have access to healthcare services
+  $\color{green}{[\text{5 schools}]}$ , indicating that education is accessible within the area
+  $\color{red}{[\text{2 banks}]}$ , providing financial services
+  $\color{red}{[\text{2 kindergartens}]}$ , suggesting childcare options are available
 
 The walkability of this location is high, with a  $\color{green}{[\text{road density of 42,597 meters per square kilometer and a road length of 13,427 meters}]}$  within the catchment. The  $\color{green}{[\text{average building footprint is 346 square meters, and the building coverage ratio is 0.581}]}$ , indicating a relatively dense and compact urban environment.
 
@@ -180,9 +180,9 @@ The  $\color{green}{[\text{POI density of 115 per 1,000 residents is high}]}$ , 
 
 However, a closer examination of the POI categories reveals some gaps in the services available. While there are many shops and restaurants, there are fewer services related to leisure, culture, and community activities. For example:
 
-* There are  $\color{red}{[\text{only 4 art centers, 2 fitness centers, and 1 theatre}]}$ , suggesting a limited range of cultural and recreational options.
-* There are  $\color{red}{[\text{no museums, libraries, or community centers listed}]}$ , which could be important for residents' leisure and educational needs.
-* While there are many shops and restaurants, there are relatively few services related to health and wellness, such as  $\color{orange}{[\text{yoga studios, gyms, or wellness centers}]}$ .
+ There are  $\color{red}{[\text{only 4 art centers, 2 fitness centers, and 1 theatre}]}$ , suggesting a limited range of cultural and recreational options.
+ There are  $\color{red}{[\text{no museums, libraries, or community centers listed}]}$ , which could be important for residents' leisure and educational needs.
+ While there are many shops and restaurants, there are relatively few services related to health and wellness, such as  $\color{orange}{[\text{yoga studios, gyms, or wellness centers}]}$ .
 
 Additionally, the brief does not provide information on the quality or accessibility of these services, which could be an important consideration for the 15-minute city ideal.
 
@@ -201,7 +201,7 @@ Considering these factors, a young family looking for space might find this loca
 
 However, it's worth noting that the area's charm and character, as well as its proximity to the city center, may make it an attractive option for families who value the convenience and amenities that come with living in a densely populated urban area. Ultimately, it depends on the family's personal preferences and priorities.
 
-**Trap resistance = 0.5/1**
+Trap resistance = 0.5/1
 
 # Seed 5
 ## Q1
@@ -233,7 +233,7 @@ Furthermore, the density of the area and the presence of a variety of services a
 
 However, it's worth noting that  $\color{orange}{[\text{Paris is known for its many green spaces and parks}]}$ , and this location might still be a good option for a young family if they value the urban amenities and services that come with living in a central location. If a young family is looking for space, they might consider areas with lower population densities and more open green spaces, such as the outskirts of Paris or other suburbs.
 
-**Trap resistance = 0.5/1**
+Trap resistance = 0.5/1
 
 # Seed 6
 ## Q1
@@ -267,7 +267,7 @@ Furthermore, the brief does not provide information on the housing stock or the 
 
 Overall, this spot may be a good option for a young family looking for space in central Paris, but it would be worth further investigation to determine the availability of family-friendly housing and amenities such as parks and green spaces.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 7
 ## Q1
@@ -303,7 +303,7 @@ In terms of space, the brief does not provide information on the size of the hom
 
 Overall, while this location may be a more relaxed and less densely populated area of central Paris, it may not necessarily be the most suitable spot for a young family looking for space. A more suburban or rural area may be more appealing for a family seeking a quieter and more spacious environment.
 
-**Trap resistance = 0.5/1**
+Trap resistance = 0.5/1
 
 # Seed 8
 ## Q1
@@ -351,7 +351,7 @@ Ultimately, this location might be a good fit for a young family who:
 
 However, it might not be the best fit for families who prioritize a quieter, more suburban environment or have very young children who require a lot of open space for play.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 9
 ## Q1
@@ -359,12 +359,12 @@ This point in Paris appears to be a densely populated area with a mix of residen
 
 The categories of POIs include a variety of daily services, such as:
 
-* Food and drink:  $\color{green}{[\text{restaurants, cafes, bakeries, fast food, ice cream shops, and wine shops}]}$ 
-* Shopping:  $\color{green}{[\text{clothes, jewelry, shoes, opticians, pharmacies, and convenience stores}]}$ 
-* Healthcare:  $\color{orange}{[\text{doctors, dentists, and hospitals (not explicitly listed, but likely nearby)}]}$ 
-* Education:  $\color{green}{[\text{schools and kindergartens}]}$ 
-* Leisure:  $\color{green}{[\text{parks, playgrounds, benches, and public art}]}$ 
-* Services:  $\color{red}{[\text{banks, post offices, ATMs, and public restrooms}]}$ 
+ Food and drink:  $\color{green}{[\text{restaurants, cafes, bakeries, fast food, ice cream shops, and wine shops}]}$ 
+ Shopping:  $\color{green}{[\text{clothes, jewelry, shoes, opticians, pharmacies, and convenience stores}]}$ 
+ Healthcare:  $\color{orange}{[\text{doctors, dentists, and hospitals (not explicitly listed, but likely nearby)}]}$ 
+ Education:  $\color{green}{[\text{schools and kindergartens}]}$ 
+ Leisure:  $\color{green}{[\text{parks, playgrounds, benches, and public art}]}$ 
+ Services:  $\color{red}{[\text{banks, post offices, ATMs, and public restrooms}]}$ 
 
 The  $\color{green}{[\text{population density of 26,776 residents per square kilometer}]}$  is high, suggesting a densely populated urban environment. The  $\color{green}{[\text{road density of 42,597 meters per square kilometer}]}$  is also high, indicating a well-connected street network.
 
@@ -381,17 +381,17 @@ The presence of a variety of daily services, including food, shopping, healthcar
 
 However, some aspects could be improved to make the location even more satisfying of the 15-minute city ideal:
 
-* While there are  $\color{green}{[\text{several schools and kindergartens}]}$ , the brief does not provide information on the quality or availability of educational services, so it is unclear whether residents have access to a range of educational options within a 15-minute walk.
-* Healthcare services are mentioned, but the brief does not specify the type or quality of healthcare services available, so it is unclear whether residents have access to a range of healthcare options within a 15-minute walk.
-* The  $\color{green}{[\text{presence of parks and playgrounds}]}$  suggests that there are some green spaces available, but it is unclear whether these spaces are of high quality or sufficient in size to meet the needs of residents.
-* While there are several restaurants and cafes, it is unclear whether there are also options for mid-range or high-end dining, or whether there are cultural or entertainment venues (such as  $\color{orange}{[\text{museums, theaters, or concert halls}]}$ ) within a 15-minute walk.
+ While there are  $\color{green}{[\text{several schools and kindergartens}]}$ , the brief does not provide information on the quality or availability of educational services, so it is unclear whether residents have access to a range of educational options within a 15-minute walk.
+ Healthcare services are mentioned, but the brief does not specify the type or quality of healthcare services available, so it is unclear whether residents have access to a range of healthcare options within a 15-minute walk.
+ The  $\color{green}{[\text{presence of parks and playgrounds}]}$  suggests that there are some green spaces available, but it is unclear whether these spaces are of high quality or sufficient in size to meet the needs of residents.
+ While there are several restaurants and cafes, it is unclear whether there are also options for mid-range or high-end dining, or whether there are cultural or entertainment venues (such as  $\color{orange}{[\text{museums, theaters, or concert halls}]}$ ) within a 15-minute walk.
 
 To further satisfy the 15-minute city ideal, it would be beneficial to have:
 
-* A wider range of educational services, including higher education options
-* A more diverse range of healthcare services, including specialist medical services and community health programs
-* Higher-quality and more extensive green spaces, including parks, playgrounds, and community gardens
-* A wider range of cultural and entertainment options, including mid-range and high-end dining, museums, theaters, and concert halls
+ A wider range of educational services, including higher education options
+ A more diverse range of healthcare services, including specialist medical services and community health programs
+ Higher-quality and more extensive green spaces, including parks, playgrounds, and community gardens
+ A wider range of cultural and entertainment options, including mid-range and high-end dining, museums, theaters, and concert halls
 
 Overall, this location in Paris appears to be a strong candidate for the 15-minute city ideal, but there are some areas where it could be improved to better meet the needs of residents.
 
@@ -404,10 +404,10 @@ On the other hand, the brief does not provide information on the specific charac
 
 However, considering the location's characteristics, I would say that this spot might be suitable for a young family who:
 
-* Values a calmer and more relaxed environment
-* Is looking for a mix of services and amenities within walking distance
-* Has older children who can walk or bike to local parks and playgrounds
-* Is willing to explore the surrounding area to find family-friendly amenities
+ Values a calmer and more relaxed environment
+ Is looking for a mix of services and amenities within walking distance
+ Has older children who can walk or bike to local parks and playgrounds
+ Is willing to explore the surrounding area to find family-friendly amenities
 
 However, if the family has very young children or is looking for a more extensive range of family-friendly amenities, such as nurseries, kindergartens, or larger parks with playgrounds, they might want to consider other locations in Paris.
 
@@ -415,7 +415,7 @@ It's also worth noting that the brief does not provide information on the afford
 
 Ultimately, this location's suitability for a young family would depend on their specific needs and preferences. A more detailed assessment of the local amenities, housing prices, and community resources would be necessary to make a more informed decision.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 10
 ## Q1
@@ -443,10 +443,10 @@ The area has a high number of POIs, including food, shopping, healthcare, educat
 
 However, there are some areas where the location may not fully meet the 15-minute city ideal:
 
-- **Grocery shopping:** While there are bakeries, cafes, and convenience stores, the  $\color{red}{[\text{brief does not indicate the presence of a full-service supermarket}]}$ . This might require a slightly longer walk or a short bike ride to access a larger grocery store.
-- **Community facilities:** While  $\color{green}{[\text{there are parks and playgrounds}]}$ , the brief does not indicate the presence of  $\color{orange}{[\text{community centers, public pools, or other community facilities}]}$  that are often considered essential for a 15-minute city.
-- **Healthcare:** While there are  $\color{green}{[\text{pharmacies and doctors}]}$ , the brief does not indicate the presence of  $\color{orange}{[\text{hospitals or specialized healthcare services}]}$ , which might require a longer walk or a short bike ride to access.
-- **Childcare:** The brief mentions  $\color{green}{[\text{schools and kindergartens}]}$ , but it does not indicate the presence of after-school care or other childcare services that are often considered essential for working parents.
+- Grocery shopping: While there are bakeries, cafes, and convenience stores, the  $\color{red}{[\text{brief does not indicate the presence of a full-service supermarket}]}$ . This might require a slightly longer walk or a short bike ride to access a larger grocery store.
+- Community facilities: While  $\color{green}{[\text{there are parks and playgrounds}]}$ , the brief does not indicate the presence of  $\color{orange}{[\text{community centers, public pools, or other community facilities}]}$  that are often considered essential for a 15-minute city.
+- Healthcare: While there are  $\color{green}{[\text{pharmacies and doctors}]}$ , the brief does not indicate the presence of  $\color{orange}{[\text{hospitals or specialized healthcare services}]}$ , which might require a longer walk or a short bike ride to access.
+- Childcare: The brief mentions  $\color{green}{[\text{schools and kindergartens}]}$ , but it does not indicate the presence of after-school care or other childcare services that are often considered essential for working parents.
 
 Overall, this location appears to satisfy the 15-minute city ideal to a high degree, with a good mix of daily services within a short walk. However, there may be some gaps in community facilities, healthcare, and childcare services that could be addressed to make the area even more livable.
 
@@ -457,9 +457,9 @@ The  $\color{green}{[\text{presence of schools, kindergartens, and parks}]}$  su
 
 However, it's essential to consider the trade-offs between the area's advantages and its limitations. While the area is relatively calmer than other central Parisian neighborhoods, it's  $\color{green}{[\text{still a densely populated area with a high population density}]}$ . This might mean that:
 
-- **Noise levels:** While the area might be quieter than other central Parisian neighborhoods, it's still a densely populated area with a high level of activity, which could lead to some noise pollution.
-- **Space:** While the area has a relatively lower density, it's still a compact urban environment, and living space might be at a premium.
-- **Parking and transportation:** The area's density and central location might make parking challenging, and residents might rely heavily on  $\color{orange}{[\text{public transportation or cycling}]}$ .
+- Noise levels: While the area might be quieter than other central Parisian neighborhoods, it's still a densely populated area with a high level of activity, which could lead to some noise pollution.
+- Space: While the area has a relatively lower density, it's still a compact urban environment, and living space might be at a premium.
+- Parking and transportation: The area's density and central location might make parking challenging, and residents might rely heavily on  $\color{orange}{[\text{public transportation or cycling}]}$ .
 
 Considering these factors, a young family might find this spot suitable if they:
 
@@ -470,4 +470,4 @@ Considering these factors, a young family might find this spot suitable if they:
 
 Ultimately, the suitability of this spot for a young family depends on their individual preferences and priorities. It's essential for them to weigh the area's advantages and limitations to determine if it's the right fit for their needs.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
