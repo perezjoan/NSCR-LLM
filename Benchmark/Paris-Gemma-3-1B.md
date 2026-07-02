@@ -1437,7 +1437,7 @@ Daily Services within a Short Walk:
     $\color{red}{[\text{Community Centre: 2 points of interest}]}$  (community centers)
     $\color{red}{[\text{Computer: 2 points of interest}]}$  (computers)
     $\color{green}{[\text{Car: 1 point of interest}]}$  (car)
-    $\color{green}{[\text{Bed: 1 point of interest}]}$  (beds)
+    $\color{green}{[\text{Bed 1 point of interest}]}$  (beds)
     $\color{green}{[\text{Gold Buyer: 1 point of interest}]}$  (gold buyers)
     $\color{green}{[\text{Hifi: 1 point of interest}]}$  (hifi)
     $\color{green}{[\text{Newsagent: 1 point of interest}]}$  (newsagents)
