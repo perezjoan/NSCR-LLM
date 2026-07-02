@@ -13,7 +13,7 @@ Based on the provided data and the spatial brief, here’s a breakdown of daily 
 
 Daily Services Within a Short Walk (15-minute radius):
 
-    $\color{red}{[\text{Clothing: 113 points of interest}]}$  (clothing stores)
+$\color{red}{[\text{Clothing: 113 points of interest}]}$  (clothing stores)
     $\color{green}{[\text{Bicycle Parking: 82 points of interest}]}$  (bicycle parking)
     $\color{green}{[\text{Restaurant: 79 points of interest}]}$  (restaurants)
     $\color{green}{[\text{Bench: 54 points of interest}]}$  (benches)
