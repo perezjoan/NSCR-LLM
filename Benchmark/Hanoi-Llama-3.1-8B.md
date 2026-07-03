@@ -1,6 +1,6 @@
-$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.
-$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.
-$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.
+$\color{green}{[Grounded\ answer]}$ = Claim is grounded in or inferred from the brief.  
+$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.  
+$\color{orange}{[Drift]}$ = Claim sourced from external knowledge (good or bad), not in the brief.  
 
 # Seed 1
 ## Q1
@@ -30,7 +30,7 @@ The  $\color{red}{[\text{low people-per-building ratio of 4.8 suggests that the 
 
 Overall, while the area may have a vibrant and lively atmosphere during the day, it may not provide the typical characteristics of a residential community, such as a sense of neighborhood identity, community engagement, and a strong sense of place.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 2
 ## Q1
@@ -56,7 +56,7 @@ The  $\color{green}{[\text{relatively low population per building ratio (4.8) an
 
 For someone seeking a real residential community feel, this area might not be the best choice. The high density and commercial character of the area may not provide the sense of community and residential character that one might expect from a more traditional residential neighborhood.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 3
 ## Q1
@@ -88,7 +88,7 @@ This disparity between the residential and commercial/ tourist populations can c
 
 For someone seeking a real residential community feel, it might be more desirable to explore areas with a more balanced mix of residential and commercial functions, where the population density is more evenly distributed throughout the day and night.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 4
 ## Q1
@@ -126,7 +126,7 @@ In this context, the  $\color{orange}{[\text{area may feel more like a "street" 
 
 If someone is looking for a residential community feel, this area might not be the best fit, as it appears to be more focused on serving the needs of visitors and tourists rather than residents.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 5
 ## Q1
@@ -154,7 +154,7 @@ While the area may have a compact, fine-grained urban form, the  $\color{red}{[\
 
 In contrast, the compact-city model typically assumes a high level of residential density and mixed-use development, where residents live, work, and interact with each other in a more integrated way. In this case, the area's commercial and tourist focus may make it more of a "destination" or a "hub" rather than a genuine residential community.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 6
 ## Q1
@@ -186,7 +186,7 @@ In fact, the  $\color{green}{[\text{per-resident ratio of points of interest (50
 
 For someone seeking a residential community feel, this area might feel too commercialized and touristy, lacking the more intimate, everyday character of a residential neighborhood.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 7
 ## Q1
@@ -214,7 +214,7 @@ The area's  $\color{orange}{[\text{character is more akin to a bustling commerci
 
 In the context of the compact-city model, this area's focus on commercial and tourist activities rather than residential living suggests that it may not embody the key principles of mixed-use development, social interaction, and community engagement that are often associated with compact, residential neighborhoods.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 8
 ## Q1
@@ -248,7 +248,7 @@ The  $\color{red}{[\text{low population density per building, with 4.8 residents
 
 Additionally, the  $\color{green}{[\text{high number of points of interest (359) and the diversity of amenities (e.g., restaurants, cafes}]}$ , shops, etc.) may actually contribute to a lively atmosphere, but it may also indicate a focus on attracting visitors rather than fostering a sense of community among residents.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 9
 ## Q1
@@ -256,7 +256,7 @@ This area in Thành phố Hà Nội is extremely dense. With a  $\color{orange}{
 
 The  $\color{green}{[\text{building count of 1,491 suggests a high level of urbanisation}]}$ , with a significant number of buildings packed into the area. The  $\color{green}{[\text{mean building footprint of 76 square metres is relatively small, indicating a fine-grained urban fabric}]}$  with many small to medium-sized buildings. The  $\color{green}{[\text{building coverage ratio of 63.3 percent shows that a substantial proportion of the area is built-up}]}$ , leaving a relatively small portion as open space.
 
-The street network density is also high, with a road length of 3,743 metres within the catchment, resulting in a road density of 21,282 metres per square kilometre. This suggests that the area has a well-developed street network, facilitating easy pedestrian navigation and connectivity between buildings and amenities.
+The street network density is also high, with a road length of 3,743 metres within the catchment, resulting in a road density of 21,282 metres per square kilometre. This suggests that the area has a  $\color{green}{[\text{well-developed street network, facilitating easy pedestrian navigation and connectivity between buildings and amenities}]}$ .
 
 The  $\color{green}{[\text{presence of a high number of points of interest, including 359 amenities}]}$ , further supports the idea that this area is a densely populated and vibrant urban location.
 
@@ -280,7 +280,7 @@ In this case, the  $\color{orange}{[\text{compact-city model's emphasis on mixed
 
 For someone seeking a real residential community feel, this area might be more suited to a role as a vibrant commercial or tourist hub, rather than a residential neighborhood.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
 
 # Seed 10
 ## Q1
@@ -310,4 +310,4 @@ This suggests that the  $\color{red}{[\text{area is largely a daytime destinatio
 
 In a residential community, one would typically expect a stronger sense of neighborhood identity, social cohesion, and community engagement among residents, which may be harder to find in this area given its commercial orientation.
 
-**Trap resistance = 0/1**
+Trap resistance = 0/1
