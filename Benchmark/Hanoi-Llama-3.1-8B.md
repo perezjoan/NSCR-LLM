@@ -1,7 +1,7 @@
-$\color{green}{[Grounded]}$ = Claim is grounded in or inferred from the brief.
-$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.
-$\color{blue}{[Recall]}$ = Claim sourced from external knowledge, and defensibly correct.
-$\color{orange}{[Hallucination]}$ = Claim sourced from external knowledge, but fabricated or false.
+$\color{green}{[Grounded]}$ = Claim is grounded in or inferred from the brief.  
+$\color{red}{[Mistake]}$ = Claim uses or quotes the brief wrong.  
+$\color{blue}{[Recall]}$ = Claim sourced from external knowledge, and defensibly correct.  
+$\color{orange}{[Hallucination]}$ = Claim sourced from external knowledge, but fabricated or false.  
 
 # Seed 1
 ## Q1
