@@ -9,12 +9,12 @@ Okay, let's analyze the spatial brief and assess the area’s density based on t
 
 Overall Assessment:
 
-The area exhibits a  $\color{green}{[\text{highly dense, compact urban form}]}$ ,  $\color{blue}{[\text{dominated by a grid of interconnected buildings}]}$  and a robust street network. The  $\color{blue}{[\text{density is significantly higher than typical suburban areas in Vietnam}]}$ , reflecting the city’s growth and the prevalence of residential housing.  The  $\color{blue}{[\text{presence of multiple amenity types (restaurants, cafes, etc.) contributes to a high population density}]}$ .
+The area exhibits a  $\color{green}{[\text{highly dense, compact urban form}]}$ ,  $\color{blue}{[\text{dominated by a grid of interconnected buildings}]}$  and a robust street network. The  $\color{blue}{[\text{density is significantly higher than typical suburban areas in Vietnam}]}$ , $\color{green}{[\text{reflecting the city's growth and the prevalence of residential housing}]}$.  The  $\color{blue}{[\text{presence of multiple amenity types (restaurants, cafes, etc.) contributes to a high population density}]}$ .
 
 Detailed Breakdown:
 
-   Population Density: The  $\color{red}{[\text{population density is relatively high – approximately 48 people per square kilometer}]}$ . This is above average for Hanoi, but still respectable, especially considering the area's size. The  $\color{red}{[\text{density is driven by the large number of residential buildings}]}$ .
-   Building Density: The  $\color{red}{[\text{building footprint per square kilometer is relatively low, averaging around 76}]}$ . This indicates a significant amount of housing concentrated within the area. The density is relatively high, driven by the density of residential buildings.
+   Population Density: The  $\color{red}{[\text{population density is relatively high – approximately 48 people per square kilometer}]}$ . $\color{blue}{[\text{This is above average for Hanoi, but still respectable, especially considering the area's size}]}$. The  $\color{red}{[\text{density is driven by the large number of residential buildings}]}$ .
+   Building Density: The  $\color{red}{[\text{building footprint per square kilometer is relatively low, averaging around 76}]}$ . $\color{green}{[\text{This indicates a significant amount of housing concentrated within the area}]}$. The density is relatively high, driven by the density of residential buildings.
    Street Network Density: The  $\color{green}{[\text{road density per kilometer squared is around 21282}]}$ . This is a substantial amount of road space, indicating a  $\color{green}{[\text{high degree of connectivity and accessibility}]}$  within the area. The  $\color{blue}{[\text{density of connected buildings contributes to the overall connectivity}]}$ .
 
 Density Ranking (Relative):
@@ -103,7 +103,7 @@ Thành phố Hà Nội is characterized by a  $\color{orange}{[\text{relatively 
 Density Breakdown:
 
    Population Density: The  $\color{green}{[\text{population density is relatively high at 40545 people per square kilometer}]}$ . This is  $\color{blue}{[\text{significantly higher than the average for suburban areas}]}$ , indicating a concentrated population. The density is driven by the presence of numerous buildings, suggesting a mix of residential and commercial activity.
-   Building Density: The  $\color{red}{[\text{building footprint density is relatively high at 76 buildings per square kilometer}]}$ . This indicates a significant concentration of buildings, particularly in the central area. The density is lower in the periphery, suggesting a mix of residential and commercial zones.
+   Building Density: The  $\color{red}{[\text{building footprint density is relatively high at 76 buildings per square kilometer}]}$ . This indicates a significant concentration of buildings, particularly in the central area. $\color{orange}{[\text{The density is lower in the periphery, suggesting a mix of residential and commercial zones}]}$.
    Street Network Density: The  $\color{green}{[\text{road network density is relatively high at 21282 m per km2}]}$  (road length per square kilometre). This suggests a  $\color{green}{[\text{robust and well-developed street network}]}$ , facilitating efficient movement of people and goods.
 
 Density Ranking (Relative):
@@ -125,7 +125,7 @@ Alignment with the Compact-City Model
 
 Yes, this area  $\color{green}{[\text{leans towards a compact-city model}]}$ , but it’s nuanced. It’s not a strictly defined, tightly-defined compact zone, but it exhibits several key characteristics that align with the principles of compact urbanism. Here’s a breakdown:
 
-   Dense, Fine-Grained Fabric: The  $\color{red}{[\text{high population density (around 7131 residents)}]}$  is a strong indicator of a dense, finely-grained urban form. This contrasts with sprawling suburban development. The  $\color{red}{[\text{relatively small, scattered buildings interspersed with larger areas}]}$  suggest a layered, intricate pattern.
+   Dense, Fine-Grained Fabric: The  $\color{red}{[\text{high population density (around 7131 residents)}]}$  is a strong indicator of a dense, finely-grained urban form. $\color{blue}{[\text{This contrasts with sprawling suburban development}]}$. The  $\color{red}{[\text{relatively small, scattered buildings interspersed with larger areas}]}$  suggest a layered, intricate pattern.
    Layered Structure: $\color{orange}{[\text{The presence of multiple distinct zones - residential, commercial, and potentially some industrial}]}$ – contributes to a layered, dense fabric.
     $\color{blue}{[\text{Grid-like Patterns: The relatively high road network density (21282 m2 per km2) hints at a grid-like pattern}]}$  – where streets intersect and connect in a somewhat organized manner. $\color{green}{[\text{This is typical of compact urban areas}]}$.
    Mixed Land Use: The presence of restaurants, cafes, shops, and other commercial buildings suggests a  $\color{green}{[\text{mix of residential and commercial functions}]}$ , rather than solely focused on one type of activity.
@@ -155,19 +155,19 @@ Here’s a breakdown of how that change impacts the overall appeal:
 Negative Impacts on the "Real Residential" Feeling:
 
    Reduced Density: The primary factor is the reduced density. The  $\color{orange}{[\text{prevalence of commercial and tourist-focused buildings creates a sense of isolation}]}$  and detachment. It’s less about a feeling of belonging and more about a  $\color{orange}{[\text{transient, often transient, environment}]}$ .
-   Lack of Strong Social Fabric: Commercial areas often lack the same depth of social connections and community engagement as residential neighborhoods. There’s less emphasis on neighborly interactions, community events, or a sense of collective investment.
-   “Tourist-Focused” Aesthetic: The concentration of shops and restaurants can create an atmosphere where residents are often just visitors, reinforcing a feeling of being an outsider.
-   Missing the "Heartbeat" of a Community: A true residential area has a distinct pulse – the sounds of local businesses, the spontaneous gatherings of residents, the feeling of a neighborhood’s lifeblood. This is absent here.
+   Lack of Strong Social Fabric: $\color{blue}{[\text{Commercial areas often lack the same depth of social connections and community engagement as residential neighborhoods}]}$. $\color{orange}{[\text{There's less emphasis on neighborly interactions, community events, or a sense of collective investment}]}$.
+   “Tourist-Focused” Aesthetic: $\color{orange}{[\text{The concentration of shops and restaurants can create an atmosphere where residents are often just visitors, reinforcing a feeling of being an outsider}]}$.
+   Missing the "Heartbeat" of a Community: $\color{orange}{[\text{A true residential area has a distinct pulse}]}$ – the sounds of local businesses, the spontaneous gatherings of residents, the feeling of a neighborhood’s lifeblood. $\color{orange}{[\text{This is absent here}]}$.
 
 Why It's Less Appealing for a Residential Feel:
 
-   Transient Population: $\color{orange}{[\text{Residents tend to be transient, often tourists, visitors}]}$, or people with specific work or business needs. This doesn't foster the same sense of rootedness.
-   Focus on Consumption: The economic emphasis in a commercial area often prioritizes consumption over community building.
-   Lack of Local Investment: Commercial spaces can sometimes lead to a lack of investment in the local neighborhood – fewer community initiatives, fewer local businesses, and a perception of neglect.
+   Transient Population: $\color{orange}{[\text{Residents tend to be transient, often tourists, visitors}]}$, or people with specific work or business needs. $\color{orange}{[\text{This doesn't foster the same sense of rootedness}]}$.
+   Focus on Consumption: $\color{blue}{[\text{The economic emphasis in a commercial area often prioritizes consumption over community building}]}$.
+   Lack of Local Investment: $\color{blue}{[\text{Commercial spaces can sometimes lead to a lack of investment in the local neighborhood}]}$ – fewer community initiatives, fewer local businesses, and a perception of neglect.
 
 In Conclusion:
 
-The transformation into a predominantly commercial/tourism area fundamentally alters the appeal for long-term residents. It diminishes the sense of community, social engagement, and a feeling of belonging that is crucial for a truly residential experience.
+$\color{orange}{[\text{The transformation into a predominantly commercial/tourism area fundamentally alters the appeal for long-term residents}]}$. $\color{orange}{[\text{It diminishes the sense of community, social engagement, and a feeling of belonging that is crucial for a truly residential experience}]}$.
 
 Recommendations for Improving the "Real" Feel:
 
@@ -192,7 +192,7 @@ Detailed Breakdown:
 
  Population Density: The  $\color{red}{[\text{population density is around 48 people per square kilometer}]}$  (approximately 10,000 people per square km). This is considerably high, reflecting the region’s population size and the relatively low per-resident ratios.  The density is also influenced by the road network; the  $\color{blue}{[\text{presence of a large road network contributes to higher density}]}$ .
 
- Building Density: The building density is relatively high, with  $\color{red}{[\text{approximately 14,900 buildings covering a total footprint of 175,879 square meters}]}$ . This indicates a significant concentration of residential and commercial development.
+ Building Density: The building density is relatively high, with  $\color{red}{[\text{approximately 14,900 buildings covering a total footprint of 175,879 square meters}]}$ . $\color{green}{[\text{This indicates a significant concentration of residential and commercial development}]}$.
 
  Street Network Density: The  $\color{green}{[\text{road density is relatively high, at 21282 m per km2}]}$ . This means that there are a lot of streets, which contributes to the overall density.
 
@@ -204,7 +204,7 @@ Detailed Breakdown:
 
 Putting it Together – Density Ranking:
 
-Based on these factors, the area is likely to be considered  $\color{green}{[\text{highly dense}]}$ . It's a significant urban area with a high concentration of population and a considerable road network. The density is likely to be a key characteristic of the area, balancing residential, commercial, and infrastructural elements.
+Based on these factors, the area is likely to be considered  $\color{green}{[\text{highly dense}]}$ . It's a significant urban area with a high concentration of population and a considerable road network. $\color{green}{[\text{The density is likely to be a key characteristic of the area, balancing residential, commercial, and infrastructural elements}]}$.
 
 Important Note: This analysis is based solely on the provided data and brief. A more comprehensive assessment would require a deeper dive into the specific building types, zoning regulations, and other contextual factors.
 
@@ -229,7 +229,7 @@ Features Supporting the Compact-City Model:
 Factors Limiting a Strict Compact-City Fit:
 
  Large, Open Spaces: The significant road network might indicate a lack of substantial open spaces or parks, which are common in more compact areas.
- Low Building Density (Relative): While dense, it’s not ultra-dense like a dense urban core.
+ $\color{orange}{[\text{Low Building Density (Relative): While dense, it's not ultra-dense like a dense urban core}]}$.
  Mixed Land Use: It could be a mix of residential, commercial, and possibly some industrial/institutional use, which isn't always present in a purely compact model.
 
 In Conclusion:
@@ -254,9 +254,9 @@ How This Impacts the "Real Residential Community" Feel:
  Lack of Social Cohesion: $\color{orange}{[\text{The transient nature naturally leads to a weak}]}$er sense of community. $\color{orange}{[\text{People tend to be visitors rather than neighbors}]}$.
  Reduced Local Investment: Businesses are likely to invest less in long-term community building – think community events, local neighborhood associations, etc.
  Sense of Isolation: $\color{orange}{[\text{The transient population can create a feeling of isolation and detachment from the local community}]}$.
- Shift in Values: The focus on tourism can shift values, prioritizing spectacle and temporary experiences over genuine community engagement.
+ Shift in Values: $\color{orange}{[\text{The focus on tourism can shift values, prioritizing spectacle and temporary experiences over genuine community engagement}]}$.
 
-In short, the commercial/tourism focus creates a different dynamic than a genuinely residential area, diminishing the sense of belonging and fostering a feeling of distance.
+In short, $\color{orange}{[\text{the commercial/tourism focus creates a different dynamic than a genuinely residential area, diminishing the sense of belonging and fostering a feeling of distance}]}$.
 
 Further Considerations for a "Real Residential" Feel:
 
@@ -279,13 +279,13 @@ The area is characterized by a  $\color{blue}{[\text{relatively dense urban fabr
 Density Breakdown:
 
  Population Density: The  $\color{red}{[\text{population density is relatively high, averaging around 48 people per square kilometer}]}$ . This is a respectable density, but it's noticeable considering the area’s size.
- Building Density: The building density is moderate. The  $\color{red}{[\text{number of buildings is substantial – 14,912}]}$ , but  $\color{red}{[\text{the density per square kilometer is relatively low}]}$ , particularly compared to areas like the central districts.
+ Building Density: $\color{orange}{[\text{The building density is moderate}]}$. The  $\color{red}{[\text{number of buildings is substantial – 14,912}]}$ , but  $\color{red}{[\text{the density per square kilometer is relatively low}]}$ , particularly compared to areas like the central districts.
  Street Network Density: The road network density is high, with a significant proportion of buildings clustered along the streets. The road length is substantial, suggesting a robust street system.  The density of buildings per kilometer is relatively high.
 
 Detailed Assessment:
 
- Population Density:  The 48 people/km² population density is a relatively high level for a city of this size, indicating a good level of urban concentration. However, it’s not a densely populated area.
- Building Density: The number of buildings is substantial (14,912), but the density per square kilometer is moderate.  The density of buildings is relatively low compared to similar-sized cities.
+ Population Density:  The 48 people/km² population density is a relatively high level for a city of this size, indicating a good level of urban concentration. $\color{orange}{[\text{However, it's not a densely populated area}]}$.
+ Building Density: The number of buildings is substantial (14,912), but the density per square kilometer is moderate.  $\color{orange}{[\text{The density of buildings is relatively low compared to similar-sized cities}]}$.
  Street Network Density: The network’s density is high, with a large proportion of buildings concentrated along the streets. This suggests a well-developed street network.
 
 In summary: The area exhibits a  $\color{green}{[\text{dense, mixed-use urban fabric}]}$ , with a noticeable concentration of buildings and a substantial network of streets. $\color{green}{[\text{It's a relatively compact urban area, though not as dense as some major Vietnamese cities}]}$.
@@ -300,7 +300,7 @@ Yes, this area  $\color{green}{[\text{leans towards a compact-city model}]}$ , b
 Characteristics Suggesting a Compact-City Fit:
 
  High Building Density: The  $\color{red}{[\text{number of buildings (14,912) is a strong indicator of density}]}$ . This is a key characteristic of compact urban environments.
- Layered Street Network: The dense arrangement of buildings along the streets suggests a layered street network – buildings are spaced relatively close together. This is characteristic of dense urban areas.
+ Layered Street Network: The dense arrangement of buildings along the streets suggests a layered street network – buildings are spaced relatively close together. This is $\color{blue}{[\text{characteristic of dense urban areas}]}$.
  Relatively Small Area Size: The  $\color{green}{[\text{area is relatively small, which is typical of compact urban forms}]}$ . It's not sprawling, but it's a defined area.
 
 Features Supporting a Compact-City Feel:
@@ -337,11 +337,11 @@ Why It Doesn’t Feel Like a Residential Community:
 
 How It Impacts the "Real Residential Feel":
 
- Sense of Place: The lack of established neighborhood structures and a strong sense of community diminishes the feeling of a place where people feel rooted.
- Social Interaction: The transient nature of the population means limited opportunities for meaningful social interaction – neighbors knowing each other, community events, etc. – are reduced.
- Long-Term Investment:  The absence of long-term residents means less investment in local infrastructure (schools, parks, community services) and a slower, less sustainable development.
+ Sense of Place: $\color{orange}{[\text{The lack of established neighborhood structures and a strong sense of community diminishes the feeling of a place where people feel rooted}]}$.
+ Social Interaction: $\color{orange}{[\text{The transient nature of the population means limited opportunities for meaningful social interaction}]}$ – neighbors knowing each other, community events, etc. – are reduced.
+ Long-Term Investment:  $\color{orange}{[\text{The absence of long-term residents means less investment in local infrastructure}]}$ (schools, parks, community services) and a slower, less sustainable development.
 
-In short, it's a beautiful, strategically-designed area, but it lacks the depth and stability of a community where people genuinely choose to live and build a life.
+In short, it's a beautiful, strategically-designed area, but $\color{orange}{[\text{it lacks the depth and stability of a community where people genuinely choose to live and build a life}]}$.
 
 To put it more succinctly: $\color{orange}{[\text{It's a highly attractive, tourist-focused area, but it's not a place to build a life}]}$. It’s more of a temporary, experiential destination.
 
@@ -363,7 +363,7 @@ The area exhibits a  $\color{green}{[\text{highly dense, compact urban form}]}$ 
 Density Breakdown:
 
    Population Density: The  $\color{red}{[\text{population density is relatively high at around 48 people per square kilometer}]}$ . This is  $\color{blue}{[\text{significantly higher than the average of 3000 residents per square kilometer}]}$ , but still relatively dense compared to many suburban areas.
-   Building Density: The  $\color{red}{[\text{building footprint per square kilometer is substantial, with an average of 76}]}$ . This indicates a high concentration of residential and commercial buildings. The  $\color{green}{[\text{building coverage ratio is also fairly high at 0.633, meaning that 63.3 percent of the land is covered by buildings}]}$ .
+   Building Density: The  $\color{red}{[\text{building footprint per square kilometer is substantial, with an average of 76}]}$ . $\color{green}{[\text{This indicates a high concentration of residential and commercial buildings}]}$. The  $\color{green}{[\text{building coverage ratio is also fairly high at 0.633, meaning that 63.3 percent of the land is covered by buildings}]}$ .
    Street Network Density: The road density is high, with a  $\color{green}{[\text{road length of 3743 meters}]}$ . The  $\color{green}{[\text{road density per km2 is 21282}]}$ . This suggests a very dense network of streets, with a high concentration of interconnected streets.
 
 Conclusion:
@@ -416,9 +416,9 @@ Why It Feels Less Residential:
 Impact on the "Real Residential Feel":
 
    Sense of Place:  A core element of a residential area is a strong sense of place – a feeling of familiarity and belonging. The density of tourism-driven development often diminishes this feeling.
-   Community Building:  Traditional residential communities are built on a foundation of shared interests, local events, and a sense of mutual support.  The commercial focus here is less likely to foster these dynamics.
+   Community Building:  $\color{blue}{[\text{Traditional residential communities are built on a foundation of shared interests, local events, and a sense of mutual support}]}$.  The commercial focus here is less likely to foster these dynamics.
 
-In short: The density here creates an environment that’s largely geared toward tourism and business, not to long-term residential living. It’s a vibrant, bustling area, but it’s not the kind of place where people want to build a life and become part of a community.
+In short: $\color{orange}{[\text{The density here creates an environment that's largely geared toward tourism and business, not to long-term residential living}]}$. It’s a vibrant, bustling area, but $\color{orange}{[\text{it's not the kind of place where people want to build a life and become part of a community}]}$.
 
 Alternative Considerations:
 
@@ -547,8 +547,8 @@ Yes, this area  $\color{green}{[\text{leans heavily toward a compact-city typolo
 Features Supporting the Compact-City Character:
 
    High Building Density: This is the most significant factor.  The area has a  $\color{green}{[\text{high concentration of buildings (1491)}]}$ , which is characteristic of compact urban growth.
-   Fine-Grained Footprint: The  $\color{green}{[\text{relatively small footprint per building (around 76 square meters) suggests a more densely packed, less sprawling layout}]}$ . It's not a sprawling, low-density neighborhood, but it’s not a sprawling suburb either.
-   Dense Street Network: The  $\color{green}{[\text{significant road density (21282 meters per km)}]}$  reinforces the idea of a well-connected, functional street network.  This is typical of dense urban areas.
+   Fine-Grained Footprint: The  $\color{green}{[\text{relatively small footprint per building (around 76 square meters) suggests a more densely packed, less sprawling layout}]}$ . It's not a sprawling, low-density neighborhood, but $\color{orange}{[\text{it's not a sprawling suburb either}]}$.
+   Dense Street Network: The  $\color{green}{[\text{significant road density (21282 meters per km)}]}$  reinforces the idea of a well-connected, functional street network.  $\color{blue}{[\text{This is typical of dense urban areas}]}$.
    POI Density: The  $\color{green}{[\text{presence of numerous amenities (restaurants, shops, banks, etc.)}]}$  indicates a robust commercial and social life, which is often found in denser areas.
 
 Factors that Don't Fully Support Compactness:
@@ -611,7 +611,7 @@ Density Assessment:
 Comparison to Context:
 
    Density Relative to Size: The area’s density is higher than the average for a comparable urban area in Vietnam, but still falls within a moderate range.  It's not a sprawling suburban area, but it’s not a small, low-density neighborhood either.
-   Land Use: The presence of buildings and a significant road network points to a  $\color{green}{[\text{mixed-use or commercial-dominated area}]}$ . The population density likely reflects a mix of residential, commercial, and potentially recreational activities.
+   Land Use: The presence of buildings and a significant road network points to a  $\color{green}{[\text{mixed-use or commercial-dominated area}]}$ . $\color{green}{[\text{The population density likely reflects a mix of residential, commercial, and potentially recreational activities}]}$.
 
 Conclusion:
 
@@ -673,7 +673,7 @@ How it Affects the Compact-City Context:
 
 In Conclusion:
 
-$\color{green}{[\text{This area's characteristics strongly suggest a more tourist-driven, commercial-focused development}]}$. While it can be a vibrant and economically active area, it doesn’t necessarily translate into a robust, long-term residential community. It’s a fascinating example of urban design – a carefully crafted mix of uses – but one that prioritizes economic activity over the needs of a resident population.
+$\color{green}{[\text{This area's characteristics strongly suggest a more tourist-driven, commercial-focused development}]}$. While it can be a vibrant and economically active area, $\color{orange}{[\text{it doesn't necessarily translate into a robust, long-term residential community}]}$. It’s a fascinating example of urban design – a carefully crafted mix of uses – but $\color{orange}{[\text{one that prioritizes economic activity over the needs of a resident population}]}$.
 
 Would you like me to delve deeper into potential strategies for augmenting the area’s residential potential (e.g., incorporating mixed-income housing, encouraging longer-term residents, promoting community-building initiatives)?
 
@@ -685,14 +685,14 @@ Okay, let's analyze the spatial brief and assess the area’s density.
 
 Overall Assessment:
 
-Thành phố Hà Nội presents a  $\color{green}{[\text{relatively dense urban fabric, particularly in its core areas}]}$ . The area boasts a high concentration of buildings, a significant road network, and a relatively high population density, though with some regional variations. It’s a mix of established residential and commercial zones.
+Thành phố Hà Nội presents a  $\color{green}{[\text{relatively dense urban fabric, particularly in its core areas}]}$ . The area boasts a high concentration of buildings, a significant road network, and a relatively high population density, though with some regional variations. $\color{green}{[\text{It's a mix of established residential and commercial zones}]}$.
 
 Detailed Breakdown:
 
    Population Density: The  $\color{red}{[\text{population density is substantial – 71,310 people per square kilometer}]}$ . This is  $\color{red}{[\text{above the national average of 40545}]}$ , but still reasonable for a major metropolitan area in Vietnam. However, the  $\color{orange}{[\text{density is somewhat concentrated in the city center}]}$ .
-   Building Density: The  $\color{red}{[\text{building count of 14,912 is substantial}]}$ . The  $\color{red}{[\text{building footprint is approximately 11,3995 square kilometers}]}$ . This indicates a high density of residential and commercial buildings.
+   Building Density: The  $\color{red}{[\text{building count of 14,912 is substantial}]}$ . The  $\color{red}{[\text{building footprint is approximately 11,3995 square kilometers}]}$ . $\color{green}{[\text{This indicates a high density of residential and commercial buildings}]}$.
    Street Network Density: The  $\color{green}{[\text{road length (3743m)}]}$  suggests a relatively dense network. The  $\color{green}{[\text{road density per km2 is 21282}]}$ . This is a notable density, indicating a significant proportion of the area is covered by walkable streets.
-   POI Density: The  $\color{green}{[\text{presence of 359 POI (amenities)}]}$  across the area signifies a robust commercial and social activity. The distribution of POIs across different building types suggests a mix of residential, commercial, and leisure sectors.
+   POI Density: The  $\color{green}{[\text{presence of 359 POI (amenities)}]}$  across the area signifies a robust commercial and social activity. $\color{green}{[\text{The distribution of POIs across different building types suggests a mix of residential, commercial, and leisure sec}]}$tors.
    Land Use Intensity: The area’s land-use intensity is high, reflecting the density of buildings and the size of the catchment area.
    Land Footprint: The  $\color{red}{[\text{combined footprint of buildings is 11,3995 square km}]}$ , indicating a significant land use area.
 
@@ -752,7 +752,7 @@ Why It Falls Short of a Residential Feel:
  High Commercial Footprint: The dominant feature is a  $\color{green}{[\text{massive concentration of retail and tourist-oriented businesses}]}$ . This creates a  $\color{orange}{[\text{vibrant, but somewhat isolating, atmosphere}]}$ .  $\color{red}{[\text{Residents are often transient, drawn by the opportunities}]}$  and the overall atmosphere, not necessarily a desire to build a long-term, social life.
  Limited Housing Density: The  $\color{red}{[\text{relatively low density of residential buildings}]}$  – primarily apartments and smaller homes – $\color{orange}{[\text{creates a sense of isolation and detachment}]}$. There's not the same level of neighborhood-building feel.
  Lack of Community Hubs: The absence of community spaces – cafes, bars, shared workspaces, community centers – contributes to a sense of loneliness. People often stick to their own areas, rather than actively seeking to connect.
- Tourism-Driven: A large portion of the population is driven by tourism, which further concentrates the residential presence.
+ Tourism-Driven: $\color{orange}{[\text{A large portion of the population is driven by tourism, which further concentrates the residential presence}]}$.
 
 How it Contributes to a "Residential" Feeling (and its downsides):
 
@@ -850,9 +850,9 @@ Why It's Less of a Residential Community:
 
 How It Impacts the "Real Residential Community" Feel:
 
-   Lack of Social Cohesion: $\color{orange}{[\text{The transient nature leads to a weaker sense of}]}$ social connection. People are more likely to be passing through than to engage in daily life.
-   Limited Community Investment:  Without a resident base, there’s less investment in local amenities, neighborhood maintenance, and community events.
-   Transient Street Patterns:  The street layout becomes more about tourist attractions and shopping destinations, rather than creating a comfortable, walkable residential area.
+   Lack of Social Cohesion: $\color{orange}{[\text{The transient nature leads to a weaker sense of}]}$ social connection. $\color{orange}{[\text{People are more likely to be passing through than to engage in daily life}]}$.
+   Limited Community Investment:  $\color{orange}{[\text{Without a resident base, there's less investment in local amenities, neighborhood maintenance, and community events}]}$.
+   Transient Street Patterns:  $\color{orange}{[\text{The street layout becomes more about tourist attractions and shopping destinations, rather than creating a comfortable, walkable residential area}]}$.
    Feeling of Isolation: $\color{orange}{[\text{Tourists often experience a sense of isolation}]}$, especially if they’re not actively seeking to engage with locals.
 
 In summary: The area can be a beautiful, well-designed urban area, but $\color{green}{[\text{it's fundamentally shaped by its tourist-driven econom}]}$y. It lacks the depth and social density of a truly residential neighborhood, creating a sense of detachment and potentially feeling less like a place to live rather than a place to visit.
