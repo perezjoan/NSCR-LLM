@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Model weights, caches and large downloads (never commit)
+models/
+weights/
+*.safetensors
+*.gguf
+*.bin
+.cache/
+osmnx_cache/
+cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Office lock and temp files
+~$*.docx
+~$*.xlsx
+*.tmp
+
+# Local scratch
+scratch/
+tmp/
