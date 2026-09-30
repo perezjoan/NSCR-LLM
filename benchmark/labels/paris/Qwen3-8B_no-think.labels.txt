@@ -1,0 +1,116 @@
+##### paris_400m | Qwen3-8B_no-think | LABELS | guide version 1.0 | glossary fa7ee737a14a | persona 42faa0374a4b
+##### 30 responses, 388 claims, 0 ECHO lines. Format: claim number = label. Notes only where a rule requires one or the call is non-obvious.
+
+=== seed 1 | Q1 (12) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+
+=== seed 1 | Q2 (15) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 R
+  08: scarcity of playgrounds (2) / sports facilities, not absence -> T. 15: recommendation.
+
+=== seed 1 | Q3 (10) ===
+01 T  02 T  03 T  04 T  05 R  06 T  07 T  08 T  09 T  10 R
+  01-02: rejects Q3 premise citing density -> T (5.6). 04: "lacks significant" = scarcity, parks 4 / playgrounds 2 acknowledged -> T.
+
+=== seed 2 | Q1 (16) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T
+
+=== seed 2 | Q2 (17) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 R  15 R  16 T  17 R
+  12: no hospital/clinic category in brief -> absence T. 14: hedged inference about space mix, not about resident count; uncontradicted -> R.
+
+=== seed 2 | Q3 (9) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 R  08 R  09 T
+
+=== seed 3 | Q1 (14) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T
+
+=== seed 3 | Q2 (13) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 F  09 T  10 T  11 T  12 T  13 R
+  08: "limited access to schools or kindergartens" not supportable by school 5 + kindergarten 3 (+ college 2, prep_school 1) in 0.315 km2 -> F. 09: counts are small in absolute terms -> T. 11: hospitals absent from brief, hedged -> T.
+
+=== seed 3 | Q3 (10) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 F  08 F  09 R  10 T
+  07: asserts absence of schools (5), kindergartens (3), playgrounds (2) -> F (5.6). 08: "educational facilities sparse" -> F.
+
+=== seed 4 | Q1 (22) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 T  20 T  21 T  22 T
+  All enumerated counts verified: restaurant 79, cafe 47, bakery 10, pharmacy 9, clothes 113, beauty 11, convenience 10, park 4, theatre 4, art 7.
+
+=== seed 4 | Q2 (12) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 R  11 T  12 R
+  08: transport hub / hospital absent from poi_by_category -> absence rule, T. 09: no hospital/clinic category -> T.
+
+=== seed 4 | Q3 (11) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 R  09 T  10 T  11 R
+
+=== seed 5 | Q1 (19) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 T
+  Counts verified: restaurant 79, cafe 47, bar 38, optician 20, jewelry 19, bakery 10, pharmacy 9, road density 42,597.
+
+=== seed 5 | Q2 (13) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 R  09 T  10 F  11 F  12 T  13 R
+  10: "notable absence of schools" (5 listed) -> F. 11: education limitation follows from the false absence; hedging does not rescue -> F.
+
+=== seed 5 | Q3 (9) ===
+01 T  02 T  03 T  04 R  05 T  06 T  07 F  08 T  09 R
+  04: "may feel calmer than the city's busiest districts" = unanchored comfort language -> R (5.2). 07: absence of schools (5), playgrounds (2), parks (4) -> F.
+
+=== seed 6 | Q1 (13) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T
+
+=== seed 6 | Q2 (15) ===
+01 T  02 T  03 T  04 T  05 F  06 T  07 T  08 T  09 T  10 T  11 R  12 F  13 R  14 T  15 R
+  05: "over 115" per 1,000; brief value is exactly 115.0 -> F (misread). 08: park 4 T. 10: school 5, doctors 5 T. 12: "limited dedicated pedestrian infrastructure" contradicts 13,427 m walkable streets / road density 42,597 -> F.
+
+=== seed 6 | Q3 (10) ===
+01 T  02 T  03 T  04 T  05 R  06 T  07 R  08 T  09 R  10 R
+  05: "absence of large parks" - brief gives no park sizes; plausible external claim, uncontradicted -> R. 08: parks, playgrounds present -> T.
+
+=== seed 7 | Q1 (12) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+  09: 13.4 km = 13,427 m, correct conversion.
+
+=== seed 7 | Q2 (13) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 F  12 T  13 R
+  11: absence of schools (5) and kindergartens (3) -> F.
+
+=== seed 7 | Q3 (11) ===
+01 R  02 H  03 T  04 T  05 T  06 T  07 R  08 F  09 R  10 T  11 R
+  02: "relatively calm ... compared to the dense, high-activity core" adopts the Q3 premise as fact about the place -> H (5.6). 08: absence of schools, kindergartens, childcare (1) -> F.
+
+=== seed 8 | Q1 (13) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T
+
+=== seed 8 | Q2 (13) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 F
+  10-11: supermarket 2 / greengrocer 3 vs restaurant 79 -> scarcity, T. 13: "potential gap ... schooling" with school 5, kindergarten 3, college 2 -> F.
+
+=== seed 8 | Q3 (9) ===
+01 R  02 H  03 T  04 T  05 T  06 T  07 T  08 T  09 R
+  02: "calmer pace compared to the city's denser areas" adopts the premise -> H. 07: "only 5 schools" count correct -> T.
+
+=== seed 9 | Q1 (12) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+
+=== seed 9 | Q2 (16) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 F  10 R  11 T  12 F  13 T  14 T  15 T  16 R
+  09: "lacks significant representation of schools, kindergartens" (5, 3) -> F. 12: "absence of educational infrastructure" -> F. 13: vacant 39 read as vacancies -> T.
+
+=== seed 9 | Q3 (9) ===
+01 R  02 T  03 T  04 T  05 T  06 T  07 T  08 F  09 R
+  08: absence of schools, kindergartens -> F.
+
+=== seed 10 | Q1 (16) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T
+
+=== seed 10 | Q2 (16) ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 F  12 T  13 T  14 R  15 T  16 R
+  11: "absence of supermarkets" (2 listed) -> F (5.6).
+
+=== seed 10 | Q3 (8) ===
+01 R  02 H  03 T  04 T  05 T  06 F  07 T  08 R
+  02: "calm, lower-density character" asserted as fact about the place -> H (5.2/5.6). 06: absence of supermarkets (2) -> F.
+
+##### TOTALS
+T 329 | F 16 | R 40 | H 3 | total 388

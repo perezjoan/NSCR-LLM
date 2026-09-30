@@ -1,0 +1,507 @@
+##### hanoi_300m | Qwen3-14B_thinking | LABELLED annotation sheet | guide v1.0 (glossary fa7ee737a14a, persona 23bd3f7063ef) | labels: T (brief-true) F (brief-false) R (recall) H (hallucination)
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 1 | Q1 ===
+01 {T} [This area in central Hanoi is highly dense in population, buildings, and street network.]
+02 {T} [The population density is over 40,000 residents per square kilometre,]
+03 {T} [indicating a very compact residential fabric.]
+04 {T} [With 1,491 buildings]
+05 {T} [covering 63% of the catchment area,]
+06 {T} [the built environment is intensely developed,]
+07 {T} [with an average building footprint of just 76 square metres,]
+08 {T} [suggesting a fine-grained, possibly high-rise or multi-storey urban form.]
+09 {T} [Each building houses about 4.8 residents,]
+10 {T} [pointing to a mix of small-scale residential units.]
+11 {T} [The street network is exceptionally dense, with over 21,000 metres of road per square kilometre,]
+12 {T} [reflecting a tightly woven street grid.]
+13 {T} [This combination of high population density, compact building form, and dense street network suggests a traditional, high-density urban core typical of central Hanoi,]
+14 {T} [where land is intensively used and movement is prioritised through a complex, interconnected street system.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 1 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [The **high building coverage ratio** (63.3%)]
+03 {T} [and **extremely high population density** (40,545 residents/km²)]
+04 {T} [indicate intensive land use.]
+05 {T} [The **small average building footprint** (76 m²)]
+06 {T} [and **large building count** (1,491 buildings)]
+07 {T} [suggest a compact, multi-storey or high-density development pattern,]
+08 {R} [typical of traditional urban cores.]
+09 {T} [The **street network is exceptionally dense** (21,282 m/km²),]
+10 {T} [reflecting a tightly woven grid that enables dense connectivity and accessibility.]
+11 {T} [Additionally, the **high POI density** (50.3 per 1,000 residents)]
+12 {T} [and diversity of amenities (restaurants, shops, schools, etc.)]
+13 {T} [reinforce a mixed-use, activity-rich environment.]
+14 {F} [While the built form is not fully contiguous (63% coverage leaves room for open spaces or courtyards),]  # 5.3: open-space inference from the complement; the unbuilt 37% is largely street
+15 {T} [the combination of high building density, small-scale units, and dense streetscapes aligns with a fine-grained, high-intensity urban fabric,]
+16 {R} [characteristic of historic, densely populated districts like central Hanoi.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 1 | Q3 ===
+01 {T} [While the data shows a **high residential population density** (40,545 residents/km²)]
+02 {T} [and **intensive building coverage**,]
+03 {F} [the area's **functional character as a commercial and tourist hub** may limit its residential appeal.]  # 5.4: antecedent asserted as fact about this catchment
+04 {F} [The **residential population count (7,131 residents)** is likely skewed by the inclusion of nearby residential blocks or mixed-use zones,]  # 5.2: count claimed "skewed"; the catchment is the defined unit
+05 {T} [but the **dominance of commercial POIs** (e.g., shops, restaurants, ATMs)]
+06 {F} [and the **lack of explicit residential amenities** (e.g., housing, community spaces)]  # schools 2, place_of_worship 9, townhall, garden are listed
+07 {F} [suggest that the area's primary use is non-residential.]  # 5.4 / 5.2
+08 {R} [This contrasts with the **fine-grained urban fabric** typically associated with residential neighborhoods,]
+09 {R} [which prioritize social interaction, private living spaces, and community-oriented infrastructure.]
+10 {T} [While the built density is high,]
+11 {F} [the **absence of a cohesive residential social fabric**—such as shared courtyards, local markets, or public gathering spaces—may make it feel less like a "real" residential community.]  # marketplace 1 listed; conjunction fails
+12 {R} [Thus, for someone seeking a lived-in, socially connected neighborhood,]
+13 {T} [this area might be better described as a **high-density, mixed-use commercial core** rather than a traditional residential enclave.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 2 | Q1 ===
+01 {T} [This area of Hà Nội exhibits high population density, with 40,545 residents per square kilometer,]
+02 {T} [reflecting a tightly packed urban core.]
+03 {T} [Building density is similarly intense: 63.3% of the catchment area is covered by structures,]
+04 {T} [comprising 1,491 buildings]
+05 {T} [averaging 76 m² each,]
+06 {T} [accommodating nearly 5 residents per building.]
+07 {T} [The street network is exceptionally dense, with 21,282 meters of road per square kilometer—equivalent to 3.7 kilometers of walkable streets within the 300-meter walking catchment.]
+08 {T} [This suggests a fine-grained, interconnected street layout typical of traditional urban fabrics,]
+09 {R} [where narrow streets and compact blocks dominate.]
+10 {T} [The high building coverage and road density imply a historically developed, mixed-use district,]
+11 {F} [though the lack of explicit open space or green areas in the data suggests limited permeability.]  # 5.1: garden 1 listed
+12 {T} [The 359 points of interest (50 per 1,000 residents) further indicate a vibrant, service-rich environment,]
+13 {T} [blending residential, commercial, and social functions within this dense urban matrix.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 2 | Q2 ===
+01 {T} [This area of Hà Nội reflects a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [First, **building coverage** reaches 63.3% of the catchment area,]
+03 {T} [with **1,491 buildings** averaging **76 m²** in footprint—small, compact structures typical of high-density, mixed-use neighborhoods.]
+04 {T} [The **street network** is exceptionally dense, with **21,282 meters of road per square kilometer**,]
+05 {T} [reflecting a tightly woven, interconnected street layout (narrow streets and short blocks) that enhances walkability and permeability.]
+06 {T} [The **high population density** (40,545 residents/km²)]
+07 {T} [and **people-per-building ratio** (4.8)]
+08 {T} [further suggest a mix of residential and commercial functions,]
+09 {R} [with buildings serving multiple roles.]
+10 {T} [The **abundance of points of interest** (359 POIs, 50 per 1,000 residents) reinforces this,]
+11 {T} [indicating a vibrant, service-rich environment.]
+12 {T} [While building coverage is high,]
+13 {T} [the **fine grain** is evident in the small average footprint and high building count,]
+14 {R} [contrasting with coarse, low-density areas characterized by large, isolated structures and sparse street networks.]
+15 {R} [This fabric aligns with traditional, historically developed urban cores where density is achieved through compact, layered land use rather than sprawling development.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 2 | Q3 ===
+01 {T} [The area's **high population density (40,545/km²)**]
+02 {T} [and **building coverage (63.3%)**]
+03 {T} [suggest a dense, layered urban fabric,]
+04 {F} [but the **residential population count (7,131 residents)** may be misleading in a commercial/tourist zone.]  # 5.4: antecedent asserted ("in a commercial/tourist zone")
+05 {F} [The GHS-POP model counts *residents*—not daytime visitors or workers—but in a place dominated by shops, restaurants, and tourist amenities,]  # citation correct, but particularisation embedded (5.4)
+06 {F} [the **actual resident population could be much lower**,]  # 5.2: inverted direction of caveat
+07 {F} [with many buildings serving non-residential functions (e.g., retail, offices).]  # 5.5
+08 {F} [This would create a **surface-level density** that masks a **low residential density**,]  # 5.2
+09 {R} [where the community feel is diluted by transient activity.]
+10 {T} [The **small building footprints (avg 76 m²)**]
+11 {T} [and **high street density (21,282 m/km²)**]
+12 {T} [suggest a traditional, fine-grained urban form,]
+13 {F} [but without a significant residential base, the social fabric may lack cohesion.]  # presupposes absence of a residential base; 7,131 at 40,545/km² is one
+14 {T} [The **poi_per_1000_residents (50.3)** appears high,]
+15 {F} [but this could reflect an overabundance of commercial amenities relative to actual residents.]  # 5.5: per-resident ratio inverted; "actual residents" implies overcount
+16 {T} [While the physical layout supports a vibrant, walkable environment,]
+17 {R} [its **residential character** hinges on the proportion of buildings designated for living.]
+18 {R} [If most structures are commercial or mixed-use with limited housing,]
+19 {R} [the area may indeed feel more like a *service hub* than a *residential community*,]
+20 {T} [even if its urban form is dense and interconnected.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 3 | Q1 ===
+01 {T} [This area of Hà Nội exhibits high population density, with 40,545 residents per square kilometre,]
+02 {T} [reflecting a compact, densely inhabited urban core.]
+03 {T} [Building density is similarly pronounced, with 1,491 buildings]
+04 {T} [covering 63.3% of the catchment area (176,000 m²),]
+05 {T} [averaging 76 m² per building.]
+06 {T} [This suggests a mix of small-to-medium-scale structures, likely including multi-family residences,]
+07 {T} [given the 4.8 residents per building ratio.]
+08 {T} [The street network is exceptionally dense, with 21,282 metres of road per square kilometre—equivalent to a tightly woven grid of narrow streets, typical of traditional urban fabric.]
+09 {T} [The high road density (3.7 km within the catchment)]
+10 {T} [and extensive POI network (359 points, including 71 restaurants,]
+11 {T} [48 cafes,]
+12 {T} [and 42 ATMs)]
+13 {T} [indicate a vibrant, mixed-use district with strong pedestrian connectivity.]
+14 {T} [The combination of high building coverage, dense streets, and abundant amenities points to a historically developed, intensely utilised urban area,]
+15 {T} [likely characterised by close-knit residential and commercial activity.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 3 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key indicators.]
+02 {T} [The **high building coverage ratio (63.3%)**]
+03 {T} [and **1,491 buildings** within a 176,000 m² catchment]
+04 {T} [suggest a compact, tightly packed arrangement of structures,]
+05 {T} [many of which are small (average footprint: 76 m²),]
+06 {T} [typical of fine-grained urbanism.]
+07 {T} [The **population density of 40,545 residents per km²**]
+08 {T} [and **4.8 people per building**]
+09 {T} [reflect high residential intensity,]
+10 {R} [likely in multi-family or mixed-use developments.]
+11 {T} [The **street network is exceptionally dense** (21,282 m road/km²),]
+12 {T} [with 3.7 km of walkable streets within the catchment,]
+13 {T} [enabling a grid-like, pedestrian-friendly layout.]
+14 {T} [The **abundance of POIs (359 total, 50.3 per 1,000 residents)**—including diverse retail, services, and amenities—further underscores a mixed-use, activity-rich environment.]
+15 {T} [Together, these metrics indicate a historically developed, high-density neighborhood with a layered, interconnected built form,]
+16 {T} [where buildings, streets, and amenities are closely integrated,]
+17 {T} [fostering walkability and urban vitality.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 3 | Q3 ===
+01 {T} [While the area's **high commercial and tourist activity** (e.g., 71 restaurants,]
+02 {T} [48 cafes,]
+03 {T} [and 42 ATMs)]
+04 {T} [might suggest a non-residential character,]
+05 {T} [the data reveals a **mixed-use fabric** that includes significant residential density.]
+06 {T} [The **7,131 residents** within the catchment,]
+07 {T} [**4.8 people per building**,]
+08 {T} [and **1,491 buildings** (many small-scale)]
+09 {T} [indicate a **residential component** that extends beyond the core commercial zones.]
+10 {T} [The **high building coverage (63.3%)**]
+11 {T} [and **dense street network** (21,282 m road/km²)]
+12 {T} [suggest a layered urban form where residential, commercial, and service functions intermingle—common in historic urban cores.]
+13 {R} [However, if the goal is a **purely residential community**,]
+14 {T} [this area may not fully meet expectations due to its **strong commercial orientation** and **high pedestrian activity**.]
+15 {T} [The residential density exists,]
+16 {T} [but it is likely interspersed with or adjacent to commercial zones,]
+17 {T} [creating a **vibrant yet mixed-use environment** rather than a quiet, single-use residential neighborhood.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 4 | Q1 ===
+01 {T} [This area of Hà Nội exhibits exceptionally high population density, with 40,545 residents per square kilometre,]
+02 {T} [reflecting a tightly packed urban core.]
+03 {T} [Building coverage is substantial, at 63.3% of the catchment area,]
+04 {T} [with an average building footprint of 76 m²,]
+05 {T} [suggesting a mix of small to medium-scale structures—likely multi-family residential or mixed-use buildings—given the 4.8 residents per building ratio.]
+06 {T} [The street network is remarkably dense, with 21,282 metres of road per square kilometre,]
+07 {T} [indicating a compact, grid-like layout with short blocks and high connectivity,]
+08 {T} [typical of traditional urban fabric.]
+09 {T} [This density is amplified by the 3,743 metres of walkable streets within the catchment,]
+10 {T} [fostering a pedestrian-friendly environment.]
+11 {T} [The area is also intensely serviced, with 50.3 points of interest per 1,000 residents,]
+12 {T} [including a diverse array of shops, restaurants, and amenities,]
+13 {T} [pointing to a vibrant, mixed-use district.]
+14 {T} [Together, these metrics paint a picture of a high-density, historically developed urban quarter where residential, commercial, and social functions are tightly interwoven,]
+15 {T} [supported by a dense street network and high building coverage.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 4 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [First, **building coverage** reaches 63.3% of the catchment,]
+03 {T} [with **1,491 buildings** packed into a compact area,]
+04 {T} [many of small average footprint (76 m²),]
+05 {T} [suggesting a mix of multi-family residential and mixed-use structures.]
+06 {T} [The **population density** (40,545 residents/km²)]
+07 {T} [and **people-per-building ratio** (4.8)]
+08 {T} [imply high residential intensity,]
+09 {T} [typical of tightly packed urban cores.]
+10 {T} [The **street network** is exceptionally dense, with **21,282 m of road/km²**]
+11 {T} [and **3,743 m of walkable streets** within the catchment,]
+12 {T} [indicating a grid-like layout with short blocks and high connectivity—hallmarks of fine-grained urbanism.]
+13 {T} [The **poi density** (50.3 per 1,000 residents) further underscores a vibrant, mixed-use environment,]
+14 {T} [with amenities like shops, restaurants, and services densely interspersed.]
+15 {T} [Together, these metrics reflect a historically developed, intensely built-up quarter where residential, commercial, and social functions are interwoven at a fine scale,]
+16 {R} [contrasting with coarse, low-density areas characterized by sparse building coverage, larger lots, and less connectivity.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 4 | Q3 ===
+01 {T} [While the area's **high building coverage, street density, and POI density** suggest a vibrant, intensively used urban core,]
+02 {T} [the **residential population** (7,131 residents) may not reflect the lived experience if the district is primarily commercial or tourist-oriented.]
+03 {T} [The **GHS-POP data** captures *residential* residents,]
+04 {T} [but in mixed-use or commercial zones, daytime workers, tourists, and transient populations may dominate activity,]
+05 {T} [even if the modeled residential count is high.]
+06 {R} [This could create a **"lived-in" feel** that is more ephemeral—focused on retail, dining, and tourism—rather than a stable, community-oriented residential environment.]
+07 {T} [The **fine-grained urban fabric** (dense streets, small buildings, and high POI density) is ideal for walkability and accessibility,]
+08 {F} [but without a strong residential base, the social cohesion and local culture typical of residential neighborhoods may be lacking.]  # presupposes no strong residential base; contradicts 5.2
+09 {R} [For someone seeking a *real* residential community,]
+10 {R} [this area might feel **"empty" at night**]
+11 {F} [or **underpopulated** in terms of permanent residents,]  # 5.2: residents-only figure is 40,545/km²; hedge does not rescue
+12 {R} [despite its daytime vibrancy.]
+13 {T} [Thus, while the physical infrastructure supports density,]
+14 {R} [the *social fabric* may lean toward commercial rather than residential character.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 5 | Q1 ===
+01 {T} [This area of Hanoi exhibits exceptionally high population density, with 40,545 residents per square kilometre,]
+02 {T} [reflecting a tightly packed urban core.]
+03 {T} [Building density is similarly intense, as 63.3% of the catchment area is covered by structures,]
+04 {T} [many of which are small (average footprint 76 m²),]
+05 {T} [suggesting a mix of residential and compact commercial buildings.]
+06 {T} [The street network is hyper-dense, with 21,282 metres of road per square kilometre,]
+07 {T} [enabling extensive pedestrian connectivity]
+08 {R} [despite the narrow, winding streets typical of historic urban layouts.]
+09 {T} [The high road density and building coverage ratio indicate a fully developed, layered urban fabric where streets and buildings interlock closely.]
+10 {F} [While the population figure might seem high for a commercial zone,]  # 5.4: presupposes the catchment is "a commercial zone"
+11 {T} [the 359 points of interest (50.3 per 1,000 residents) suggest a vibrant mix of services,]
+12 {T} [from retail and food to financial amenities,]
+13 {T} [aligning with a bustling, mixed-use district.]
+14 {T} [The combination of dense housing, compact buildings, and a labyrinthine street network reflects a traditional, high-density urban form,]
+15 {T} [though the small average building size hints at potential constraints on living space or a prevalence of small-scale enterprises.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 5 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [First, the **high building coverage ratio (63.3%)**]
+03 {T} [and **small average building footprint (76 m²)**]
+04 {T} [indicate tightly packed, compact structures,]
+05 {T} [typical of traditional urban cores where buildings are interwoven with streets.]
+06 {T} [The **extremely high road density (21,282 m/km²)**]
+07 {T} [and **narrow, interconnected street network** further reinforce this fine-grained texture,]
+08 {T} [suggesting a layered, historic urban layout with limited open space.]
+09 {T} [The **large number of buildings (1,491)**]
+10 {T} [and **points of interest (359)**]
+11 {T} [per small catchment area (176,000 m²)]
+12 {T} [reflects a dense mix of residential, commercial, and service functions,]
+13 {T} [with small-scale enterprises (e.g., cafes, shops) contributing to the grain.]
+14 {T} [While the **population density (40,545/km²)** is exceptionally high,]
+15 {F} [the **low people-per-building ratio (4.8)** suggests small household sizes or a significant commercial component,]  # 5.5: 4.8 characterised as low and read as commercial evidence
+16 {T} [aligning with the presence of retail and service POIs.]
+17 {T} [Together, these features paint a picture of a tightly knit, high-density urban fabric with a rich, heterogeneous mix of uses and small-scale development.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 5 | Q3 ===
+01 {F} [While the area exhibits a **physically dense, fine-grained urban fabric**—with compact buildings, high road density, and a layered mix of uses—the **residential character is minimal**, as noted in the brief.]  # 5.4: hallucinated provenance; brief says no such thing
+02 {T} [The **population of 7,131 residents** (40,545/km²) is concentrated in a small catchment,]
+03 {F} [but the **people-per-building ratio of 4.8** suggests limited residential occupancy,]  # 5.5
+04 {F} [with many buildings likely serving commercial or mixed-use functions (e.g., shops, restaurants, offices).]  # 5.5
+05 {T} [The **high POI density (50.3 per 1,000 residents)**]
+06 {T} [and prevalence of retail, food, and service amenities (e.g., 71 restaurants,]
+07 {T} [48 cafes,]
+08 {T} [42 ATMs)]
+09 {T} [align with a **tourist/commercial orientation**,]
+10 {F} [where daytime activity far outpaces residential life.]  # unsupported particular; asserts residential life is subordinate in this catchment
+11 {T} [Thus, while the physical form is dense and walkable,]
+12 {F} [the **social fabric is not residentially oriented**—it lacks the density of households, community spaces, or long-term residents typical of a "real" residential community.]  # 5.2: "lacks the density of households" contradicts 40,545/km²
+13 {R} [For someone seeking a lived-in, residential neighborhood,]
+14 {R} [this area would likely feel **transient or commercialized**,]
+15 {F} [with amenities tailored to visitors rather than residents.]  # supermarket 3, convenience 8, pharmacy 3, school 2 etc. serve residents; "rather than residents" unsupported
+16 {R} [The fine-grained structure supports activity but does not inherently foster a cohesive residential community.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 6 | Q1 ===
+01 {T} [This area of Hà Nội is densely populated, with a population density of 40,545 residents per square kilometre,]
+02 {T} [indicating a highly concentrated residential environment.]
+03 {T} [The built fabric is also dense, with 1,491 buildings]
+04 {T} [covering 63.3% of the catchment area,]
+05 {T} [averaging about 76 square metres per building.]
+06 {T} [This suggests a mix of small-scale residential and commercial structures,]
+07 {T} [likely contributing to a fine-grained urban texture.]
+08 {T} [The street network is exceptionally dense, with 21,282 metres of road per square kilometre,]
+09 {T} [reflecting a well-connected and walkable urban layout.]
+10 {T} [The high number of points of interest—359 in total—further underscores the area's intensity of use,]
+11 {T} [with 50.3 points of interest per 1,000 residents.]
+12 {T} [This density of amenities, combined with the compact building and street patterns, suggests a vibrant, mixed-use urban quarter where residential, commercial, and service functions are closely interwoven.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 6 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**.]
+02 {T} [The high building coverage ratio (63.3%)]
+03 {T} [and the presence of 1,491 buildings in a compact catchment area]
+04 {T} [suggest a tightly packed built environment,]
+05 {T} [with small average building footprints (76 m²) contributing to a fragmented, heterogeneous texture.]
+06 {T} [The exceptionally high street density (21,282 m/km²) reflects a dense, interconnected street network,]
+07 {T} [typical of traditional urban cores where streets and blocks are closely spaced.]
+08 {T} [The abundance of points of interest (359 total, 50.3 per 1,000 residents) further underscores a mixed-use, activity-rich environment,]
+09 {T} [consistent with fine-grained urbanism.]
+10 {T} [While the building coverage is high,]
+11 {T} [the small-scale nature of structures and the intricate street layout suggest a layered, intensively developed urban form rather than a coarse, low-density sprawl.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 6 | Q3 ===
+01 {T} [The data suggests a **high population density** (40,545 residents/km²),]
+02 {T} [but the **residential character** of this area is ambiguous.]
+03 {T} [While the catchment includes 7,131 residents,]
+04 {T} [the **high concentration of commercial POIs** (e.g., restaurants, cafes, ATMs, and shops)]
+05 {F} [and the **low "people per building" ratio** (4.8)]  # 5.5: 4.8 is not low (Chicago control 4.9)
+06 {F} [imply that many buildings may be non-residential or under-occupied.]  # 5.5
+07 {F} [This aligns with the user's observation that the area is **commercial/tourist-oriented**,]  # 5.4: premise endorsed as established
+08 {F} [with limited residential density beyond its core.]  # 5.2
+09 {T} [The **fine-grained urban fabric** (dense streets, small buildings) and high POI density suggest a lively, mixed-use environment,]
+10 {R} [but the **residential feel** would depend on the **proportion of housing vs. commercial space**—a nuance not fully captured by the metrics.]
+11 {R} [For someone seeking a **cohesive residential community**,]
+12 {F} [this area might lack the **social infrastructure, private spaces, and low-density neighborhoods** typical of residential zones,]  # conjunction fails: school 2, place_of_worship 9, townhall 1 are social infrastructure
+13 {T} [even if its physical form appears dense.]
+14 {T} [The key limitation is that the data aggregates all residents,]
+15 {F} [including those in transient or mixed-use buildings,]  # 5.2: residents redefined as transient
+16 {R} [which may not reflect the **authentic, lived-in residential character** desired.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 7 | Q1 ===
+01 {T} [This area of Hà Nội exhibits a highly dense urban fabric.]
+02 {T} [Population density is exceptionally high, with 40,545 residents per square kilometre,]
+03 {T} [reflecting a tightly packed residential environment.]
+04 {T} [The built form is similarly dense, with 1,491 buildings]
+05 {T} [covering 63.3% of the catchment area,]
+06 {T} [averaging 76 square metres per building.]
+07 {T} [This suggests a mix of small-scale residential and commercial structures,]
+08 {T} [likely contributing to the fine-grained urban texture typical of older, historic districts in the city.]
+09 {F} [The street network is also densely woven, with 3,743 metres of road per square kilometre,]  # 5.6: road_length_m reported as a density; true density 21,282
+10 {T} [indicating a well-connected, walkable environment.]
+11 {T} [The high road density, combined with a substantial number of points of interest—particularly in retail, food, and services—suggests a lively, mixed-use area with strong local amenities.]
+12 {T} [Overall, this is a compact, high-density urban core with a richly layered built environment.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 7 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [The **high building coverage ratio (63.3%)**]
+03 {T} [and **dense street network (21,282 m/km²)**]
+04 {T} [indicate compact development with buildings closely spaced and streets interwoven,]
+05 {T} [typical of fine-grained urbanism.]
+06 {T} [The **average building footprint (76 m²)** is small,]
+07 {T} [suggesting a mix of residential and small-scale commercial structures,]
+08 {T} [which aligns with a fine-grained texture.]
+09 {T} [The **high building count (1,491)**]
+10 {T} [and **population density (40,545/km²)**]
+11 {T} [further reinforce density,]
+12 {T} [while the **poi_per_1000_residents (50.3)** reflects a vibrant mix of amenities,]
+13 {T} [enhancing the area's walkability and layered urban character.]
+14 {R} [In contrast, coarse or sparse fabrics would show larger building footprints, lower coverage ratios, or fewer amenities per capita.]
+15 {T} [Here, the data collectively points to a tightly packed, mixed-use, high-density environment.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 7 | Q3 ===
+01 {T} [While the data shows a **high residential population density (40,545/km²)**]
+02 {T} [and **1,491 buildings**,]
+03 {F} [the **caveat** in the brief is critical: this area is likely **commercial/tourist-oriented**, with **low resident counts** relative to its activity level.]  # 5.4: conditional rewritten as declarative and attributed to the brief; 5.2 "low resident counts"
+04 {T} [The **7,131 residents** may be concentrated in high-density, small-scale housing (e.g., apartments or row houses)]
+05 {T} [rather than a sprawling, low-density residential community.]
+06 {T} [However, the **fine-grained urban fabric**—with dense streets, small buildings, and abundant amenities—could still support a **vibrant, mixed-use community**]
+07 {R} [if residents are present in sufficient numbers.]
+08 {T} [The **high POI density (50.3 per 1,000 residents)**]
+09 {T} [and **compact street network** suggest a lively, walkable environment,]
+10 {R} [which might appeal to those seeking convenience and urban energy.]
+11 {F} [That said, the **lack of clear residential dominance** (e.g., fewer schools, parks, or large residential buildings)]  # 5.1: conjunction fails on schools (school 2 listed); parks alone would be T
+12 {R} [could make it feel less like a traditional "community" and more like a **transient, service-oriented zone**.]
+13 {R} [For someone prioritizing a **cohesive residential neighborhood**,]
+14 {R} [this area might feel **less authentic**,]
+15 {R} [but its density and connectivity could still foster a sense of place if integrated with nearby residential districts.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 8 | Q1 ===
+01 {T} [This area of Hà Nội exhibits high population density, with 40,545 residents per square kilometre,]
+02 {T} [reflecting a tightly packed urban fabric.]
+03 {T} [Building density is similarly intense: 63.3% of the catchment area is covered by structures,]
+04 {T} [averaging 76 m² per building,]
+05 {T} [though the sheer number of buildings (1,491) suggests a fine-grained, closely spaced arrangement.]
+06 {T} [The street network is exceptionally dense, with 21,282 m of roads per square kilometre—equivalent to a labyrinth of narrow, interconnected streets.]
+07 {R} [This aligns with traditional Hanoi's historic urban form,]
+08 {R} [where alleys and small-scale buildings dominate.]
+09 {T} [Despite the high building coverage,]
+10 {T} [the 4.8 people per building ratio indicates modest dwelling sizes or mixed-use patterns.]
+11 {T} [The abundance of points of interest (50.3 per 1,000 residents) further underscores a vibrant, commercialised environment,]
+12 {T} [likely blending residential and retail functions.]
+13 {T} [Overall, the area is characterised by compact, high-density urbanism with a rich street-level diversity,]
+14 {R} [typical of older, well-established neighbourhoods in the city.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 8 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [The **high building coverage ratio (63.3%)**]
+03 {T} [and **extremely high population density (40,545/km²)**]
+04 {T} [indicate compact development,]
+05 {T} [with minimal open space.]
+06 {T} [The **large number of buildings (1,491)**]
+07 {T} [and **small average footprint (76 m²)**]
+08 {T} [suggest a proliferation of small-scale structures,]
+09 {R} [typical of traditional Hanoi's historic neighborhoods.]
+10 {T} [The **street network is exceptionally dense (21,282 m/km²)**,]
+11 {T} [implying a network of narrow, interconnected alleys and streets—a hallmark of fine-grained urbanism.]
+12 {T} [The **high POI density (50.3 per 1,000 residents)** further reinforces this,]
+13 {T} [reflecting a mix of residential, commercial, and service functions at the street level,]
+14 {T} [with many small shops, eateries, and amenities clustered closely.]
+15 {F} [The **low people-per-building ratio (4.8)** hints at mixed-use or multi-family housing,]  # 5.5: 4.8 characterised as low
+16 {T} [which aligns with the fine-grained, layered urban form.]
+17 {T} [Together, these metrics paint a picture of a tightly woven, high-density neighborhood with a rich, heterogeneous built environment.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 8 | Q3 ===
+01 {T} [While the area's **high population density (40,545/km²)**]
+02 {T} [and **dense building coverage (63.3%)**]
+03 {T} [suggest a compact urban form,]
+04 {T} [the **residential population count (7,131 residents)** may not fully reflect a *residential community feel* if the area is primarily commercial or tourist-oriented.]
+05 {F} [The **low people-per-building ratio (4.8)**]  # 5.5
+06 {T} [and **high POI density (50.3 per 1,000 residents)**—with many points of interest focused on retail, dining, and services—suggest a **mixed-use or commercial bias**.]
+07 {R} [If the built environment is dominated by shops, restaurants, and tourist amenities rather than housing,]
+08 {R} [the **residential character may be diluted**,]
+09 {R} [especially in areas where buildings are repurposed or underutilized for non-residential functions.]
+10 {T} [However, the **fine-grained urban fabric** (small buildings, dense streets) could still support a vibrant, walkable community]
+11 {R} [if residential uses are interwoven with commercial activity.]
+12 {T} [The **data does not explicitly confirm or refute** the user's observation about sparse residential living,]
+13 {F} [but the **high POI-to-resident ratio** and potential focus on transient activity (tourism, commerce) might align with their impression of a less residential, more commercial environment.]  # 5.5: per-resident ratio read as evidence against residential character
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 9 | Q1 ===
+01 {T} [This area of Hà Nội exhibits extremely high population density, with 40,545 residents per square kilometre,]
+02 {T} [reflecting a tightly packed urban fabric.]
+03 {T} [Building density is similarly intense: 1,491 buildings]
+04 {T} [cover 63.3% of the catchment area,]
+05 {T} [with an average footprint of 76 m²,]
+06 {T} [suggesting a mix of small-scale residential and commercial structures.]
+07 {T} [The street network is exceptionally dense, with 21,282 metres of road per square kilometre—indicating a fine-grained, grid-like layout typical of traditional Asian cities.]
+08 {T} [This high road density, combined with the building coverage, implies a compact, walkable environment where streets and buildings are interwoven closely.]
+09 {T} [The presence of 359 points of interest (50.3 per 1,000 residents) further underscores a vibrant mix of amenities,]
+10 {T} [from retail and food services to public facilities,]
+11 {T} [suggesting a lively, mixed-use district.]
+12 {T} [However, the high building coverage and density contrast with the relatively modest average building size,]
+13 {T} [hinting at a layered urban form where narrow streets and closely spaced structures dominate,]
+14 {T} [characteristic of a historic or highly urbanized core.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 9 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [The **high building coverage ratio (63.3%)**]
+03 {T} [and **extremely high building count (1,491)**]
+04 {T} [indicate that the built environment is intensely packed,]
+05 {T} [with minimal open space.]
+06 {T} [The **average building footprint (76 m²)** is relatively small,]
+07 {T} [suggesting a mix of modest-scale residential and commercial structures,]
+08 {T} [typical of a fine-grained, layered urban form.]
+09 {T} [The **road density (21,282 m/km²)** is exceptionally high,]
+10 {T} [reflecting a dense, interconnected street network—common in traditional Asian cities with narrow, grid-like layouts.]
+11 {T} [This fine grain is further reinforced by the **high POI density (50.3 per 1,000 residents)**,]
+12 {T} [which implies a vibrant mix of uses (retail, services, public amenities) clustered closely together.]
+13 {T} [The combination of high building and road density, alongside small building sizes, contrasts with coarse, sparse fabrics,]
+14 {R} [which would feature fewer, larger structures and lower connectivity.]
+15 {T} [Instead, this area reflects a compact, walkable, and intensely utilized urban core.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 9 | Q3 ===
+01 {T} [While the area's **high population density (40,545 residents/km²)**]
+02 {T} [and **dense building coverage (63.3%)**]
+03 {T} [suggest a compact urban form,]
+04 {F} [the **caveat in the data**—that this is a commercial/tourist area with low resident counts compared to its activity level—strongly implies a **limited residential character**.]  # 5.4: caveat rewritten as declarative about this catchment
+05 {T} [The **359 POIs**, including 71 restaurants,]
+06 {T} [48 cafes,]
+07 {T} [and 42 ATMs,]
+08 {T} [reflect a **vibrant commercial and service-oriented environment**,]
+09 {F} [likely catering to transient visitors and workers rather than long-term residents.]  # unsupported "rather than residents"; residents outnumber POIs 20:1
+10 {T} [The **people-per-building ratio (4.8)**]
+11 {T} [and **small average building size (76 m²)**]
+12 {T} [could suggest high occupancy or mixed-use,]
+13 {F} [but the **lack of residential-specific amenities** (e.g., schools, parks, or housing-focused POIs) reinforces its role as a commercial hub.]  # 5.1: school 2 listed; conjunction fails
+14 {T} [Thus, while the urban fabric is dense and fine-grained,]
+15 {F} [its **primary function and social character** lean toward tourism and commerce,]  # 5.4
+16 {F} [making it a **poor match for someone seeking a traditional residential community**.]  # verdict supported only by the F claims above; brief values cannot support it
+17 {F} [The data aligns with the user's observation:]  # 5.4: premise endorsed; the density figure argues the opposite
+18 {F} [density exists, but residential life is secondary.]  # 5.2
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 10 | Q1 ===
+01 {T} [This area of Hà Nội exhibits a high level of population density, with over 40,500 residents per square kilometre,]
+02 {T} [reflecting a densely inhabited urban environment.]
+03 {T} [The built fabric is also quite dense, with a building coverage ratio of 63.3%,]
+04 {T} [meaning more than half of the catchment area is occupied by buildings.]
+05 {T} [On average, each building is relatively small, with an average footprint of about 76 square metres,]
+06 {T} [suggesting a mix of low-rise structures or a high number of small-scale buildings.]
+07 {T} [The street network is exceptionally dense, with over 21,000 metres of road per square kilometre,]
+08 {T} [indicating a fine-grained, walkable urban form with a high connectivity of streets.]
+09 {T} [This combination of high population density, compact building form, and an extensive street network suggests a highly urbanised, possibly historic or central district of Hà Nội,]
+10 {T} [where urban life is concentrated and spatially intensive.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 10 | Q2 ===
+01 {T} [This area exhibits a **dense, fine-grained urban fabric**, supported by several key features.]
+02 {T} [The **high building count (1,491)**]
+03 {T} [and **small average building footprint (76 m²)**]
+04 {T} [suggest a proliferation of compact structures,]
+05 {T} [typical of traditional or historic urban cores.]
+06 {T} [The **building coverage ratio of 63.3%** indicates extensive development,]
+07 {T} [leaving limited open space.]
+08 {T} [The **exceptionally high road density (21,282 m/km²)** reflects a tightly woven street network,]
+09 {T} [characteristic of fine-grained urban forms with short blocks and high connectivity.]
+10 {T} [Additionally, the **high density of points of interest (359 POIs)**—including diverse amenities like restaurants, shops, and services—suggests a mixed-use, pedestrian-oriented environment.]
+11 {T} [The **population density of 40,545/km²**]
+12 {T} [and **4.8 residents per building**]
+13 {T} [further imply a compact, high-intensity settlement pattern.]
+14 {T} [Together, these metrics point to a historically developed, densely built, and socially active urban neighborhood,]
+15 {R} [likely in a central or historic district of Hà Nội.]
+
+=== hanoi_300m | Qwen3-14B (thinking) | seed 10 | Q3 ===
+01 {T} [While the area appears to be **commercial and tourist-oriented** (evidenced by high POI density, including shops, restaurants, and services),]
+02 {T} [the data still shows **significant residential presence**.]
+03 {T} [The **40,545 residents per km²**]
+04 {T} [and **4.8 people per building**]
+05 {T} [suggest a **dense residential population**,]
+06 {T} [even if the built form is mixed-use.]
+07 {T} [However, the **high proportion of commercial POIs** (e.g., 71 restaurants,]
+08 {T} [48 cafes,]
+09 {T} [42 ATMs)]
+10 {F} [and **low resident count relative to activity** (e.g., 359 POIs for 7,131 residents)]  # 5.5: "359 POIs for 7,131 residents" as scarcity evidence; residents outnumber POIs 20:1
+11 {R} [might create a **perception of a commercial or transient environment**,]
+12 {R} [especially if open spaces or residential amenities are limited.]
+13 {R} [This could make it a **poor choice for someone seeking a purely residential, low-density, or community-focused neighborhood**,]
+14 {T} [as the urban fabric is **highly functional, compact, and activity-driven** rather than quiet or suburban.]
+15 {R} [However, the **fine-grained street network and high building density** might still offer a vibrant, walkable environment with amenities—though the "community feel" would depend on social interactions, local institutions, and residential cohesion,]
+16 {T} [which the data does not explicitly capture.]

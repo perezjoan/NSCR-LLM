@@ -1,0 +1,136 @@
+hanoi_300m | Qwen3-4B_thinking | labels | guide v1.0 | glossary sha256 fa7ee737a14a | persona sha256 23bd3f7063ef
+One label per claim number, in order. Notes where a rule requires one or the call is non-obvious.
+
+=== seed 1 | Q1 === (14)
+01 T  02 T  03 T  04 H  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 R  14 R
+  04: "residents outnumber non-residents" = invented statistic (5.5)
+
+=== seed 1 | Q2 === (19)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 R
+
+=== seed 1 | Q3 === (22)
+01 R  02 F  03 T  04 T  05 T  06 F  07 T  08 T  09 F  10 T  11 T  12 T  13 R  14 T  15 F  16 T  17 F  18 F  19 R  20 F  21 T  22 R
+  02: asserts a data discrepancy the brief does not contain
+  09: "actual residents may be fewer" = inverted caveat direction (5.2)
+  15: network_distance_m read as block length = schema inversion (5.6)
+  17/18: non-residential character derived from 4.8 ppb (5.5)
+
+=== seed 2 | Q1 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 R  11 R  12 T  13 F  14 T
+  13: "low resident count (per the caveat)" = lowness + particularised caveat (5.2, 5.4)
+
+=== seed 2 | Q2 === (15)
+01 F  02 T  03 T  04 F  05 T  06 T  07 T  08 T  09 T  10 F  11 F  12 F  13 F  14 F  15 F
+  01/14: coarse verdict supported by 76 m2 read as large (5.7)
+
+=== seed 2 | Q3 === (19)
+01 R  02 F  03 F  04 T  05 F  06 T  07 F  08 T  09 F  10 F  11 T  12 T  13 F  14 T  15 F  16 T  17 F  18 R  19 F
+  07: "actual residents likely fewer due to the caveat" = inverted direction, misattributed
+  15: contains 71 restaurants (correct) but asserts low resident count; labelled on the false assertion
+
+=== seed 3 | Q1 === (14)
+01 T  02 T  03 T  04 F  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T
+  04: "17.6 km2" = 100x catchment unit error
+
+=== seed 3 | Q2 === (20)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 F  17 T  18 F  19 T  20 T
+  16: "17.6 km2"
+  18: coarse-grained street network derived from dense road figures
+
+=== seed 3 | Q3 === (18)
+01 R  02 F  03 T  04 T  05 T  06 F  07 F  08 T  09 T  10 T  11 T  12 F  13 T  14 F  15 T  16 F  17 T  18 F
+  06: "far lower than expected" (5.2)
+  07: discrepancy attributed to the caveat = misattributed provenance (5.4)
+
+=== seed 4 | Q1 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 R  10 T  11 T  12 T  13 T  14 T  15 R  16 T
+
+=== seed 4 | Q2 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 R  11 T  12 T  13 T  14 F  15 R  16 T
+  14: 300 m / 40 m retrieval parameters read as urban-form evidence = schema inversion
+
+=== seed 4 | Q3 === (18)
+01 R  02 F  03 T  04 T  05 T  06 F  07 F  08 T  09 T  10 F  11 T  12 T  13 T  14 F  15 F  16 T  17 F  18 R
+  10: per-resident ratio inverted as evidence against residents (5.5)
+
+=== seed 5 | Q1 === (15)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 R
+
+=== seed 5 | Q2 === (16)
+01 F  02 F  03 T  04 T  05 T  06 F  07 F  08 T  09 F  10 T  11 T  12 T  13 F  14 F  15 F  16 R
+  13: "low building count per square meter" as a metric (5.6)
+
+=== seed 5 | Q3 === (14)
+01 R  02 F  03 T  04 T  05 T  06 F  07 F  08 T  09 T  10 F  11 T  12 F  13 H  14 F
+  13: unsupported world-claim that Hanoi's historic core prioritises function over residential livability; contradicts density evidence, presented as fact -> H by precedence
+  14: "lacks smaller building scales / mixed-use diversity" contradicts 76 m2 and POI list
+
+=== seed 6 | Q1 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 R  11 R  12 F  13 T  14 R  15 T  16 T
+  12: "17.59 km2" + alleged contradiction in the brief (5.6, 5.7)
+  16: understate-activity direction is correct (5.2)
+
+=== seed 6 | Q2 === (17)
+01 F  02 T  03 T  04 T  05 T  06 T  07 F  08 F  09 F  10 T  11 T  12 T  13 F  14 T  15 R  16 F  17 F
+
+=== seed 6 | Q3 === (17)
+01 R  02 F  03 T  04 T  05 T  06 F  07 F  08 T  09 F  10 F  11 F  12 F  13 R  14 R  15 H  16 T  17 F
+  06/07: "17.59 km2" and "most residents are not located within this area" (5.6)
+  15: "residential populations are sparse" as world-fact about the historic centre, contradicts brief -> H
+
+=== seed 7 | Q1 === (17)
+01 T  02 T  03 F  04 F  05 F  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 F  15 T  16 T  17 T
+  03-05: "17.6 km2", then the density figure called "unusually high" / an artefact of catchment size = claim of brief inconsistency built on own unit error
+  14: retrieval parameters read as urban form
+
+=== seed 7 | Q2 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 F  12 F  13 F  14 T  15 T  16 T
+  11: block depth read as form; 12: 76 m2 "relatively large"; 13: coarse-grained from POI/building count
+
+=== seed 7 | Q3 === (18)
+01 R  02 F  03 T  04 T  05 T  06 F  07 F  08 T  09 T  10 F  11 F  12 T  13 T  14 T  15 T  16 F  17 R  18 F
+  06: "low relative to 0.176 km2" -- units right, characterisation F (5.2)
+
+=== seed 8 | Q1 === (15)
+01 T  02 T  03 T  04 R  05 F  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 R
+  05: "over two-thirds" (5.3)
+  10: 3.743 km in 0.176 km2 = correct conversion
+
+=== seed 8 | Q2 === (17)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 R
+
+=== seed 8 | Q3 === (19)
+01 R  02 F  03 T  04 T  05 T  06 T  07 F  08 F  09 F  10 T  11 T  12 F  13 T  14 T  15 F  16 T  17 F  18 R  19 F
+  07: "only 7,131"; 08: 4.8 called low; 19: "GHS-POP caveat confirms commercial catchment" = hallucinated provenance (5.4)
+
+=== seed 9 | Q1 === (14)
+01 T  02 T  03 T  04 R  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 F  14 T
+  13: "low residential count (7,131)"
+
+=== seed 9 | Q2 === (18)
+01 T  02 T  03 T  04 T  05 T  06 T  07 F  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 F  16 T  17 F  18 R
+  07: 76 m2 "larger than typical" (5.6); 17: "coarse building scales"
+
+=== seed 9 | Q3 === (17)
+01 R  02 T  03 F  04 T  05 F  06 F  07 T  08 T  09 T  10 T  11 F  12 T  13 F  14 T  15 F  16 F  17 R
+  06: density "inflated by the GHS-POP model" (5.2); 11: "actual residents likely minimal"
+
+=== seed 10 | Q1 === (11)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T
+
+=== seed 10 | Q2 === (15)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T
+
+=== seed 10 | Q3 === (18)
+01 R  02 F  03 T  04 T  05 T  06 F  07 F  08 T  09 T  10 T  11 F  12 F  13 T  14 F  15 T  16 F  17 R  18 F
+  07: discrepancy attributed to the caveat = misattributed provenance
+  11: "commercial core" asserts the antecedent (5.4); 14: non-residential form derived from building figures
+
+=== TOTALS ===
+Claims: 495 (ECHO lines: 0)
+T 335 (67.7%)  F 116 (23.4%)  R 41 (8.3%)  H 3 (0.6%)
+
+By question:
+Q1  146 claims: T 123  F 9   R 13  H 1
+Q2  169 claims: T 130  F 32  R 7   H 0
+Q3  180 claims: T 82   F 75  R 21  H 2

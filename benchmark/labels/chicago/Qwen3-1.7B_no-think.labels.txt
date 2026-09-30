@@ -1,0 +1,356 @@
+##### chicago_800m | Qwen3-1.7B_no-think | annotated sheet | guide v1.0 | labels: T (brief-true) F (brief-false) R (recall) H (hallucination) | ECHO lines are not claims
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 1 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has 1455 buildings,]
+04 {T} [with an average footprint of 176 square meters per building,]
+05 {T} [and a building coverage ratio of 19.7%.]
+06 {T} [There are 119 points of interest (POIs) within the catchment,]
+07 {T} [including 1 fast food location.]
+08 {F} [While the catchment includes a few food retail locations, such as a convenience store and a fast food restaurant,]  # convenience 4 read as one (5.4)
+09 {T} [these are not sufficient to meet the dietary needs of the population.]
+10 {T} [The presence of these POIs suggests that residents have limited access to full-service grocery stores and supermarkets within walking distance,]
+11 {T} [and the overall food retail availability is constrained.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 1 | Q2 ===
+01 {T} [Based on the spatial brief, the area is underserved for walking access to fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with a population density of 5224 residents per square kilometer,]
+04 {T} [and only 119 points of interest (POIs) within the catchment,]
+05 {T} [most of which are not food-related.]
+06 {F} [There are only a few food retail POIs, such as a convenience store and a fast food restaurant,]  # convenience 4 read as one
+07 {T} [which are not sufficient to meet the dietary needs of the population.]
+08 {T} [The lack of full-service grocery stores and supermarkets,]
+09 {T} [combined with the limited availability of food retail options,]
+10 {T} [suggests that the area is underserved for fresh, full-range food shopping.]
+11 {T} [The data supports this characterization.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 1 | Q3 ===
+01 {T} [The spatial brief indicates that while the catchment has limited access to full-service grocery stores and supermarkets,]
+02 {F} [there is a presence of a convenience store and a fast food restaurant.]  # convenience 4 read as one
+03 {T} [These options are insufficient for a diet reliant on fresh, full-range ingredients.]
+04 {F} [However, the presence of a convenience store suggests some access to basic grocery items.]  # convenience 4 read as one
+05 {T} [Given the limited availability of healthy, affordable food options, this area may not be ideal for someone who cooks a lot from fresh ingredients.]
+06 {T} [The data argues against it being a good area for such a lifestyle.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 2 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has 1455 buildings,]
+04 {T} [with an average footprint of 176 square meters per building,]
+05 {T} [and a building coverage ratio of 19.7%.]
+06 {T} [There are 119 points of interest (POIs) within the catchment,]
+07 {T} [including 1 fast food location.]
+08 {F} [While the catchment includes a few food retail locations, such as a convenience store and a fast food restaurant,]  # convenience 4 read as one
+09 {T} [these are not sufficient to meet the dietary needs of the population.]
+10 {T} [The presence of these locations is limited]
+11 {T} [and does not indicate a robust food retail network within walking distance for the majority of residents.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 2 | Q2 ===
+01 {F} [Based on the spatial brief, the area is not underserved for walking access to fresh, full-range food shopping.]  # zero supermarkets/grocery, 6 food POIs for 7,128: values cannot support "not underserved"
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with a population density of 5224 per square kilometer,]
+04 {F} [and while the food retail options are limited—such as one convenience store and one fast food location—the data shows a modest number of POIs (119)]  # "one convenience store" misread
+05 {F} [and a relatively high proportion of buildings (19.7%)]  # coverage ratio misbound as "proportion of buildings"
+06 {T} [with a modest average footprint.]
+07 {T} [The presence of these facilities suggests some access,]
+08 {T} [but they are not sufficient to meet the dietary needs of the population.]
+09 {T} [The indicators indicate a low level of food retail availability,]
+10 {T} [which may argue against a robust food shopping network.]
+11 {T} [However, the spatial catchment is not a circular buffer,]
+12 {F} [and the POIs are distributed across the catchment,]  # brief contains no POI distribution data
+13 {T} [suggesting some accessibility.]
+14 {F} [The overall assessment is that the area is not underserved,]  # see 01
+15 {T} [but the food retail options are limited and insufficient for full-range shopping.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 2 | Q3 ===
+01 {F} [The spatial brief indicates that while the catchment has limited food retail options—only one convenience store and one fast food location—there is a modest presence of food retail facilities.]  # "one convenience store" misread
+02 {T} [However, the data suggests that these are not sufficient for full-range fresh grocery shopping.]
+03 {F} [The low number of POIs and limited building footprint suggest a sparse food retail network.]  # building footprint misbound to food retail
+04 {H} [Despite this, the presence of a few supermarkets within walking distance could provide some access to fresh ingredients.]  # Q3 supermarket assertion; brief has none (5.5)
+05 {T} [However, the overall assessment leans toward the area being underserved for a robust, full-range fresh food shopping network.]
+06 {T} [Therefore, while there is some access, it is not sufficient for someone who cooks a lot from fresh ingredients.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 3 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has 1455 buildings,]
+04 {T} [with an average footprint of 176 square meters per building,]
+05 {T} [and a building coverage ratio of 19.7%.]
+06 {T} [There are 119 points of interest (POIs) within the catchment,]
+07 {T} [including 1 fast food location.]
+08 {F} [While the catchment includes a few food retail locations, such as a convenience store and a fast food restaurant,]  # convenience 4 read as one
+09 {T} [these are not sufficient to meet the dietary needs of the population.]
+10 {T} [The POI per 1000 residents is 16.7,]
+11 {T} [indicating that the area is not fully food-accessible,]
+12 {T} [and residents may need to travel outside the catchment for additional food options.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 3 | Q2 ===
+01 {T} [Based on the spatial brief, the area is underserved for walking access to fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with a population density of 5224 per square kilometer,]
+04 {T} [and while there are 119 POIs,]
+05 {T} [only 1 is classified as fast food]
+06 {F} [and 1 as convenience store.]  # convenience is 4
+07 {T} [These are limited and do not meet the dietary needs of the population.]
+08 {T} [The POI per 1000 residents is 16.7,]
+09 {T} [indicating a lack of food retail options within the catchment.]
+10 {T} [The presence of only a few food-related POIs,]
+11 {T} [combined with the low number of full-service grocery stores and supermarkets within walking distance,]
+12 {T} [suggests that residents may need to travel outside the catchment for fresh, full-range food shopping.]
+13 {T} [The data supports this characterization.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 3 | Q3 ===
+01 {T} [The spatial brief indicates that the catchment area has limited access to full-service grocery stores and supermarkets within walking distance.]
+02 {F} [While there is a convenience store and a fast food restaurant,]  # convenience 4 read as one
+03 {T} [these do not meet the dietary needs of the population.]
+04 {T} [The POI per 1000 residents is 16.7,]
+05 {T} [suggesting a lack of fresh, full-range food options.]
+06 {F} [However, the presence of a convenience store and a few other food-related POIs may provide some access.]  # convenience 4 read as one
+07 {T} [Given the limited availability of fresh, full-range food shopping within the catchment, this area may not be ideal for someone who cooks a lot from fresh ingredients.]
+08 {T} [The data argues against it being a good area for such a lifestyle.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 4 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has a road length of 60718 meters]
+04 {T} [and a catchment area of 1,364,534 square meters.]
+05 {F} [There are 11 points of interest (POIs) within the catchment,]  # 119 misread as 11
+06 {T} [including 1 fast food location.]
+07 {T} [While the catchment includes a few food-related POIs, such as a fast food restaurant,]
+08 {T} [the overall food retail availability is limited.]
+09 {T} [The presence of a few convenience stores and a fast food location suggests partial access,]
+10 {T} [but the overall food retail options are sparse,]
+11 {T} [and the population is not well served by healthy, affordable food on foot.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 4 | Q2 ===
+01 {T} [Based on the spatial brief, the area is underserved for walking access to fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with a population density of 5224 residents per square kilometer,]
+04 {T} [and a road length of 60718 meters.]
+05 {F} [While there is a small number of food-related POIs (1 fast food location and 1 convenience store),]  # convenience is 4
+06 {T} [these are sparse and do not meet the criteria for a "full-range" food shopping experience.]
+07 {T} [The low number of POIs,]
+08 {F} [combined with the limited presence of supermarkets or full-service grocery stores within walking distance,]  # "limited presence" implies some are present; brief has none
+09 {T} [argues against a well-served food retail environment.]
+10 {T} [The data supports the characterization of this area as underserved for fresh, full-range food shopping on foot.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 4 | Q3 ===
+01 {F} [The spatial brief indicates that while the catchment has a few food-related POIs, such as a fast food location and a convenience store,]  # convenience 4 read as one
+02 {T} [there are no full-service grocery stores or supermarkets within walking distance.]
+03 {T} [This limits access to fresh, full-range food shopping.]
+04 {F} [However, the presence of a convenience store suggests some access to basic retail.]  # convenience 4 read as one
+05 {T} [For someone who cooks a lot from fresh ingredients, the lack of supermarkets or full-service grocery stores means limited access to a wide variety of fresh, affordable options.]
+06 {T} [The area is not well served for this purpose.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 5 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has a network catchment of 1,364,534 square meters,]
+04 {T} [reachable on foot within 800 meters.]
+05 {T} [There are 119 points of interest (POIs) within the catchment,]
+06 {T} [including 1 fast food location.]
+07 {F} [While the catchment includes a few food retail options, such as a convenience store and a fast food outlet,]  # convenience 4 read as one
+08 {T} [these are not sufficient to meet the dietary needs of the population.]
+09 {T} [The presence of these options is limited,]
+10 {T} [and the overall food retail availability is constrained by the catchment's size and the sparse distribution of food service locations.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 5 | Q2 ===
+01 {T} [Based on the spatial brief, the area is underserved for walking access to fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with a population density of 5224 residents per square kilometer,]
+04 {T} [and a network catchment of 1,364,534 square meters reachable within 800 meters.]
+05 {F} [While the catchment contains a few food retail options (e.g., a convenience store and a fast food outlet),]  # convenience 4 read as one
+06 {T} [these are sparse and limited in number.]
+07 {F} [The low number of food-related POIs (119 total)]  # 119 is total POIs, not food-related (6)
+08 {T} [and the lack of full-service grocery stores or supermarkets within walking distance]
+09 {T} [suggest a lack of comprehensive food retail access.]
+10 {T} [The data supports the characterization of this area as underserved for fresh, full-range food shopping.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 5 | Q3 ===
+01 {F} [The spatial brief indicates that while the catchment has limited food retail options—only one convenience store and a fast food outlet—there is no evidence of full-service grocery stores or supermarkets within walking distance.]  # "one convenience store" misread
+02 {T} [This suggests a lack of comprehensive fresh food access.]
+03 {F} [However, the presence of a few food-related POIs, such as a convenience store and a fast food location, may provide some basic access.]  # convenience 4 read as one
+04 {T} [Given the sparse distribution of food retail and the lack of full-service grocery options, the area may not be ideal for someone who cooks a lot from fresh ingredients.]
+05 {T} [The data argues against it being a good area for fresh, full-range food shopping.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 6 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The road length is 60718 meters,]
+04 {T} [and the catchment area is 1,364,534 square meters.]
+05 {T} [There are 119 points of interest (POIs) within the catchment,]
+06 {T} [including 1 fast food location.]
+07 {T} [While the catchment includes a few food retail options, such as a fast food restaurant,]
+08 {T} [the overall food retail availability is limited.]
+09 {T} [The presence of a few convenience stores and a fast food location suggests that these serve as partial substitutes for full-service grocery stores.]
+10 {T} [However, the overall food retail accessibility is constrained,]
+11 {T} [and the per-resident POI density is relatively low (16.7 per 1000 residents).]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 6 | Q2 ===
+01 {T} [Based on the data, the area is underserved for walking access to fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with a population density of 5224 per square kilometer,]
+04 {T} [and while there is a fast food location within the catchment,]
+05 {T} [there are no full-service grocery stores or supermarkets within walking distance.]
+06 {T} [The POI density is low (16.7 per 1000 residents),]
+07 {T} [and the availability of convenience stores and fast food is limited.]
+08 {T} [The lack of full-service grocery stores and the limited options for fresh, full-range food suggest that the area is underserved for walking access to such shopping.]
+09 {T} [The data supports this characterization.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 6 | Q3 ===
+01 {T} [The data suggests that while the area has limited access to full-service grocery stores and supermarkets within walking distance,]
+02 {T} [there is a presence of a fast food location.]
+03 {T} [However, the low POI density and lack of full-range fresh food options indicate that it may not be the ideal area for someone who cooks a lot from fresh ingredients.]
+04 {T} [The absence of full-service grocery stores and the limited availability of fresh, full-range food shopping suggest a lower accessibility for such needs.]
+05 {R} [However, the presence of a fast food location may offer some convenience for quick meals.]  # generic, defensible, outside the brief
+06 {T} [Overall, the area is underserved for fresh, full-range food shopping,]
+07 {T} [which may limit its suitability for individuals who prioritize fresh ingredients.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 7 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has a road length of 60718 meters,]
+04 {T} [and the catchment area is 1,364,534 square meters.]
+05 {F} [There are 11 points of interest (POIs) within the catchment,]  # 119 misread as 11
+06 {T} [including 1 fast food location.]
+07 {T} [While the catchment includes a few food-related POIs, such as a fast food restaurant,]
+08 {T} [the overall food retail accessibility is limited.]
+09 {T} [The presence of a few convenience stores and a fast food location suggests partial access,]
+10 {T} [but the overall food retail availability is constrained by the low number of full-service grocery stores and supermarkets within the catchment.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 7 | Q2 ===
+01 {T} [Based on the spatial brief, the area is underserved for walking access to fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with only 1 fast food location]
+04 {T} [and a few convenience stores,]
+05 {T} [indicating limited access to full-service grocery stores and supermarkets.]
+06 {F} [The low number of food-related POIs (11 total)]  # 119 misread as 11, and bound as food-related
+07 {T} [and the absence of full-service grocery stores]
+08 {T} [suggest constrained food retail accessibility.]
+09 {T} [While there is partial access through convenience stores and fast food,]
+10 {T} [the overall availability of fresh, full-range food shopping is limited,]
+11 {T} [supporting the characterization of this area as underserved.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 7 | Q3 ===
+01 {T} [The spatial brief indicates limited access to full-service grocery stores and supermarkets within the catchment,]
+02 {T} [with only 1 fast food location]
+03 {T} [and a few convenience stores.]
+04 {T} [This suggests that while there is partial access to food retail,]
+05 {T} [it is not sufficient for someone who cooks extensively from fresh ingredients.]
+06 {F} [The lack of full-range grocery options and the limited presence of supermarkets undermines the ability to shop for a wide variety of fresh ingredients on foot.]  # "limited presence of supermarkets" implies some present; brief has none
+07 {T} [Therefore, this area is not ideal for individuals who rely on fresh, full-range food shopping.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 8 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has a road length of 60718 meters]
+04 {T} [and a catchment area of 1,364,534 square meters.]
+05 {F} [There are 11 points of interest (POIs) within the catchment,]  # 119 misread as 11
+06 {T} [including 1 fast-food location.]
+07 {F} [While the catchment includes a few food retail options, such as a convenience store and a fast-food restaurant,]  # convenience 4 read as one
+08 {T} [these are not sufficient to meet the dietary needs of the population.]
+09 {T} [The presence of these options is limited,]
+10 {T} [and the overall food retail availability is constrained by the relatively low number of full-service grocery stores and supermarkets within walking distance.]
+11 {T} [The POI per 1000 residents is 16.7,]
+12 {T} [indicating a moderate level of food retail access.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 8 | Q2 ===
+01 {T} [Based on the data, the area is moderately underserved for fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents]
+03 {F} [and 11 POIs,]  # 119 misread as 11
+04 {T} [of which only 1 is a fast-food location]
+05 {F} [and 1 is a convenience store.]  # convenience is 4
+06 {T} [There are no full-service grocery stores or supermarkets within walking distance,]
+07 {T} [and the POI per 1000 residents is 16.7,]
+08 {T} [indicating limited food retail access.]
+09 {T} [The low number of full-service stores and the limited options for fresh, full-range food suggest a moderate underservice.]
+10 {F} [The road density and population density are high,]  # 5,224/km2 is moderate, not high (5.2)
+11 {T} [but the lack of grocery stores and the limited POI categories argue against a strong, consistent food retail access.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 8 | Q3 ===
+01 {T} [The data suggests a moderate underservice for fresh, full-range food shopping,]
+02 {H} [but there is one positive: the presence of a few full-service grocery stores and supermarkets within walking distance.]  # Q3 supermarket assertion; brief has none (5.5)
+03 {H} [However, the limited number of such stores and the lack of a robust food retail network mean that fresh, full-range shopping is not easily accessible.]  # builds on asserted presence of grocery stores
+04 {T} [The POI per 1000 residents is 16.7,]
+05 {H} [which is lower than typical levels for such areas,]  # invented benchmark (5.3)
+06 {T} [indicating limited food access.]
+07 {H} [While the presence of a few grocery stores may be a benefit,]  # asserted presence of grocery stores
+08 {T} [the overall underservice suggests that this area is not ideal for someone who cooks a lot from fresh ingredients.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 9 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has 1455 buildings,]
+04 {T} [with an average footprint of 176 square meters per building,]
+05 {T} [and a building coverage ratio of 19.7%.]
+06 {T} [There are 119 points of interest (POIs) within the catchment,]
+07 {T} [including 1 fast food location.]
+08 {T} [While the catchment includes a few food-related POIs, such as a fast food restaurant,]
+09 {T} [the overall food retail accessibility is limited.]
+10 {T} [The presence of a few convenience stores and a fast food location suggests partial substitution,]
+11 {T} [but the overall food retail availability is constrained by the low number of full-service grocery stores and supermarkets within walking distance.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 9 | Q2 ===
+01 {T} [Based on the data, this area is underserved for walking access to fresh, full-range food shopping.]
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with only 1 fast food location]
+04 {T} [and a few convenience stores,]
+05 {T} [indicating limited access to full-service grocery stores and supermarkets.]
+06 {F} [The low number of food-related POIs (119 total, with only 1 fast food)]  # 119 is total POIs, not food-related
+07 {T} [and the absence of full-service grocery stores]
+08 {T} [suggest a lack of fresh, full-range food shopping options.]
+09 {F} [While there is a small convenience store and a fast food location,]  # convenience 4 read as one; "small" unsupported
+10 {T} [these do not replace the need for full-service grocery stores,]
+11 {R} [which are essential for a balanced diet.]  # generic outside claim, defensible
+12 {T} [The data supports the characterization of this area as underserved.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 9 | Q3 ===
+01 {T} [The data suggests that this area is underserved for fresh, full-range food shopping,]
+02 {T} [which may limit the ability to cook from fresh ingredients.]
+03 {T} [The presence of only one fast food location]
+04 {T} [and no full-service grocery stores within walking distance]
+05 {T} [indicates a lack of access to fresh, diverse food options.]
+06 {F} [However, the presence of a small convenience store and a few other food-related POIs suggests some access to basic groceries.]  # convenience 4 read as one
+07 {T} [For someone who cooks extensively from fresh ingredients, the lack of full-service grocery stores and limited food options would make this area less ideal.]
+08 {T} [The underserved food retail environment may hinder the ability to source fresh, diverse ingredients efficiently.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 10 | Q1 ===
+01 {T} [The catchment area includes 7128 residents,]
+02 {T} [with a population density of 5224 residents per square kilometer.]
+03 {T} [The area has 1455 buildings,]
+04 {T} [with an average footprint of 176 square meters per building,]
+05 {T} [and a building coverage ratio of 19.7%.]
+06 {T} [There are 119 points of interest (POIs) within the catchment,]
+07 {T} [including 1 fast food location.]
+08 {F} [While the catchment includes a few food retail locations, such as a convenience store and a fast food restaurant,]  # convenience 4 read as one
+09 {T} [these are not sufficient to meet the dietary needs of the population.]
+10 {T} [The presence of these locations is limited]
+11 {T} [and does not indicate a robust food retail network within walking distance for the majority of residents.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 10 | Q2 ===
+01 {F} [Based on the spatial brief, the area is not underserved for walking access to fresh, full-range food shopping.]  # values cannot support "not underserved"
+02 {T} [The catchment includes 7128 residents,]
+03 {T} [with a population density of 5224 residents per square kilometer,]
+04 {F} [and while the food retail options are limited—such as one fast food and a convenience store—the data shows that the population is served through a few POIs.]  # convenience 4 read as one
+05 {T} [The presence of these locations, though sparse,]
+06 {T} [suggests that the area has some access to food retail,]
+07 {T} [but it is not sufficient to meet the dietary needs of the majority of residents.]
+08 {T} [The low number of POIs and the limited types of food retail options argue against a robust, full-range food shopping network within walking distance for most residents.]
+
+=== chicago_800m | Qwen3-1.7B (no-think) | seed 10 | Q3 ===
+01 {F} [The spatial brief indicates that while the catchment has limited food retail options—such as one fast food and a convenience store—there is no evidence of a robust, full-range grocery network.]  # convenience 4 read as one
+02 {F} [However, the presence of a few food-related POIs, including a convenience store and a fast food location,]  # convenience 4 read as one
+03 {T} [suggests that some residents have access to basic food services.]
+04 {T} [The low number of POIs and limited types of food retail may not support a lifestyle that heavily relies on fresh, full-range grocery shopping.]
+05 {T} [Nonetheless, the area's proximity to walkable streets and the presence of some food services may allow for some flexibility,]
+06 {T} [but it does not strongly suggest it is a good area for someone who cooks a lot from fresh ingredients.]
+
+##### SUMMARY
+Claims labelled: 287 (no ECHO lines in this file)
+T = 238 (82.9%)   F = 42 (14.6%)   R = 2 (0.7%)   H = 5 (1.7%)
+Brief-sourced (T+F = 280): T 85.0% / F 15.0%
+Externally-sourced (R+H = 7): R 28.6% / H 71.4%
+Most frequent F: convenience count 4 read as "a/one convenience store" (26 of 42 F); 119 misread as 11 (6); 119 bound as the food-related count (3); "not underserved" (3, seeds 2 and 10); coverage ratio misbound (1); density called "high" (1); "limited presence of supermarkets" (2).
+All 5 H fall in Q3 (seeds 2 and 8) and are the supermarket assertion leaking in, plus one invented benchmark for 16.7.

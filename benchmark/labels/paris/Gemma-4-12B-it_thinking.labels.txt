@@ -1,0 +1,55 @@
+paris_400m | Gemma-4-12B-it_thinking | labels | guide v1.0 (glossary fa7ee737a14a, persona 42faa0374a4b)
+Format: one label per claim number, in order. Notes only where the call needed one.
+
+seed 1 | Q1 | T T T T T T T R T T T T T T T T R
+  08 R designed-for inference; 17 R quality-of-life judgement
+seed 1 | Q2 | T T T T T T T T T T T T R
+seed 1 | Q3 | T T T T R T T R T T T T R
+  05 R parenting-lifestyle judgement; 08 R conditional; 13 R stroller advice
+seed 2 | Q1 | T T T T T T T F T T T T T T T
+  08 F "post offices" (brief lists post_box 10, no post office; 5.5 misbind)
+seed 2 | Q2 | T T T T T T T T T T T T T T T T T T
+seed 2 | Q3 | T T T T T R T T T R R T
+seed 3 | Q1 | T T T T T T T T T T T T T T
+  10 "gyms" = fitness_centre 6, T
+seed 3 | Q2 | T T T T T T T T T T T T T T R
+  11 T (5 schools / 8,440 residents, defensible scarcity); 13 T (laundry 1, doityourself 1)
+seed 3 | Q3 | T T T T T T T T T T T T T T R T
+seed 4 | Q1 | T T T T T T T T T T T T T T T T T T
+seed 4 | Q2 | T T T T T T T T T T R T T
+seed 4 | Q3 | T T T T T T T T R T T
+seed 5 | Q1 | T T T T T T T T T R T T T T T T T R
+  01 "400-meter radius" taken as loose paraphrase of the catchment, T (noted)
+seed 5 | Q2 | T T T T T T T T T R T T
+seed 5 | Q3 | T T T T T T T T T T T R T T T T T T
+seed 6 | Q1 | T T T T T T T T T T T T T T T T T
+  12 "a college" existence claim (college 2), T
+seed 6 | Q2 | T R T T T T T T T T T T R T
+seed 6 | Q3 | T T T T T T R T T T F T T T T
+  11 F "a playground" in a numbered enumeration (playground 2; 5.5 off-by-one)
+seed 7 | Q1 | T T T T T T T T T T T T T T T T
+  13 "a theatre, cinema, several parks" example list, T
+seed 7 | Q2 | T T T T T T T T T T T T T
+seed 7 | Q3 | R R T T T T T T T T T T T R
+  02 R unanchored comfort language (5.2); 14 R "village feel"
+seed 8 | Q1 | T T T T T T T T T T T T R T T T
+seed 8 | Q2 | T T T T T T T T T T T T T T T T
+seed 8 | Q3 | T R T T T T T T T T R T R
+  11 R "may offer a calmer atmosphere relative to other parts of Paris" (hedged, unanchored; 5.2)
+seed 9 | Q1 | T T T T T T T T T T T T T T T T T T T
+  18 "highly balanced" allowed as coverage characterisation, T (noted)
+seed 9 | Q2 | T T T T T T T T T T T T T T T T T T T
+seed 9 | Q3 | T T T T T T T T T T T T T R T
+  14 R "15-minute city"
+seed 10 | Q1 | T T T T T T T T T T T T T F T
+  14 F "resident population is relatively modest (8,440)" (5.2 count-is-low call)
+seed 10 | Q2 | T T T T T T T T T T T T T T
+seed 10 | Q3 | T T T T T T T T T T R
+
+TOTALS
+claims 450 | ECHO lines 0 | responses 30 (10 seeds x 3 questions)
+T 418 (92.9%)
+F   3 ( 0.7%)
+R  29 ( 6.4%)
+H   0 ( 0.0%)
+brief-sourced 421 (93.6%) | external 29 (6.4%)

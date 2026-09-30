@@ -1,0 +1,45 @@
+hanoi_300m | Gemma-3-4B-it | labels | guide v1.0 (glossary fa7ee737a14a, persona 23bd3f7063ef)
+Labels: T brief-true, F brief-false, R recall, H hallucination. No ECHO lines in this file.
+
+seed 1 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T
+seed 1 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 T, 15 T, 16 R, 17 F (method as evidence), 18 F (block depth as urban form), 19 F, 20 T
+seed 1 | Q3: 01 R, 02 F (endorses "low resident count"), 03 F (convergent 405; digit-dropped catchment), 04 F, 05 F, 06 F (density driven by commerce), 07 F, 08 F, 09 R (verdict), 10 F, 11 F, 12 F
+
+seed 2 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 F ("300-metre radius": not a circle)
+seed 2 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 T, 15 T, 16 T, 17 F (method as evidence), 18 F, 19 R, 20 T
+seed 2 | Q3: 01 R, 02 F (caveat rewritten as "predominantly non-resident"), 03 T, 04 F, 05 F, 06 F ("only 7131"), 07 F, 08 T, 09 F (4.8 as non-residential evidence), 10 F, 11 F, 12 F, 13 F, 14 T, 15 F, 16 R, 17 R, 18 R
+
+seed 3 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 F (359 bound to per-1000), 13 T, 14 T
+seed 3 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 F (359 per 1,000), 15 T, 16 R, 17 T, 18 F (300 m budget as urban form)
+seed 3 | Q3: 01 F, 02 T, 03 F, 04 F (density = visitors/workers), 05 T (accurate caveat), 06 F, 07 F (schools listed; food/pharmacy listed), 08 F, 09 F, 10 F, 11 F, 12 R (verdict), 13 R, 14 F, 15 T, 16 F (schema inversion)
+
+seed 4 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T
+seed 4 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 R, 10 T, 11 T, 12 T, 13 T, 14 T, 15 F (block depth as buffer), 16 T, 17 T, 18 F, 19 F (block depth as urban form), 20 T
+seed 4 | Q3: 01 F (no disconnect: density is residents), 02 T, 03 F (attributed to caveat), 04 F, 05 T, 06 F, 07 F ("low" 4.8), 08 F, 09 F, 10 R, 11 R, 12 R, 13 F, 14 R, 15 F
+
+seed 5 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 T, 15 T
+seed 5 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 R, 09 T, 10 T, 11 T, 12 F (road density "driven by method"), 13 T, 14 T, 15 F ("relatively low" 4.8), 16 F, 17 T, 18 R, 19 T
+seed 5 | Q3: 01 R, 02 F (attributed to brief), 03 T, 04 F, 05 F (density as transience evidence), 06 F, 07 F, 08 F, 09 T, 10 F (schema inversion), 11 F, 12 T, 13 F, 14 R, 15 F, 16 F, 17 R, 18 R
+
+seed 6 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 F (breakdown is in the brief)
+seed 6 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 R, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 T, 15 T, 16 R, 17 T, 18 T, 19 T, 20 T, 21 T
+seed 6 | Q3: 01 R, 02 F, 03 T, 04 F, 05 F (175,879 read as population), 06 F, 07 F, 08 F (caveat misattributed, inverted), 09 F, 10 F, 11 F (coverage as commercial dominance), 12 F, 13 F, 14 R, 15 R, 16 F, 17 F, 18 F (hallucinated provenance)
+
+seed 7 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 F (block depth as density evidence), 13 F
+seed 7 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 F (block depth "confirms layering"), 13 F, 14 R, 15 R, 16 T
+seed 7 | Q3: 01 R, 02 R, 03 F ("residents" are transient), 04 F, 05 F, 06 F, 07 F, 08 T, 09 T, 10 F, 11 T, 12 R, 13 F, 14 F, 15 R
+
+seed 8 | Q1: 01 T, 02 R, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 F (block depth as urban form), 14 T
+seed 8 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 T, 15 R, 16 R, 17 T, 18 T
+seed 8 | Q3: 01 R, 02 R, 03 F (count vs density comparison), 04 F, 05 T, 06 T, 07 T, 08 R, 09 T, 10 F (4.8 bound to residents:POI), 11 F (establishments outnumber residents), 12 R, 13 R, 14 R, 15 T, 16 F, 17 F, 18 R
+
+seed 9 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 F (small footprint "moderates" density), 09 T, 10 T, 11 T, 12 T, 13 T
+seed 9 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 F (catchment definition as street form), 12 T, 13 T, 14 R, 15 F (17.6 ha "relatively large"), 16 T, 17 T, 18 T
+seed 9 | Q3: 01 F, 02 F, 03 T, 04 R, 05 F (50.3 inverted), 06 F, 07 F, 08 F (buildings primarily shops), 09 F, 10 F, 11 T, 12 F, 13 F, 14 T, 15 F, 16 R, 17 F
+
+seed 10 | Q1: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 T, 14 T, 15 T, 16 T
+seed 10 | Q2: 01 T, 02 T, 03 T, 04 T, 05 T, 06 T, 07 T, 08 T, 09 T, 10 T, 11 T, 12 T, 13 F (schema inversion), 14 F (359 per 1,000), 15 T, 16 T, 17 T, 18 T, 19 R, 20 T, 21 T, 22 F, 23 F
+seed 10 | Q3: 01 F (asserts commercial/tourist nature), 02 F (caveat misattributed), 03 R, 04 T, 05 F, 06 F, 07 F, 08 F, 09 F, 10 F, 11 F, 12 F, 13 F (coverage as commercial footprint), 14 F, 15 F (housing/building data present), 16 T, 17 F, 18 R, 19 R
+
+TOTALS (492 claims): T 308 (62.6%) | F 134 (27.2%) | R 50 (10.2%) | H 0 (0.0%)
+By question: Q1 133 claims: T 125, F 7, R 1 | Q2 193: T 158, F 21, R 14 | Q3 166: T 25, F 106, R 35

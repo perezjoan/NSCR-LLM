@@ -1,0 +1,140 @@
+hanoi_300m | Gemma-3-1B-it | claim labels
+Guide version 1.0 | glossary sha256 fa7ee737a14a | persona sha256 23bd3f7063ef
+Labels: T brief-true, F brief-false, R recall, H hallucination. ECHO lines excluded.
+Format per section: claim number = label (notes after #).
+
+=== seed 1 | Q1 === (33 claims)
+01=T 02=T 03=T 04=T 05=T 06=T 07=T 08=T 09=F 10=T 11=F 12=T 13=T 14=T 15=F 16=F 17=T 18=T 19=T 20=T 21=T 22=T 23=F 24=T 25=T 26=F 27=T 28=T 29=T 30=F 31=T 32=T 33=T
+# 09 density mutation (48/km2); 11 "76 buildings per km2" wrong binding; 15-16 catchment area read as a size/density indicator; 23 misstates the residents note; 26 footprint field does not encode residential share; 30 "offset by footprint" unsupported.
+
+=== seed 1 | Q2 === (23 claims)
+01=T 02=T 03=R 04=T 05=T 06=T 07=T 08=T 09=T 10=H 11=T 12=T 13=T 14=F 15=T 16=F 17=T 18=R 19=R 20=R 21=T 22=T 23=R
+# 10 "streets acting as a filtration system" invented (5.6); 14 "low ratio" - 0.633 not low; 16 retrieval method read as evidence of dense network (schema inversion).
+
+=== seed 1 | Q3 === (19 claims; line 20 ECHO)
+01=F 02=F 03=R 04=F 05=F 06=F 07=H 08=H 09=F 10=R 11=R 12=R 13=R 14=R 15=R 16=R 17=R 18=R 19=R
+# 01,02,04,05,06,09 premise instantiation (5.4); 07-08 invented vacancy/lack of housing.
+
+=== seed 2 | Q1 === (41 claims; line 42 ECHO)
+01=T 02=T 03=H 04=T 05=T 06=T 07=T 08=H 09=R 10=T 11=F 12=F 13=F 14=T 15=R 16=T 17=T 18=T 19=F 20=F 21=F 22=T 23=T 24=F 25=T 26=T 27=T 28=F 29=F 30=T 31=F 32=F 33=R 34=T 35=F 36=F 37=T 38=T 39=H 40=F 41=H
+# 11 population read as density; 12 "moderate" (5.2); 13 "76 footprints/km2"; 24 21,282 called moderate; 31-32 coverage "slightly below 1.0", under-development; 35-36 note misread; 41 "suburban".
+
+=== seed 2 | Q2 === (21 claims)
+01=T 02=T 03=T 04=F 05=T 06=T 07=T 08=R 09=T 10=T 11=F 12=T 13=T 14=T 15=R 16=R 17=R 18=T 19=R 20=R 21=R
+# 04 76 m2 read as significant/large (footprint sign); 11 76 m2 bound as total footprint.
+
+=== seed 2 | Q3 === (23 claims; line 24 ECHO)
+01=R 02=F 03=R 04=F 05=R 06=F 07=R 08=H 09=H 10=R 11=F 12=H 13=T 14=R 15=R 16=F 17=R 18=F 19=R 20=R 21=F 22=H 23=H
+# 11 "sprawling"; 16 road network "lower overall density"; 18 "underdeveloped"; 21 low building density + parks; 22-23 buffer zone / emptiness invented.
+
+=== seed 3 | Q1 === (25 claims)
+01=T 02=T 03=F 04=T 05=R 06=T 07=F 08=T 09=F 10=T 11=T 12=F 13=T 14=T 15=T 16=T 17=T 18=T 19=H 20=T 21=T 22=T 23=T 24=R 25=T
+# 03 population read as density; 07 1491 "moderate"; 09 "not overwhelmingly dense"; 12 road length "moderate"; 19 rural comparison inverted.
+
+=== seed 3 | Q2 === (20 claims; line 21 ECHO)
+01=T 02=T 03=F 04=R 05=T 06=R 07=T 08=T 09=T 10=F 11=F 12=F 13=T 14=T 15=T 16=F 17=F 18=F 19=F 20=F
+# 03,18 catchment retrieval read as design (schema inversion); 10 1491 read as "low coverage"; 11-12 road length vs population non-comparison; 16-17,19-20 coarse aside supported only by those errors (5.7).
+
+=== seed 3 | Q3 === (23 claims)
+01=R 02=F 03=R 04=F 05=F 06=R 07=H 08=F 09=R 10=R 11=R 12=R 13=R 14=R 15=R 16=R 17=R 18=R 19=R 20=R 21=R 22=R 23=R
+# 02,04,05 premise instantiation; 07 housing market invented; 08 "landscape dominated by shops" (5.5, POIs cover at most 24% of buildings).
+
+=== seed 4 | Q1 === (28 claims)
+01=T 02=T 03=T 04=H 05=T 06=T 07=F 08=T 09=F 10=T 11=F 12=T 13=T 14=F 15=F 16=T 17=T 18=F 19=F 20=T 21=T 22=R 23=R 24=H 25=T 26=T 27=T 28=R
+# 04 Tokyo comparison false at 40,545; 07 48/km2; 09 coverage "moderate"; 11,18 significant open space; 14-15 "633%" percent-scale error; 19 1491 "moderate"; 24 other Vietnamese cities "significantly higher".
+
+=== seed 4 | Q2 === (27 claims)
+01=T 02=T 03=T 04=T 05=R 06=F 07=R 08=H 09=F 10=T 11=R 12=T 13=R 14=T 15=T 16=F 17=T 18=R 19=R 20=T 21=H 22=F 23=T 24=R 25=R 26=R 27=R
+# 06,09,22 open-space/buffer inference from 0.633; 16 1491 "moderate"; 21 "not as dense as some high-density cities".
+
+=== seed 4 | Q3 === (21 claims; line 22 ECHO)
+01=R 02=F 03=F 04=F 05=H 06=F 07=R 08=F 09=H 10=F 11=R 12=R 13=R 14=R 15=R 16=R 17=R 18=R 19=R 20=F 21=F
+# 02,04,08 residents recast as transient visitors (5.2); 06 hotels not in brief, built environment "geared commercial"; 10 coverage ratio read as low resident density.
+
+=== seed 5 | Q1 === (35 claims)
+01=T 02=T 03=T 04=R 05=T 06=T 07=T 08=T 09=F 10=R 11=T 12=F 13=R 14=F 15=T 16=T 17=F 18=T 19=F 20=F 21=T 22=F 23=T 24=F 25=R 26=T 27=F 28=T 29=T 30=R 31=T 32=T 33=R 34=T 35=R
+# 09 48/km2; 12 density "driven by commercial activity"; 14 14,911 buildings (10x); 17 "21282 km2 per 1000km2" unit catastrophe; 19-20 network "relatively low"; 22 50.3 called moderate; 24 "approximately 26 square kilometers"; 27 network_distance misread.
+
+=== seed 5 | Q2 === (29 claims)
+01=T 02=T 03=T 04=T 05=F 06=T 07=T 08=T 09=T 10=F 11=T 12=H 13=H 14=T 15=T 16=R 17=F 18=H 19=F 20=T 21=T 22=T 23=T 24=T 25=R 26=F 27=T 28=R 29=T
+# 05 "21282 km2"; 17,19 coverage ratio bound to commercial activity; 18 invented benchmark "0.6 is medium"; 26 "not purely dense".
+
+=== seed 5 | Q3 === (22 claims)
+01=R 02=F 03=F 04=R 05=F 06=F 07=F 08=T 09=R 10=R 11=H 12=R 13=R 14=R 15=R 16=R 17=R 18=R 19=R 20=R 21=R 22=R
+# 06 "The data suggests... not permanent residents" hallucinated provenance; 03,05,07 transient residents.
+
+=== seed 6 | Q1 === (30 claims)
+01=T 02=T 03=T 04=T 05=F 06=F 07=F 08=T 09=F 10=T 11=H 12=T 13=T 14=F 15=T 16=F 17=T 18=H 19=R 20=R 21=T 22=T 23=T 24=T 25=T 26=T 27=T 28=R 29=T 30=R
+# 05-06 "moderate"/"reasonable"; 07 resident count "lower than GHS-POP estimate" (inverted caveat); 09 48/km2; 14 ratio "76 m2" wrong binding; 16 "m2/km2" unit transplant; 11,18 centre/periphery gradient invented.
+
+=== seed 6 | Q2 === (21 claims; line 22 ECHO)
+01=T 02=T 03=T 04=F 05=T 06=T 07=R 08=T 09=F 10=T 11=F 12=F 13=F 14=F 15=T 16=H 17=R 18=R 19=T 20=F 21=T
+# 04,09 footprint "larger than catchment"; 11-13 coverage "relatively low", fragmented; 14 4.8 read as high occupancy as fact (5.5); 16 coarse = smaller footprints (wrong); 20 "relatively low population density".
+
+=== seed 6 | Q3 === (24 claims; line 25 ECHO)
+01=R 02=F 03=H 04=F 05=R 06=H 07=H 08=H 09=H 10=F 11=F 12=H 13=R 14=R 15=R 16=F 17=R 18=R 19=R 20=R 21=R 22=R 23=R 24=R
+# 06 "empty streets"; 08-09 short-term rental housing invented; 11 footprint vs catchment reused for "less settled"; 12 "built up rather than organically growing".
+
+=== seed 7 | Q1 === (35 claims)
+01=T 02=T 03=T 04=T 05=T 06=F 07=R 08=R 09=F 10=T 11=F 12=F 13=T 14=F 15=T 16=F 17=T 18=T 19=T 20=T 21=T 22=F 23=F 24=F 25=F 26=T 27=F 28=T 29=R 30=T 31=R 32=R 33=T 34=R 35=T
+# 06,09,25 48/km2; 11 "2.1 buildings per sq km"; 12,23 "21282 km2 of road length"; 14,27 14,910 buildings; 16 fabricated provenance for footprint; 22 significant open space; 24 "significant portion is road network".
+
+=== seed 7 | Q2 === (20 claims; line 21 ECHO)
+01=T 02=T 03=R 04=T 05=F 06=T 07=F 08=T 09=T 10=T 11=T 12=R 13=T 14=F 15=R 16=H 17=H 18=R 19=T 20=R
+# 05 48/km2; 07 21,282 km2; 14 open space between buildings; 16-17 gaps/low-density areas and height variation invented.
+
+=== seed 7 | Q3 === (22 claims; line 23 ECHO)
+01=F 02=R 03=R 04=F 05=F 06=F 07=R 08=R 09=R 10=R 11=R 12=R 13=R 14=F 15=R 16=T 17=R 18=F 19=R 20=R 21=R 22=R
+# 01 density "driven by tourism" (5.2); 05 "Many residents are tourists"; 14 footprint "weighted toward retail"; 16 correct non-claim about housing; 18 street network read as "transactional system".
+
+=== seed 8 | Q1 === (43 claims)
+01=T 02=T 03=T 04=T 05=H 06=H 07=F 08=R 09=T 10=H 11=F 12=T 13=T 14=T 15=T 16=T 17=F 18=T 19=T 20=F 21=F 22=T 23=T 24=F 25=F 26=F 27=F 28=F 29=T 30=F 31=H 32=T 33=R 34=T 35=T 36=F 37=T 38=T 39=R 40=R 41=R 42=R 43=R
+# 06 "large sprawling structures" vs 76 m2; 07 48/km2; 11 14,910; 17 300 m read as network density; 20-21 connectivity/intensity "moderate"; 24-27 catchment area read as city footprint / large; 28 coverage read as distribution; 30-31 walkable-zones/grid invented.
+
+=== seed 8 | Q2 === (31 claims)
+01=T 02=T 03=H 04=F 05=T 06=H 07=T 08=T 09=T 10=R 11=F 12=F 13=T 14=T 15=T 16=H 17=R 18=T 19=T 20=F 21=F 22=F 23=H 24=H 25=F 26=T 27=T 28=T 29=R 30=R 31=R
+# 03,06 CBD/financial district invented; 04 14,910; 11-12 retrieval parameters read as form; 20-21 footprint "larger in proportion"; 22 coverage as distribution; 25 catchment "large".
+
+=== seed 8 | Q3 === (19 claims; line 20 ECHO)
+01=F 02=F 03=F 04=F 05=F 06=R 07=R 08=R 09=F 10=R 11=R 12=T 13=R 14=R 15=F 16=F 17=F 18=R 19=R
+# 01,15 "low residential density"; 03 hotels not in brief; 17 "spatial characteristics support" tourist-destination reading (hallucinated provenance).
+
+=== seed 9 | Q1 === (48 claims)
+01=T 02=T 03=T 04=H 05=T 06=T 07=T 08=F 09=T 10=T 11=T 12=R 13=F 14=T 15=H 16=H 17=T 18=F 19=F 20=T 21=T 22=T 23=T 24=T 25=T 26=F 27=T 28=T 29=T 30=T 31=T 32=F 33=T 34=T 35=F 36=T 37=T 38=T 39=T 40=T 41=F 42=T 43=T 44=T 45=T 46=T 47=R 48=R
+# 04 "green space (roads)" (5.6 invented content); 08 48/km2; 13 14,910; 15-16 even distribution / clustered around centre invented; 18-19 road length bound as network distance, "few connections"; 26 avg footprint read as coverage; 32 21,282 "moderate"; 35 fields do not demonstrate land-use mix; 41 note misread.
+
+=== seed 9 | Q2 === (23 claims)
+01=T 02=T 03=F 04=T 05=T 06=H 07=R 08=T 09=F 10=R 11=R 12=H 13=T 14=T 15=T 16=F 17=R 18=T 19=T 20=F 21=T 22=R 23=T
+# 03 14,910; 06 "multiple layers of buildings"; 09 3743 as network distance; 12 industrial zones invented; 16 density value read as spatial concentration; 20 coarse elements unsupported.
+
+=== seed 9 | Q3 === (23 claims; line 24 ECHO)
+01=F 02=R 03=F 04=H 05=F 06=R 07=R 08=H 09=H 10=T 11=H 12=F 13=R 14=R 15=F 16=R 17=H 18=F 19=R 20=H 21=F 22=R 23=R
+# 08-09 vacation rentals invented; 12 open spaces; 15 residents "not looking for permanent homes"; 17 "designed to attract tourists"; 20 "lack of traditional housing stock".
+
+=== seed 10 | Q1 === (29 claims; line 30 ECHO)
+01=T 02=T 03=F 04=T 05=T 06=H 07=F 08=R 09=R 10=H 11=F 12=T 13=T 14=F 15=R 16=T 17=R 18=F 19=F 20=H 21=T 22=T 23=F 24=F 25=T 26=T 27=R 28=R 29=T
+# 03 "sprawling"; 07 population read as density; 11 14,900; 14 "21,282 roads"; 18-19 density vs building density comparison; 23 significant green space; 24 street configuration read as business-geared.
+
+=== seed 10 | Q2 === (22 claims; line 23 ECHO)
+01=T 02=T 03=F 04=H 05=F 06=F 07=R 08=T 09=T 10=T 11=T 12=T 13=F 14=T 15=F 16=H 17=T 18=T 19=H 20=H 21=T 22=F
+# 03,05,06,13,15,22 block_depth / network_distance / catchment read as urban form (schema inversion); 04,16,19,20 fine/coarse block-size definitions inverted; 08 counts 71/48/22 correct values, unbound to wrong category, so T.
+
+=== seed 10 | Q3 === (23 claims; line 24 ECHO)
+01=R 02=F 03=H 04=T 05=F 06=R 07=H 08=R 09=F 10=H 11=F 12=F 13=F 14=R 15=R 16=F 17=F 18=R 19=R 20=R 21=R 22=R 23=R
+# 04 concession that locals reside is T; 05,09 majority transient / lack of residents; 07 affordable-housing scarcity invented; 10 absence of family neighbourhoods contradicts brief; 13 "large high-end" buildings vs 76 m2; 17 block_depth as layered blocks.
+
+=== TOTALS ===
+Claims: 803 (ECHO lines excluded: 14)
+T 329 (40.97%) | F 200 (24.91%) | R 209 (26.03%) | H 65 (8.09%)
+
+Per seed (T/F/R/H, n):
+s1  41/15/16/3   (75)
+s2  33/23/20/9   (85)
+s3  27/17/22/2   (68)
+s4  27/19/24/6   (76)
+s5  38/19/25/4   (86)
+s6  28/18/20/9   (75)
+s7  29/20/26/2   (77)
+s8  35/28/21/9   (93)
+s9  47/19/17/11  (94)
+s10 24/22/18/10  (74)

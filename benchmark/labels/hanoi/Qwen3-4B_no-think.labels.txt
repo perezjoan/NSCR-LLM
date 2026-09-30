@@ -1,0 +1,485 @@
+##### hanoi_300m | Qwen3-4B_no-think | digital labels | guide v1.0 | glossary fa7ee737a14a | persona 23bd3f7063ef
+##### format: NN L [optional note]. Labels: T brief-true, F brief-false, R recall, H hallucination. Verdict-only Q3 claims ("poor choice / less suitable") labelled R per 5.7 (brief silent on community feel); their false supports labelled F on their own content.
+
+=== seed 1 | Q1 ===
+01 T
+02 T
+03 R
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 1 | Q2 ===
+01 T
+02 T
+03 F  over two-thirds (5.3)
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 1 | Q3 ===
+01 R  verdict
+02 F  antecedent asserted (5.4)
+03 F  7,131 "relatively low" vs building count (5.2)
+04 T
+05 F  4.8 -> commercial derivation (5.5)
+06 F
+07 T
+08 T
+09 F  per-resident ratio inverted (5.5)
+10 T
+11 T
+12 F
+13 T
+14 F
+15 R  verdict
+16 F  "low residential density"
+
+=== seed 2 | Q1 ===
+01 T
+02 T
+03 R
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+
+=== seed 2 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+
+=== seed 2 | Q3 ===
+01 R  verdict
+02 F  count "relatively low" (5.2)
+03 F  50.3 as commercial-vs-residential comparator (5.5)
+04 T
+05 F  density "due to" commercial buildings (5.2)
+06 T  neutral reading of 4.8
+07 F  4.8 -> commercial (5.5)
+08 T
+09 T
+10 F  "majority not residential" (5.4)
+11 F  premise endorsed as description
+12 R  verdict
+
+=== seed 3 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+16 T
+17 T
+
+=== seed 3 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 3 | Q3 ===
+01 F  area "is" commercial/tourist district (5.4)
+02 F
+03 F  commercial character "aligns" with 40,545 density
+04 T
+05 F  inverted caveat direction (5.2)
+06 H  invented "total population" (5.5)
+07 T
+08 T
+09 F  4.8/76 -> commercial buildings (5.5)
+10 F  "data does not indicate residential character" at 40,545/km2
+11 R  verdict
+12 F
+13 T
+14 F
+
+=== seed 4 | Q1 ===
+01 T
+02 T
+03 R
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+
+=== seed 4 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+
+=== seed 4 | Q3 ===
+01 R  verdict
+02 T
+03 T
+04 R  hedged, not the inverted direction
+05 T
+06 F  POI ratio + streets -> commercial/tourist hub (5.5 inversion)
+07 F
+08 T
+09 T
+10 F  4.8 -> "not occupied by residents" (5.5)
+11 T
+12 R  hedged, plausible
+13 F  "reinforcing commercial character"
+14 T
+15 F
+16 R  verdict
+
+=== seed 5 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 F  "coarse-grained" (5.7); contradicts own "small, closely spaced"
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 5 | Q2 ===
+01 F  coarse/sparse verdict on error supports (5.7)
+02 T
+03 F  "only about two-thirds" as sparseness (5.3)
+04 F
+05 T
+06 T
+07 F  76 m2 read as large (5.6)
+08 F
+09 T
+10 F  "low building coverage" (5.3)
+11 F
+12 T
+13 T
+14 T
+15 T
+16 F
+
+=== seed 5 | Q3 ===
+01 R  verdict
+02 T
+03 T
+04 F  antecedent asserted (5.4)
+05 F
+06 T
+07 T  conditional quoted accurately
+08 F  instantiation (5.4 two-step)
+09 F
+10 T
+11 T
+12 F  commercial hub (inversion)
+13 F
+14 F  0.633/76 -> coarser, less dense (5.3, 5.6)
+15 F
+16 T
+17 F
+
+=== seed 6 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 F  over two-thirds (5.3)
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 6 | Q2 ===
+01 T
+02 F  over two-thirds (5.3)
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+
+=== seed 6 | Q3 ===
+01 T
+02 F  "relatively low—only 7,131" (5.2)
+03 T
+04 F
+05 R  generic, uncontradicted
+06 F
+07 T
+08 F
+09 T  neutral reading of 4.8
+10 F  4.8 as commercial-dominance signature (5.5)
+11 R  verdict
+12 F
+13 T
+14 F
+15 R  affective
+
+=== seed 7 | Q1 ===
+01 T
+02 T
+03 R
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 7 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 7 | Q3 ===
+01 R  verdict
+02 T
+03 F  "only 7,131" (5.2)
+04 F  4.8 "low" (5.5)
+05 F
+06 T
+07 T
+08 T
+09 F
+10 T
+11 F
+12 T
+13 F
+14 R  verdict
+15 F  "commercially driven"
+16 F
+
+=== seed 8 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+
+=== seed 8 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 8 | Q3 ===
+01 F  antecedent asserted (5.4)
+02 T
+03 F  residents "are" workers/tourists/visitors (5.2)
+04 F
+05 T
+06 T  conditional
+07 F
+08 T
+09 T
+10 F
+11 T
+12 F  4.8 -> commercialized (5.5)
+13 T
+14 F
+15 R  affective
+
+=== seed 9 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+
+=== seed 9 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+
+=== seed 9 | Q3 ===
+01 T
+02 F  resident count "lower than modeled" (5.2 inverted)
+03 F
+04 T
+05 T  conditional
+06 F
+07 F
+08 T
+09 F  4.8 -> commercial uses (5.5)
+10 F
+11 T
+12 F  "lack of long-term residents"
+13 R  verdict
+14 F
+
+=== seed 10 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+
+=== seed 10 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 F  retrieval parameters read as urban form (5.6 schema inversion)
+13 T
+
+=== seed 10 | Q3 ===
+01 R  verdict
+02 F  "only 7,131"
+03 T
+04 F
+05 F
+06 T
+07 F
+08 T
+09 T
+10 T
+11 F
+12 T
+13 F  density "driven by" commercial infrastructure (5.2)
+14 F
+15 R  verdict

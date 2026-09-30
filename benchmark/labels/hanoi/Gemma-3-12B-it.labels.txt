@@ -1,0 +1,392 @@
+## hanoi_300m | Gemma-3-12B-it | labels | guide v1.0 (glossary fa7ee737a14a, persona 23bd3f7063ef)
+## Format: seed Q claim label [note]
+
+=== seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 R
+
+=== seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 R  general definitional statement
+
+=== seed 1 | Q3 ===
+01 R  meta
+02 T
+03 T
+04 F  7131 + 50.3 read as small resident population / commercial dominance (5.2, 5.5)
+05 R  affective prediction
+06 R  affective prediction
+07 R
+08 R
+09 F  asserts antecedent: commercial/entertainment rather than residential, contradicted by density (5.4)
+
+=== seed 2 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+
+=== seed 2 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 R
+12 T
+13 T
+
+=== seed 2 | Q3 ===
+01 T
+02 F  density "inflated" (5.2)
+03 F  particularisation attributed to the brief (5.4, misattributed provenance)
+04 R  verdict/advice
+05 R
+06 R
+07 F  per-resident ratio read against residential character (5.5)
+08 F  POI density read as evidence of visitor orientation (5.5)
+09 R
+10 F  7131 described as lack of substantial residential population (5.2)
+
+=== seed 3 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+
+=== seed 3 | Q2 ===
+01 T
+02 T
+03 T
+04 R
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 R  general definition of coarse fabric
+
+=== seed 3 | Q3 ===
+01 F  the conditional caveat presented as suggesting a conclusion about this catchment (5.4)
+02 T
+03 T
+04 T
+05 R
+06 F  residents called transient (5.2)
+07 H  residents "concentrated in pockets": specific, unverifiable claim about the place, at odds with 40,545/km2
+08 R
+09 F  asserts antecedent: prioritises commercial/tourist over residential (5.4)
+
+=== seed 4 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 R
+11 T
+
+=== seed 4 | Q2 ===
+01 T
+02 T
+03 T
+04 R
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+
+=== seed 4 | Q3 ===
+01 R  meta
+02 T
+03 T
+04 F  7131 + POIs read as small core of residents / commercial dominance (5.2, 5.5)
+05 R  verdict
+06 R
+07 R
+08 F  50.3 read as evidence against residential character (5.5)
+09 F  "the few who live there" (5.2)
+
+=== seed 5 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+
+=== seed 5 | Q2 ===
+01 T
+02 T
+03 T
+04 R
+05 R
+06 T
+07 T
+08 T
+09 T
+10 T
+11 R
+
+=== seed 5 | Q3 ===
+01 R  meta
+02 T
+03 T
+04 T
+05 F  density "driven" by commercial activity (5.2)
+06 R
+07 R
+08 F  denies substantial permanent resident base (5.2)
+09 R
+10 F  residents a small fraction (5.2)
+11 R
+
+=== seed 6 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T  correct value; "equating" loosely conflates whole-footprint ratio with clipped coverage, value itself right
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+
+=== seed 6 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 R
+06 T
+07 T
+08 T
+09 T
+10 T  4.8 -> not large apartment blocks, defensible with 76 m2 footprints
+11 T
+12 T
+
+=== seed 6 | Q3 ===
+01 R  meta
+02 T
+03 T
+04 T
+05 F  hallucinated provenance: brief does not say the area is commercial/tourist-driven (5.4)
+06 T  correct direction of caveat (undercounts daytime activity)
+07 T
+08 R
+09 F  "low proportion of true residents" (5.2)
+10 R
+11 R
+12 R
+13 R
+14 R
+15 R
+
+=== seed 7 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 R
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+
+=== seed 7 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+
+=== seed 7 | Q3 ===
+01 R  meta
+02 T
+03 T
+04 F  "in this area" embedded in citation of the conditional caveat (5.4, misattributed provenance)
+05 R  verdict
+06 F  density "driven" by commercial/tourist demand (5.2)
+07 F  denies residential community as source of a residents-only figure
+08 F  inverted caveat direction: residents "significantly lower" than metrics (5.2)
+09 F  "used rather than lived in": asserts antecedent against density (5.4)
+
+=== seed 8 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+
+=== seed 8 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T  concludes closely packed, not offered as sparseness
+10 T
+11 T
+12 T
+
+=== seed 8 | Q3 ===
+01 R  meta
+02 T
+03 T
+04 F  density "driven" by commercial activity (5.2)
+05 F  "only 7,131" (5.2)
+06 R
+07 F  density called artificial (5.2)
+08 F  residents-only density said to reflect built environment not a lived-in neighbourhood
+09 T
+10 T  neutral-ish statement of 4.8
+11 F  4.8 + POIs derived as commercial over residential (5.5)
+12 R
+13 R
+14 R
+
+=== seed 9 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+
+=== seed 9 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 F  0.633 called "relatively modest" (5.3)
+07 T
+08 T
+
+=== seed 9 | Q3 ===
+01 R  meta
+02 R  endorses questioning suitability; advice-level
+03 T
+04 T
+05 T
+06 F  density "inflated" by commercial properties (5.2)
+07 T
+08 F  residential character "much less pronounced": inverted caveat direction (5.2)
+09 F  50.3 read against residential character (5.5)
+10 F  residents "a relatively minor component" (5.2)
+11 R
+12 T
+13 R
+14 R
+
+=== seed 10 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 F  300 m retrieval parameter read as evidence of walkability (schema inversion, 5.6)
+10 T
+11 T
+
+=== seed 10 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+
+=== seed 10 | Q3 ===
+01 R  meta
+02 F  endorses the premise that hardly anyone lives here, contradicted by 7131 / 40,545 km2
+03 T
+04 T
+05 T
+06 F  population density "driven" by commercial activity and transient visitors (5.2)
+07 R
+08 F  residential population "masked": asserts antecedent (5.4)
+09 F  false absence: schools 2, place_of_worship 9, townhall, police, post_office are listed (5.1)
+10 R
+11 F  asserts antecedent: prioritises commercial/tourism over residential (5.4)

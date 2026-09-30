@@ -1,0 +1,35 @@
+# chicago_800m | Llama-3.1-8B-Instruct | labels | guide v1.0 | glossary sha256 fa7ee737a14a | persona sha256 e9ad438171dd
+# One label per claim, in sheet order. ECHO lines: none in this file.
+
+seed1 Q1: 01 T | 02 T | 03 F (conv 4 read as 1) | 04 R | 05 T | 06 T | 07 T | 08 T
+seed1 Q2: 01 T | 02 F | 03 T | 04 T | 05 F (high density) | 06 T | 07 F (densely populated) | 08 R | 09 T | 10 T | 11 T | 12 T | 13 T | 14 T | 15 T | 16 T
+seed1 Q3: 01 H | 02 H | 03 H | 04 F | 05 F | 06 R | 07 H | 08 H | 09 H | 10 H
+seed2 Q1: 01 T | 02 T | 03 F (brief lists conv 4, variety 1) | 04 T
+seed2 Q2: 01 T | 02 T | 03 F (fast food as sole retailer) | 04 T | 05 T | 06 T | 07 T | 08 F (16.7 called high) | 09 T | 10 T
+seed2 Q3: 01 T | 02 T | 03 T | 04 F | 05 T | 06 F | 07 F | 08 T | 09 F (brief does give retailer types)
+seed3 Q1: 01 T | 02 F | 03 T | 04 T | 05 T | 06 T
+seed3 Q2: 01 T | 02 F | 03 T | 04 T | 05 T | 06 T | 07 T | 08 F | 09 T | 10 F | 11 T
+seed3 Q3: 01 H | 02 H | 03 H | 04 H | 05 F | 06 R | 07 H | 08 H
+seed4 Q1: 01 F | 02 T | 03 T | 04 T | 05 T | 06 T | 07 R | 08 T
+seed4 Q2: 01 T | 02 T | 03 F | 04 T | 05 T | 06 T | 07 T (5 = conv+fast food, consistent) | 08 T | 09 T | 10 T | 11 T | 12 T
+seed4 Q3: 01 H | 02 H | 03 F | 04 T | 05 T | 06 H | 07 T | 08 R | 09 R | 10 H | 11 H
+seed5 Q1: 01 T | 02 T | 03 T | 04 T | 05 T | 06 T | 07 T
+seed5 Q2: 01 T | 02 T | 03 T | 04 T | 05 F (16.7 called high) | 06 F | 07 T | 08 T | 09 T | 10 R
+seed5 Q3: 01 H | 02 H | 03 H | 04 F | 05 T | 06 R | 07 H | 08 T | 09 T | 10 H
+seed6 Q1: 01 F (absence is documented) | 02 T | 03 F | 04 T | 05 T | 06 T | 07 T | 08 T | 09 T | 10 T | 11 T
+seed6 Q2: 01 T | 02 T | 03 T | 04 T | 05 T | 06 T | 07 F | 08 F (4.9/bldg called high) | 09 R | 10 T | 11 F (absence treated as gap) | 12 T
+seed6 Q3: 01 H | 02 H | 03 H | 04 F | 05 T | 06 R | 07 H
+seed7 Q1: 01 T | 02 T | 03 T | 04 T | 05 T | 06 T | 07 T
+seed7 Q2: 01 T | 02 T | 03 T | 04 T | 05 T | 06 T | 07 R | 08 F (absence treated as gap) | 09 R | 10 T
+seed7 Q3: 01 H | 02 H | 03 H | 04 R | 05 H | 06 H | 07 R
+seed8 Q1: 01 T | 02 T | 03 T | 04 T | 05 T | 06 R | 07 T | 08 T
+seed8 Q2: 01 T | 02 T | 03 T | 04 F (variety store "could be a supermarket") | 05 T | 06 R | 07 R | 08 T | 09 T | 10 T
+seed8 Q3: 01 H | 02 H | 03 H | 04 H | 05 F | 06 T | 07 R | 08 R
+seed9 Q1: 01 T | 02 F | 03 F | 04 T | 05 F | 06 T
+seed9 Q2: 01 T | 02 T | 03 F | 04 T | 05 T | 06 T | 07 T | 08 T | 09 T | 10 R | 11 T
+seed9 Q3: 01 H | 02 F ("data suggests" high access) | 03 H | 04 F | 05 H | 06 H | 07 H | 08 T | 09 R
+seed10 Q1: 01 T | 02 T | 03 T | 04 F | 05 T | 06 T | 07 F | 08 T
+seed10 Q2: 01 T | 02 T | 03 T | 04 T | 05 F | 06 T | 07 T | 08 R | 09 T | 10 R | 11 T | 12 T | 13 T | 14 T | 15 T | 16 T | 17 T
+seed10 Q3: 01 H | 02 F | 03 H | 04 T | 05 F | 06 F | 07 H | 08 F | 09 T | 10 F
+
+# Totals: 281 claims | T 166 | F 47 | R 24 | H 44

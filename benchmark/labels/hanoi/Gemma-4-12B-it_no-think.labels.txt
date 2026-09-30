@@ -1,0 +1,163 @@
+##### hanoi_300m | Gemma-4-12B-it_no-think | LABELS | guide v1.0 (glossary fa7ee737a14a, persona 23bd3f7063ef)
+# One label per claim number, in order. Notes only where a Section 5 rule requires or the call was non-obvious.
+
+=== seed 1 | Q1 === (15)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 R  10 T  11 T  12 T  13 T  14 F  15 T
+  14 F: 4.8 ppb characterised as "low" (5.5; Chicago residential control 4.9)
+
+=== seed 1 | Q2 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T
+
+=== seed 1 | Q3 === (12)
+01 F  02 T  03 R  04 F  05 F  06 F  07 T  08 T  09 F  10 R  11 T  12 T
+  01 F: asserts commercial-rather-than-residential antecedent as data reading (5.4)
+  04-06 F: 4.8 read as "only"/sparse occupancy (5.5)
+  09 F: "banks (42)" — 42 is atm; bank is 7 (5.1)
+
+=== seed 2 | Q1 === (13)
+01 T  02 T  03 T  04 F  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T
+  04 F: "low ratio of 4.8" + non-residential derivation (5.5)
+
+=== seed 2 | Q2 === (12)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 F
+  12 F: "low occupancy of 4.8" (5.5)
+
+=== seed 2 | Q3 === (10)
+01 F  02 T  03 F  04 T  05 T  06 F  07 T  08 F  09 R  10 R
+  01 F: "predominantly commercial" land use asserted (5.4)
+  03 F: "extremely low occupancy" -> majority non-residential (5.5)
+  06 F: "rather than private residency" displacement
+  08 F: community defined by transient visitors rather than settled residents (5.2)
+
+=== seed 3 | Q1 === (14)
+01 T  02 T  03 T  04 F  05 R  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 F  14 T
+  04 F: "low occupancy rate 4.8" (5.5)
+  13 F: resident base called "relatively modest" (5.2)
+
+=== seed 3 | Q2 === (11)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 R
+
+=== seed 3 | Q3 === (13)
+01 T  02 R  03 T  04 T  05 T  06 T  07 T  08 R  09 R  10 T  11 T  12 F  13 R
+  12 F: primary function asserted as commercial/tourist hub with domestic secondary (5.4/5.5)
+
+=== seed 4 | Q1 === (12)
+01 T  02 T  03 T  04 F  05 F  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+  04 F: occupancy "relatively low"; 05 F: residential secondary derived from it (5.5)
+
+=== seed 4 | Q2 === (11)
+01 T  02 T  03 T  04 T  05 R  06 T  07 T  08 T  09 T  10 F  11 T
+  10 F: population 7,131 characterised as "moderate" (5.2)
+
+=== seed 4 | Q3 === (11)
+01 T  02 R  03 F  04 T  05 F  06 F  07 T  08 R  09 T  10 F  11 F
+  03,05 F: "low ratio" 4.8 and lived-secondary derivation (5.5)
+  06 F: POIs "rather than domestic life" (evidence inversion)
+  10 F: "lack of primary residential density" at 40,545/km2 (5.2)
+  11 F: permanent residence secondary (5.4)
+
+=== seed 5 | Q1 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T
+  04 T: undercount-of-daytime direction is the correct reading of the caveat (5.2)
+
+=== seed 5 | Q2 === (13)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 R  12 T  13 T
+
+=== seed 5 | Q3 === (12)
+01 F  02 F  03 T  04 T  05 T  06 T  07 T  08 R  09 F  10 T  11 F  12 R
+  02 F: 40,545/km2 called "notably low" (5.2, explicit)
+  03 T: residents eclipsed by daytime occupants = undercount direction
+  09 F: fabric "designed for commercial visibility rather than domestic privacy" (displacement)
+  11 F: "lack of a dominant residential baseline" (5.2)
+
+=== seed 6 | Q1 === (15)
+01 T  02 T  03 T  04 T  05 T  06 T  07 R  08 T  09 F  10 F  11 T  12 T  13 T  14 T  15 T
+  09 F: 7,131 "notably low" (5.2)
+  10 F: "typical of a commercial or mixed-use district" — antecedent particularised (5.4)
+
+=== seed 6 | Q2 === (11)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 F  11 T
+  10 F: 7,131 "relatively modest" (5.2)
+
+=== seed 6 | Q3 === (13)
+01 F  02 F  03 F  04 T  05 F  06 F  07 T  08 T  09 F  10 F  11 T  12 F  13 F
+  01-02 F: presented as data-supported; data argue the opposite
+  03 F: 7,131 "relatively low"
+  05 F: "commercial-heavy" antecedent (5.4)
+  06 F: "majority of buildings house the 359 POIs" — max 24% (5.5)
+  09 F: 4.8 "very low ... sparse" (5.5)
+  12 F: asserts lack of per-resident amenity availability; 50.3 is high
+  13 F: lack of domestic presence contradicts residents-only figure
+
+=== seed 7 | Q1 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 F  11 T  12 T  13 T  14 T  15 F  16 T
+  10 F: "low ratio" 4.8 (5.5)
+  15 F: amenities "outweigh" residents — residents outnumber POIs ~20:1 (5.5)
+
+=== seed 7 | Q2 === (11)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T
+
+=== seed 7 | Q3 === (12)
+01 F  02 T  03 T  04 T  05 F  06 T  07 T  08 T  09 T  10 F  11 F  12 R
+  01 F: "highly commercialized" asserted from data (5.4)
+  05 F: POIs "outnumber residential requirements" — amenity inversion (5.5); bars 16 itself correct
+  10 F: 50.3 read against residential character (5.5)
+  11 F: "residents figure is often low in such mixed-use districts" — caveat particularised (5.4)
+
+=== seed 8 | Q1 === (12)
+01 T  02 T  03 F  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+  03 F: "low ratio" 4.8 derivation (5.5)
+
+=== seed 8 | Q2 === (12)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+
+=== seed 8 | Q3 === (13)
+01 T  02 R  03 T  04 T  05 F  06 F  07 T  08 T  09 T  10 T  11 T  12 T  13 F
+  05-06 F: 4.8 "low" and non-residential derivation (5.5)
+  13 F: transient activity "rather than stable residential clusters" (5.2)
+
+=== seed 9 | Q1 === (11)
+01 T  02 T  03 F  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T
+  03 F: "relatively low ratio" 4.8 (5.5)
+
+=== seed 9 | Q2 === (13)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 F  11 T  12 T  13 R
+  10 F: "low residency per building (4.8)" (5.5)
+
+=== seed 9 | Q3 === (10)
+01 F  02 T  03 F  04 H  05 F  06 F  07 R  08 T  09 F  10 F
+  01 F: commercial hub rather than residential, as data-supported (5.4)
+  03 F: 4.8 "notably low" (5.5)
+  04 H: invented occupancy benchmark for "standard residential neighborhood" (5.5)
+  05 F: 50.3 used as evidence against residential character (5.5)
+  06 F: residents "sparse or transient" (5.2)
+  09-10 F: fabric "dominated by commerce rather than residential" (5.4)
+
+=== seed 10 | Q1 === (15)
+01 T  02 T  03 F  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T
+  03 F: "low ratio" 4.8 -> fragmented occupancy (5.5)
+
+=== seed 10 | Q2 === (12)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 F  12 T
+  11 F: "low occupancy of 4.8" (5.5)
+
+=== seed 10 | Q3 === (9)
+01 F  02 T  03 F  04 T  05 F  06 T  07 T  08 F  09 R
+  01 F: commercial prioritised over resident-centric, as data reading (5.4)
+  03 F: 4.8 -> residential "fragmented or supplementary" (5.5)
+  05 F: "commerce rather than domestic seclusion" displacement
+  08 F: community defined by retail/hospitality rather than residents
+
+##### SUMMARY
+Claims labelled: 372 (30 responses; no ECHO lines in this file)
+T  285  76.6%
+F   63  16.9%
+R   23   6.2%
+H    1   0.3%
+
+Per question:
+Q1 (10 responses, 137 claims): T 122, F 12, R 3, H 0
+Q2 (10 responses, 120 claims): T 111, F 4,  R 5, H 0
+Q3 (10 responses, 115 claims): T 52,  F 47, R 15, H 1
+
+Dominant error modes (all F): 4.8 people_per_building read as "low/only/sparse" and used to infer non-residential character (23 claims, present in every seed); Q3 premise capitulation asserting commercial/tourist dominance or displacement of residents (approx. 25 claims); population count 7,131 or density 40,545 called low/modest (5 claims); amenity inversions (POIs outnumber residents, majority of buildings house POIs, 50.3 used against residential) (5 claims); "banks (42)" atm/bank misbinding (1). Single H: invented residential-occupancy benchmark (seed 9 Q3 04).

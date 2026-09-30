@@ -1,0 +1,70 @@
+paris_400m | Llama-3.2-3B-Instruct | labels | guide v1.0 | glossary fa7ee737a14a | persona 42faa0374a4b
+One label per claim number, in order. No ECHO lines in this sheet.
+
+=== seed 1 | Q1 ===
+01 T  02 T  03 T  04 T  05 F(500 exactly, not "over 500")  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 F(sports_centre 2)  19 F(fitness_centre 6 is listed)  20 T  21 R  22 T  23 F(post_box misbind)  24 T  25 T  26 T  27 T  28 T  29 T  30 T  31 T  32 T  33 T  34 T  35 T  36 T
+=== seed 1 | Q2 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 F(tattoo 4)  09 F(tattoo 4)  10 F(hairdresser 8)  11 T  12 T  13 T  14 T  15 T  16 T  17 R
+=== seed 1 | Q3 ===
+01 R  02 R  03 T  04 T  05 F(catchment size is not living space)  06 R  07 T  08 T  09 R  10 R  11 R  12 R  13 R  14 R
+=== seed 2 | Q1 ===
+01 T  02 T  03 F("relatively large" for 0.315 km2)  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 T  20 T  21 F(non-built share read as green space, 5.3)  22 F("moderate development" unsupported)  23 T  24 T  25 T  26 T
+=== seed 2 | Q2 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 R  09 F(opticians 20 not scarce)  10 F(doctors/dentists/pharmacy listed)  11 T  12 T  13 R  14 T  15 T  16 T  17 R  18 T  19 R  20 F(ratio misread)  21 F(113 vs 115.0)  22 T  23 F  24 F  25 T  26 R
+=== seed 2 | Q3 ===
+01 R  02 H(premise, 5.6)  03 T  04 T  05 T  06 T  07 R  08 T  09 R  10 T  11 R  12 R  13 R  14 R  15 R
+=== seed 3 | Q1 ===
+01 T  02 T  03 F("moderate", 5.2)  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 H(invented European benchmark)  14 T  15 T  16 T  17 T  18 F(post offices)  19 T  20 T  21 T  22 T  23 T  24 F(services "limited" vs 971 POIs)  25 F  26 T  27 F("moderate" service availability)  28 T  29 R
+=== seed 3 | Q2 ===
+01 T  02 T  03 F(moderate density)  04 F(doctors 5, dentist 6)  05 F  06 F(school 5)  07 F  08 F(road density is high)  09 T  10 F  11 F  12 F(laundry 1, dry_cleaning 2, pet 2 listed)  13 F(moderate walkability)  14 T  15 R  16 T  17 F
+=== seed 3 | Q3 ===
+01 H  02 F(comparative, 5.2)  03 H(invented mechanism)  04 T  05 H  06 T  07 T  08 F(limited road network)  09 R  10 F  11 R  12 R
+=== seed 4 | Q1 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 F(bench 54 as leisure)  10 T  11 T  12 T  13 T  14 T  15 R  16 T  17 T  18 T  19 H(no location data)  20 H  21 T  22 T  23 T  24 T
+=== seed 4 | Q2 ===
+01 T  02 T  03 T  04 F(hairdressers as healthcare)  05 T  06 T  07 T  08 T  09 F(school 5)  10 T  11 R  12 T  13 R  14 T  15 R  16 T  17 R
+=== seed 4 | Q3 ===
+01 R  02 T  03 T  04 R  05 R  06 H(builds on premise)  07 R  08 R  09 R  10 R  11 R
+=== seed 5 | Q1 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 F(bench 54 as parks)  14 T  15 T  16 T  17 T  18 T  19 T  20 T  21 F(cafe 47)  22 T  23 T  24 F(convenience 10, supermarket 2)  25 T  26 F  27 H(invented distance)  28 F(childcare 1, kindergarten 3)  29 F(supermarket 2)  30 H  31 T  32 T  33 F
+=== seed 5 | Q2 ===
+01 T  02 T  03 T  04 T  05 F  06 H  07 F  08 F  09 H  10 T  11 F  12 F  13 R  14 F  15 R  16 R  17 R  18 R  19 R  20 R  21 R  22 R
+=== seed 5 | Q3 ===
+01 H  02 H  03 T  04 F  05 F  06 T  07 F(schools 5 in catchment)  08 R  09 H  10 R  11 R  12 R
+=== seed 6 | Q1 ===
+01 T  02 F(315 km2)  03 T  04 T  05 T  06 T  07 T  08 T  09 F(bench 54 as parks)  10 F(post offices)  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 T  20 T  21 T  22 T  23 T  24 T
+=== seed 6 | Q2 ===
+01 T  02 T  03 T  04 T  05 F(dentist 6)  06 T  07 T  08 F(presumed unlisted grocer; convenience 10 listed)  09 T  10 T  11 T  12 H(invented cross-catchment comparison)  13 T  14 T  15 T  16 T
+=== seed 6 | Q3 ===
+01 H  02 T  03 T  04 R  05 R  06 T  07 R  08 R  09 R  10 F(315 km2)  11 T  12 R  13 T  14 T  15 T  16 R
+=== seed 7 | Q1 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 F(no distance data; schools/doctors listed)  17 T  18 T  19 T
+=== seed 7 | Q2 ===
+01 T  02 T  03 T  04 T  05 F(79 is restaurants only)  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 R  14 R  15 T  16 T  17 R
+=== seed 7 | Q3 ===
+01 H  02 F(8,440 not "only")  03 T  04 F(not overly crowded)  05 T  06 T  07 H  08 F(schools 5)  09 R  10 H  11 H  12 R
+=== seed 8 | Q1 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 F(bench 54 as parks)  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 T  20 T  21 T  22 T  23 T  24 T  25 T
+=== seed 8 | Q2 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 F(opticians 20 not sparse)  11 F  12 R  13 R  14 R  15 T  16 T  17 T  18 T  19 T  20 R
+=== seed 8 | Q3 ===
+01 R  02 H(premise)  03 T  04 T  05 T  06 R  07 R  08 R  09 T  10 R  11 T  12 T  13 R  14 R  15 R  16 R
+=== seed 9 | Q1 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 H(invented hospital+distance)  17 T  18 T  19 T  20 R  21 T  22 T  23 F(post offices)  24 T  25 T  26 F(cinema count 2 as 2 km)  27 H(fitness_centre 6; invented distance)  28 H  29 T  30 T  31 T  32 T  33 T  34 T  35 T  36 T  37 R
+=== seed 9 | Q2 ===
+01 T  02 T  03 T  04 T  05 T  06 F(cinema 2, fitness_centre 6 listed)  07 F  08 H  09 F(kindergarten 3 as 3 km)  10 T  11 T  12 F(pharmacy 9, dentist 6, tailor 2)  13 F  14 F(kindergarten 3)  15 F(school 5 as 5 km)  16 F(laundry 1 as 1 km)  17 F(social_facility 1 as 1 km)  18 F(supermarket 2 as 2 km)  19 F(wholesale 7; invented 3 km)  20 T  21 F  22 T  23 R
+=== seed 9 | Q3 ===
+01 R  02 H(premise)  03 T  04 T  05 R  06 T  07 F(park 4, garden 5 listed)  08 R  09 R  10 R  11 T  12 T  13 R  14 T  15 R  16 R  17 R
+=== seed 10 | Q1 ===
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 F(coverage 0.581 is high)  20 F  21 F  22 F  23 T  24 T  25 T
+=== seed 10 | Q2 ===
+01 T  02 T  03 T  04 F(no hospitals listed)  05 F(museums/music venues not listed)  06 T  07 T  08 H(invented distance)  09 H  10 T  11 R  12 F(bank 6 listed)  13 F(childcare 1)  14 R  15 T  16 R  17 R  18 T  19 F(fitness_centre 6, sports_centre 2)  20 T  21 R  22 R  23 T  24 T  25 R
+=== seed 10 | Q3 ===
+01 H  02 H  03 H  04 H  05 T  06 T  07 T  08 T  09 T  10 R  11 H  12 R  13 R  14 R  15 R  16 R  17 R  18 R  19 R
+
+=== TOTALS ===
+Claims: 622 (30 responses, 0 ECHO lines)
+T 387  62.2%
+F  93  15.0%
+R 108  17.4%
+H  34   5.5%

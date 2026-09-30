@@ -1,0 +1,115 @@
+##### hanoi_300m | Qwen3-1.7B_thinking | LABELLED | guide v1.0 (glossary fa7ee737a14a, persona 23bd3f7063ef)
+
+=== seed 1 | Q1 ===
+01 {T} 02 {R} 03 {T} 04 {T} 05 {T} 06 {T} 07 {T} 08 {T} 09 {T} 10 {R} 11 {T} 12 {R} 13 {F}
+  note 13: ranks unit-incommensurable metrics against each other; characterisation the values cannot support.
+
+=== seed 1 | Q2 ===
+01 {T} 02 {T} 03 {T} 04 {T} 05 {T} 06 {T} 07 {T} 08 {R} 09 {T} 10 {T} 11 {R} 12 {T}
+  note 08: "narrow streets / grid and alleys" is external Old Quarter knowledge; "in the description" reads as self-reference, not brief attribution.
+
+=== seed 1 | Q3 ===
+01 {T} 02 {T} 03 {F} 04 {T} 05 {T} 06 {F} 07 {F} 08 {F} 09 {R}
+  note 03: caveat says the figure counts people who live here; "may not reflect actual residency" misreads it.
+  note 06/08: overstated-residents direction (5.2). note 07: asserts commercial/tourist focus (5.4).
+
+=== seed 2 | Q1 ===
+01 {T} 02 {T} 03 {T} 04 {F} 05 {T} 06 {T} 07 {F} 08 {T} 09 {T} 10 {F} 11 {T} 12 {T} 13 {R} 14 {R}
+  note 04: 64.6% is the whole-footprint ratio, not the clipped coverage (5.3). note 07/10: 1000x road-density collapse.
+
+=== seed 2 | Q2 ===
+01 {T} 02 {T} 03 {F} 04 {T} 05 {F} 06 {T} 07 {T} 08 {T} 09 {R} 10 {T}
+
+=== seed 2 | Q3 ===
+01 {F} 02 {F} 03 {T} 04 {T} 05 {T} 06 {T} 07 {T} 08 {T} 09 {F} 10 {F} 11 {R} 12 {R} 13 {F}
+  note 01: carries 64.6%. note 02/09/13: asserts commercial/tourist orientation. note 10: caveat says nothing about residents not being long-term.
+
+=== seed 3 | Q1 ===
+01 {F} 02 {T} 03 {T} 04 {F} 05 {T} 06 {F} 07 {F} 08 {F} 09 {F} 10 {F} 11 {F}
+  note 04: invented ratio/units. note 07/10/11: sparseness propagated from the 21.3 collapse. note 09: density called low.
+
+=== seed 3 | Q2 ===
+01 {F} 02 {F} 03 {T} 04 {F} 05 {T} 06 {F} 07 {F} 08 {F} 09 {F} 10 {F}
+  note: coarse-and-sparse verdict supported only by the collapsed road density and 64.7% (5.7).
+
+=== seed 3 | Q3 ===
+01 {F} 02 {T} 03 {F} 04 {F} 05 {F} 06 {F} 07 {T} 08 {F}
+
+=== seed 4 | Q1 ===
+01 {T} 02 {T} 03 {R} 04 {T} 05 {T} 06 {F} 07 {T} 08 {R} 09 {T} 10 {T} 11 {T} 12 {T} 13 {T}
+  note 06: 76 m2 read as large/sparse (5.6). note 13: undercount-of-daytime-activity direction, T.
+
+=== seed 4 | Q2 ===
+01 {F} 02 {T} 03 {F} 04 {T} 05 {T} 06 {F} 07 {T} 08 {F} 09 {F}
+  note: "coarse" verdict rests on 76 m2 read as large and 359 POIs read as sparse.
+
+=== seed 4 | Q3 ===
+01 {F} 02 {T} 03 {F} 04 {T} 05 {F} 06 {F} 07 {T} 08 {T} 09 {F} 10 {T} 11 {F}
+
+=== seed 5 | Q1 ===
+01 {T} 02 {T} 03 {T} 04 {T} 05 {T} 06 {F} 07 {T} 08 {F} 09 {T} 10 {T} 11 {F} 12 {T} 13 {T} 14 {T}
+  note 06: 3.743 km/km2 is road_length mis-bound as density. note 11: 50.3 per 1000 characterised as "modest"; values cannot support.
+
+=== seed 5 | Q2 ===
+01 {F} 02 {T} 03 {T} 04 {F} 05 {F} 06 {T} 07 {F} 08 {F}
+  note 06: 21.282 km/km2 is a correct conversion, T.
+
+=== seed 5 | Q3 ===
+01 {T} 02 {F} 03 {F} 04 {F} 05 {T} 06 {F} 07 {F} 08 {F} 09 {F}
+  note 03/06: 7,131 called low for a 17.6 ha catchment.
+
+=== seed 6 | Q1 ===
+01 {T} 02 {T} 03 {F} 04 {T} 05 {T} 06 {F} 07 {F} 08 {F}
+  note 03: own arithmetic error (per 1000 m2 vs per km2). note 07/08: brief accused of inconsistency (5.7).
+
+=== seed 6 | Q2 ===
+01 {T} 02 {T} 03 {T} 04 {F} 05 {T} 06 {T} 07 {T} 08 {T} 09 {T}
+
+=== seed 6 | Q3 ===
+01 {F} 02 {T} 03 {T} 04 {T} 05 {F} 06 {T} 07 {F} 08 {T} 09 {F} 10 {F} 11 {F} 12 {F} 13 {T} 14 {F}
+  note 05/14: hallucinated provenance ("spatial brief notes...low"). note 09: lower ppb as lack of residential amenities (5.5). note 10: per-category commercial POIs inverted against residential character.
+
+=== seed 7 | Q1 ===
+01 {T} 02 {R} 03 {F} 04 {T} 05 {T} 06 {F} 07 {T} 08 {F} 09 {F} 10 {F} 11 {F} 12 {T} 13 {F} 14 {F}
+  note 03: 64.7% as coverage. note 10: 359 POIs in 17.6 ha called sparse. note 11: fragmented/informal not supported by the values. note 13: 7,131 called lower than typical.
+
+=== seed 7 | Q2 ===
+01 {F} 02 {T} 03 {F} 04 {F} 05 {F} 06 {T} 07 {F} 08 {F}
+
+=== seed 7 | Q3 ===
+01 {F} 02 {F} 03 {F} 04 {F} 05 {F} 06 {F} 07 {F} 08 {F} 09 {F} 10 {F} 11 {F}
+  note 08: 21.28 m/km2 carried into the claim.
+
+=== seed 8 | Q1 ===
+01 {T} 02 {T} 03 {T} 04 {T} 05 {T} 06 {T} 07 {T} 08 {T}
+
+=== seed 8 | Q2 ===
+01 {T} 02 {T} 03 {T} 04 {T} 05 {T} 06 {T} 07 {T} 08 {T} 09 {T} 10 {T} 11 {T} 12 {T}
+
+=== seed 8 | Q3 ===
+01 {T} 02 {F} 03 {T} 04 {T} 05 {T} 06 {F} 07 {T} 08 {T} 09 {R} 10 {R} 11 {F}
+  note 02/06/11: commercial orientation asserted. note 09: conditioned echo.
+
+=== seed 9 | Q1 ===
+01 {T} 02 {T} 03 {T} 04 {T} 05 {T} 06 {T} 07 {F} 08 {F} 09 {T}
+  note 07/08: brief's values called inconsistent (5.7).
+
+=== seed 9 | Q2 ===
+01 {F} 02 {T} 03 {F} 04 {T} 05 {F} 06 {T} 07 {T} 08 {F} 09 {F} 10 {T} 11 {F}
+  note 09: "substantial and spaced out" contradicts 76 m2 / 63.3% coverage.
+
+=== seed 9 | Q3 ===
+01 {T} 02 {T} 03 {F} 04 {T} 05 {F} 06 {F} 07 {T} 08 {T} 09 {F} 10 {F} 11 {F} 12 {F} 13 {F}
+  note 12: endorses the premise as valid. note 13: modelled residential figure "not the actual population" contradicts glossary.
+
+=== seed 10 | Q1 ===
+01 {T} 02 {T} 03 {R} 04 {T} 05 {T} 06 {T} 07 {T} 08 {T} 09 {T} 10 {T} 11 {T}
+
+=== seed 10 | Q2 ===
+01 {T} 02 {T} 03 {T} 04 {T} 05 {T} 06 {T} 07 {T} 08 {R}
+
+=== seed 10 | Q3 ===
+01 {T} 02 {T} 03 {T} 04 {T} 05 {F} 06 {T} 07 {F} 08 {T} 09 {R} 10 {T} 11 {R}
+  note 05: caveat misread as "modelled figure may be lower than actual residents". note 07: 4.8 ppb called low (5.5).
+
+##### TOTALS: claims 322 | T 179 | F 123 | R 20 | H 0 | ECHO lines 0

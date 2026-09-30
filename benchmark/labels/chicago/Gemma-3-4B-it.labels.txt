@@ -1,0 +1,128 @@
+chicago_800m | Gemma-3-4B-it | labels | guide v1.0 | glossary sha256 fa7ee737a14a | persona sha256 e9ad438171dd
+Format: claim_number:label. ECHO lines omitted (unlabelled). Notes follow blocks where a rule requires one.
+
+=== seed 1 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:T 07:T 08:T 09:R 10:T 11:T 12:T 13:R 14:T 15:T 16:F 17:T
+ 16 F: "moderately well-served" for food access unsupported (zero grocery/supermarket)
+
+=== seed 1 | Q2 ===
+01:T 02:T 03:T 04:T 05:R 06:F 07:T 08:R 09:T 10:T 11:T 12:R 13:T 14:T 15:T 16:T 17:F 18:T 19:T
+ 06 F: fast food framed as "healthy prepared food" — characterisation brief cannot support
+ 17 F: implies unrecorded food retail may exist (absence rule)
+
+=== seed 1 | Q3 ===
+01:H 02:F 03:F 04:F 05:H 06:F 07:F 08:T 09:H 10:H 11:T 12:R 13:H
+ 02-04 F: supermarket presence framed as reading the data; 07 F: block_depth misread as widening shop access
+
+=== seed 2 | Q1 ===
+01:F 02:T 03:T 04:T 05:T 06:T 07:T 08:F 09:T 10:T 11:R 12:T 13:T
+ 01 F: "substantial population density" (5.2); 08 F: garden centre miscategorised as food option
+
+=== seed 2 | Q2 ===
+01:T 02:T 03:F 04:R 05:T 06:R 07:R 08:T 09:T 10:T 11:T 12:T 13:T 14:F 15:T 16:T 17:T 18:T 19:T 20:F 21:T 22:T
+ 03 F: garden centre as food retail; 14 F: coverage ratio -> food retail likelihood, unsupported; 20 F: implies unrecorded stores
+
+=== seed 2 | Q3 ===
+01:H 02:H 03:T 04:H 05:F 06:T 07:H 08:F 09:F 10:T 11:R 12:H 13:H 14:H 15:H 16:H 17:R
+ 07 H: supermarkets "slightly outside the catchment" invented; 08-09 F: block_depth misread; 13 H: "better than a food-desert zone" contradicts brief
+
+=== seed 3 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:F 07:T 08:T 09:F 10:T 11:R 12:T 13:T 14:T 15:T
+ 06 F: fast_food 1 read as 13; 09 F: "handful" of variety store/garden centre (1 each) + garden centre as food
+
+=== seed 3 | Q2 ===
+01:T 02:T 03:T 04:R 05:F 06:F 07:R 08:T 09:R 10:T 11:F 12:F 13:T 14:F 15:F 16:T 17:T 18:T 19:R
+ 05 F: fast food 13; 06 F: "handful"; 11/15 F: open space "limiting space" for retailers, self-contradictory; 12 F: road_length as walking radius; 14 F: building_count -> mixed-use, unsupported
+
+=== seed 3 | Q3 ===
+01:H 02:H 03:H 04:F 05:H 06:T 07:F 08:T 09:T 10:F 11:R 12:T 13:H 14:H 15:H 16:H
+ 04 F: supermarkets "implied by the catchment definition"; 10 F: block_depth 40 m misread as fill-in blocks share
+
+=== seed 4 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:T 07:T 08:T 09:T 10:T 11:T 12:T 13:T
+
+=== seed 4 | Q2 ===
+01:T 02:T 03:F 04:T 05:T 06:R 07:T 08:T 09:T 10:T 11:T 12:T 13:T 14:T 15:T 16:T 17:T 18:F
+ 03 F: fast food placed in a "grocery" category; 18 F: low resident count "underscores limited access" — non-sequitur (5.6)
+
+=== seed 4 | Q3 ===
+01:H 02:H 03:H 04:F 05:F 06:F 07:T 08:F 09:F 10:H 11:T 12:T 13:T 14:F 15:H 16:H 17:H 18:H
+ 04-06,08-09 F: supermarket access framed as supported by the data; 14 F: block_depth misread
+
+=== seed 5 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:T 07:T 08:T 09:T 10:T 11:T 12:T 13:T
+
+=== seed 5 | Q2 ===
+01:T 02:T 03:T 04:T 05:T 06:R 07:F 08:T 09:T 10:T 11:T 12:R 13:F 14:F 15:T 16:T 17:T 18:T 19:F
+ 07 F: "high population density"; 13 F: 0.197 called high building density/built-up; 14 F: grocery "might be located nearby"; 19 F: block_depth misread, presumes a grocery store
+
+=== seed 5 | Q3 ===
+01:H 02:T 03:R 04:F 05:F 06:R 07:F 08:F 09:R 10:T 11:T 12:R 13:R 14:T 16:H
+ 03/12 R: explicitly conditional, does not assert; 05 F: "brief doesn't specify how close these supermarkets are"; 07-08 F: block_depth misread
+
+=== seed 6 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:T 07:T 08:F 09:T 10:F 11:F
+ 08 F: garden centre as food; 10-11 F: "quite high" density / substantial concentration
+
+=== seed 6 | Q2 ===
+01:T 02:F 03:T 04:T 05:T 06:T 07:F 08:R 09:F 10:R 11:T 12:R 13:T 14:T 15:T
+ 02 F: high population density; 07 F: 8 of 119 POIs called a significant proportion; 09 F: 0.197 read as high built-up density not conducive to large stores
+
+=== seed 6 | Q3 ===
+01:H 02:T 03:H 04:F 05:F 06:H 07:F 08:F 09:F 10:H 11:H 12:H 14:F
+ 05 F: claims "explicit mention of supermarkets" in brief; 08 F: high density; 09 F: footprint (avg 176 m2) said to indicate space for supermarkets
+
+=== seed 7 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:T 07:T 08:T 09:T 10:T 11:T 12:F 13:T 14:T 15:T 16:T 17:T 18:T 19:T
+ 12 F: "substantial" population density
+
+=== seed 7 | Q2 ===
+01:T 02:T 03:T 04:F 05:R 06:T 07:T 08:T 09:T 10:T 11:T 12:T 13:R 14:T 15:R 16:F 17:T 18:T 19:R 20:T 21:T 22:T 24:T
+ 04 F: exhaustive "only one fast food outlet and a variety store" omits convenience 4; 16 F: road_length as radius
+
+=== seed 7 | Q3 ===
+01:T 02:T 03:T 04:T 05:H 06:T 07:R 08:T 09:R 10:T 11:T 12:T 13:R 14:T 15:T 17:T
+ 05 H: supermarket plausibly reachable, contradicts brief
+
+=== seed 8 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:T 07:T 08:F 09:T 10:R 11:F 12:T 13:F
+ 08 F: hardware store as food pathway; 11 F: "moderate accessibility to food retail"; 13 F: "large population density"
+
+=== seed 8 | Q2 ===
+01:T 02:T 03:F 04:F 05:F 06:T 07:T 08:T 09:R 10:R 11:T 12:F 13:F 14:T 15:T 16:T 17:T
+ 03-04 F: hardware as food, "high concentration"; 05/12 F: "food_market" category (1) invented; 13 F: implies unrecorded grocers; 10 R: outside-catchment is beyond the brief
+
+=== seed 8 | Q3 ===
+01:H 02:F 03:H 04:F 05:F 06:F 07:H 08:H 09:T 10:R 11:F 12:T 13:H 14:H 15:H 16:R
+ 04 F: "data confirms a walkable distance to supermarkets"; 06 F: high density; 11 F: block_depth misread
+
+=== seed 9 | Q1 ===
+01:T 02:T 03:T 04:T 05:T 06:T 07:T 08:T 09:T 10:T 11:T 12:F 13:F 14:T
+ 12 F: "quite high"; 13 F: residents relying on small residential structures for food access — unsupported
+
+=== seed 9 | Q2 ===
+01:T 02:F 03:T 04:R 05:T 06:T 07:T 08:T 09:T 10:T 11:R 12:T 13:T 14:R 15:T 16:T 17:T 18:R 19:T 20:T 21:T
+ 02 F: exhaustive "only one fast food and one variety store"
+
+=== seed 9 | Q3 ===
+01:H 02:T 03:F 04:H 05:F 06:H 07:F 08:H 09:R 10:H 11:R 12:T 13:R 14:H 15:R 16:H 17:H 18:H
+ 03 F: "brief explicitly states the presence of supermarkets"; 07 F: 119/16.7 -> "limited dominant supermarkets", invented derivation
+
+=== seed 10 | Q1 ===
+01:F 02:T 03:T 04:T 05:T 06:T 07:T 08:T 09:T 10:T 11:T 12:T 13:T 14:F 15:T
+ 01/14 F: "significant"/"high" population density
+
+=== seed 10 | Q2 ===
+01:T 02:T 03:F 04:R 05:R 06:T 07:R 08:T 09:T 10:T 11:R 12:F 13:F 14:R 15:T 16:T 17:R 18:T 19:F
+ 03 F: exhaustive "only one fast-food and a single variety store"; 12 F: open space "contributes to scarcity of retail"; 13 F: road_length 60,718 labelled a density; 19 F: high density
+
+=== seed 10 | Q3 ===
+01:T 02:F 03:T 04:H 05:F 06:F 07:T 08:H 09:T 10:R 11:F 12:H 13:R 14:T 15:R 16:H 17:H 18:R 20:H
+ 02 F: "data confirms the presence of supermarkets"; 05 F: 800 m + 119 POIs -> grocery within reach; 11 F: "data doesn't specify the type of supermarkets"
+
+=== TOTALS ===
+Claims labelled: 496 (ECHO lines excluded)
+T 290 | F 87 | R 58 | H 61
+By question:  Q1 (143): T122 F16 R5 H0
+              Q2 (192): T129 F32 R31 H0
+              Q3 (161): T39 F39 R22 H61

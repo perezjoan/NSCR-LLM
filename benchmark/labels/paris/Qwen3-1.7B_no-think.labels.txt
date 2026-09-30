@@ -1,0 +1,436 @@
+##### paris_400m | Qwen3-1.7B_no-think | LABELLED annotation sheet | guide v1.0 (glossary fa7ee737a14a, persona 42faa0374a4b) | labels: T (brief-true) F (brief-false) R (recall) H (hallucination) | ECHO lines are not claims
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 1 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is located in a densely populated area with a high population density and a relatively walkable environment.]
+02 {T} [The catchment area reaches within 400 meters of the point,]
+03 {T} [and the road network is dense, with 13427 meters of walkable streets.]
+04 {T} [The catchment area is about 315,207 square meters,]
+05 {T} [and the population density is 26,776 residents per square kilometer.]
+06 {T} [The spatial brief indicates that there are 971 points of interest (POIs) within the catchment,]
+07 {T} [including restaurants, cafes, bakeries, and other convenience services.]
+08 {T} [The poi_per_1000_residents is 115,]
+09 {T} [indicating a relatively high density of daily services.]
+10 {T} [The building coverage ratio is 58.1%,]
+11 {T} [and the average building footprint is 346 square meters,]
+12 {T} [with 16.9 residents per building,]
+13 {T} [suggesting a balanced mix of residential and commercial spaces.]
+14 {T} [While the area is walkable, with a dense road network and a high density of POIs,]
+15 {F} [there may still be gaps in certain categories, such as specific healthcare or leisure facilities.]  # leisure well represented (bars 38, cafes 47, theatre 4, cinema 2, parks 4, gardens 5)
+16 {T} [The overall mix of services is complete and balanced,]
+17 {F} [but the presence of some POIs is limited, particularly in certain categories like sports, arts, and specific leisure activities.]  # sports 7, sports_centre 2, fitness_centre 6; art 7, arts_centre 6
+18 {T} [The walkability is strong,]
+19 {T} [but the density of services is high,]
+20 {T} [making the area very accessible for daily needs.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 1 | Q2 ===
+01 {T} [Residents can meet most daily needs on foot here,]
+02 {T} [with a high density of POIs such as restaurants, cafes, bakeries, and convenience services.]
+03 {T} [The area is walkable, featuring a dense road network and a balanced mix of residential and commercial spaces.]
+04 {F} [However, there are gaps in specific categories like sports facilities, arts centers, and certain leisure activities.]  # arts_centre 6 is listed
+05 {T} [While the overall mix is complete and balanced,]
+06 {T} [the density of some services is limited, particularly in niche categories.]
+07 {T} [The area is highly accessible]
+08 {R} [but may require additional services in specific areas.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 1 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris,]  # 5.6: repeats Q3 premise; 26,776/km2 is high
+02 {H} [providing a bit of breathing room compared to the city's denser areas.]
+03 {H} [This can be beneficial for a young family seeking a more relaxed environment.]
+04 {T} [However, the high population density and dense road network suggest a very walkable but bustling environment.]
+05 {T} [While the area is accessible and has a balanced mix of services,]
+06 {F} [the limited density may mean fewer specialized services like sports facilities or niche leisure options.]
+07 {T} [The overall walkability and convenience make it suitable for daily needs,]
+08 {R} [but the lack of specific services could be a consideration for a family seeking a more specialized environment.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 2 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is well-served by daily services within a short walk.]
+02 {T} [The catchment area includes a variety of points of interest, such as restaurants, cafes, bakeries, pharmacies, and supermarkets,]
+03 {T} [with a total of 971 POIs.]
+04 {T} [These are distributed across the catchment,]
+05 {T} [and the POI density per 1000 residents is 115,]
+06 {T} [indicating a relatively high concentration of services.]
+07 {T} [The road density is high, with 42.6 km of roads per km²,]
+08 {T} [suggesting a well-connected network.]
+09 {T} [The building coverage ratio is 58.1%,]
+10 {T} [and the average building footprint is 346 m²,]
+11 {T} [indicating a mix of residential and commercial spaces.]
+12 {T} [The population density is high at 26,776 per km²,]
+13 {T} [suggesting a compact, densely populated area with good access to services.]
+14 {F} [However, the POI count is relatively low compared to the population size,]  # 5.4 ratio fallacy
+15 {F} [indicating a possible gap in service coverage.]
+16 {T} [Overall, the area is walkable,]
+17 {T} [with most daily needs accessible within a short distance.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 2 | Q2 ===
+01 {T} [Residents in this Parisian area can meet most daily needs on foot, including food, healthcare, and cultural services,]
+02 {T} [due to the high density of POIs and well-connected road networks.]
+03 {F} [However, the relatively low POI count compared to the population suggests a potential gap in service coverage,]
+04 {H} [particularly in less densely populated areas within the catchment.]  # invented sub-area structure
+05 {T} [While the population density and road density indicate a walkable environment,]
+06 {H} [the distribution of services may leave some areas underserved, especially in smaller or less densely populated blocks.]
+07 {T} [The presence of a few POIs in certain categories, such as sports or arts, indicates a mix of services]
+08 {F} [but also highlights possible gaps in accessibility.]
+09 {T} [Overall, the area is walkable]
+10 {R} [but may require targeted improvements in service distribution.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 2 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris,]
+02 {H} [providing more breathing space compared to the city's denser areas.]
+03 {T} [While the catchment includes a good mix of services,]
+04 {F} [the relatively low POI count and potential gaps in service distribution may affect accessibility for smaller families.]
+05 {T} [The high population density and road density suggest a walkable environment,]
+06 {F} [but the lower POI density could mean fewer local services,]  # 115 is very high
+07 {F} [which might impact a young family's needs for convenience and variety.]
+08 {R} [However, the presence of essential services and a compact layout makes it suitable for families seeking a balance between walkability and space.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 3 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is well-served by daily services within a short walk.]
+02 {T} [The catchment area includes a diverse mix of points of interest, such as restaurants, cafes, bakeries, and pharmacies,]
+03 {T} [with a total of 971 POIs.]
+04 {T} [The POI per 1000 residents is 115,]
+05 {T} [indicating a high density of services.]
+06 {T} [The road density is high, with 42.6 km of road per km²,]
+07 {F} [and the catchment area is 315 km²,]  # unit catastrophe: 315,207 m2 = 0.315 km2
+08 {T} [supporting a population of 8,440 residents.]
+09 {T} [While the road length and POI density suggest a walkable environment,]
+10 {F} [the presence of some gaps, such as less coverage for certain categories like sports or arts, indicates areas where services might be lacking.]
+11 {T} [Overall, the location is highly walkable for daily needs.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 3 | Q2 ===
+01 {T} [Residents can meet most daily needs on foot here,]
+02 {T} [with a high density of services such as restaurants, cafes, pharmacies, and shops.]
+03 {T} [The POI per 1000 residents is 115,]
+04 {T} [indicating a well-served area.]
+05 {F} [However, some gaps exist, particularly in categories like sports, arts, and leisure,]
+06 {R} [which may require additional services.]
+07 {T} [The road density and catchment area suggest a walkable environment,]
+08 {F} [but the presence of fewer services in these areas indicates a potential shortfall.]
+09 {T} [Overall, the location is highly walkable for most daily needs]
+10 {R} [but may require some expansion in specific service categories.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 3 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris with breathing room,]
+02 {H} [which could suit a young family seeking space.]
+03 {T} [The high population density per square kilometer (26,776)]
+04 {F} [and moderate building density (500 buildings)]  # 58.1% coverage is high, not moderate (5.3)
+05 {T} [suggest a walkable environment with accessible services.]
+06 {F} [However, the lower density may limit the availability of certain amenities, such as sports facilities or arts venues,]
+07 {R} [which could be a consideration for a family seeking a balance between space and convenience.]
+08 {T} [Overall, it is walkable for most daily needs]
+09 {R} [but may require some adjustments in terms of service diversity.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 4 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is within a walking distance of 400 meters from the center of the catchment,]
+02 {T} [with a catchment area of 315,207 m².]
+03 {T} [The population density is 26,776 residents per km²,]
+04 {T} [and the catchment includes 500 buildings]
+05 {T} [with an average footprint of 346 m²,]
+06 {T} [giving a building coverage ratio of 58.1%.]
+07 {T} [The road density is 42.597 km per km²,]
+08 {T} [indicating a highly walkable environment.]
+09 {T} [In terms of daily services, the catchment contains 971 points of interest,]
+10 {T} [with 79 restaurants,]
+11 {F} [47 fast food places,]  # 47 is cafe; fast_food is 30 (5.5 misbind)
+12 {T} [38 bars,]
+13 {T} [and 30 fast food establishments, among others.]
+14 {T} [These include a variety of amenities like cafes, bakeries, and pharmacies.]
+15 {T} [The poi_per_1000_residents ratio is 115,]
+16 {T} [suggesting a relatively complete mix of services.]
+17 {F} [However, the catchment area is relatively large,]  # 0.315 km2 / 400 m catchment is small
+18 {T} [and the population is 8,440,]
+19 {F} [which may mean that some services are spread out.]
+20 {T} [The road length is 13,427 m,]
+21 {T} [and the road density is high,]
+22 {T} [suggesting a well-connected network.]
+23 {T} [Overall, the location is walkable for daily needs,]
+24 {T} [but the density of services may mean that some areas are accessible only via a few steps, and others may require a bit more walking.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 4 | Q2 ===
+01 {T} [Residents can meet their daily needs on foot here,]
+02 {T} [as the catchment includes a diverse mix of services such as restaurants, cafes, pharmacies, and shops.]
+03 {T} [The high road density and presence of 971 POIs suggest a well-connected and service-rich environment.]
+04 {F} [However, the relatively large catchment area and the population of 8,440 may mean that some services are spread out,]
+05 {F} [requiring a bit more walking.]
+06 {T} [The presence of a variety of amenities, including a mix of food, retail, and healthcare services, indicates a balanced mix.]
+07 {R} [However, the location may lack some specialized services, such as advanced healthcare or niche leisure options,]  # no hospital listed; defensible
+08 {T} [and the density of services might mean that some areas are accessible only via a few steps, while others require more walking.]
+09 {T} [Overall, the location is walkable for most daily needs]
+10 {R} [but may have minor gaps in specialized services.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 4 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris with breathing space,]
+02 {R} [which could suit a young family seeking a balanced lifestyle.]
+03 {T} [The walkable environment and diverse services suggest it is accessible for daily needs,]
+04 {F} [but the large catchment area and relatively low population density may mean some services are spread out.]
+05 {T} [While the area is walkable for most needs,]
+06 {R} [it may lack specialized services or require more walking for certain destinations.]
+07 {H} [The lower density and calmness offer space and flexibility,]
+08 {R} [but families may need to consider the distribution of services and the potential need for slightly more walking for certain destinations.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 5 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is within a network catchment of 400 meters,]
+02 {T} [with a catchment area of 315,207 m².]
+03 {T} [The population density is 26,776 residents per km²,]
+04 {T} [and the population is 8,440.]
+05 {T} [The catchment includes 500 buildings]
+06 {T} [with a total footprint of 172,751 m²,]
+07 {T} [and an average building footprint of 346 m².]
+08 {F} [The road density is 42,597 m/km,]  # wrong unit (m per km2)
+09 {F} [and there are 134.27 km of walkable streets.]  # 13,427 m = 13.4 km
+10 {T} [The catchment contains 971 points of interest (POIs),]
+11 {T} [with 79 restaurants,]
+12 {F} [47 fast food spots,]  # cafe 47
+13 {T} [38 bars,]
+14 {T} [and 30 fast food establishments.]
+15 {T} [There are 113 clothing shops,]
+16 {T} [82 bicycle parking spots,]
+17 {F} [and 30 bakeries.]  # bakery 10
+18 {T} [The POI density is 115 per 1000 residents,]
+19 {T} [indicating a relatively complete mix of services.]
+20 {T} [While the catchment is densely populated and has a high road density,]
+21 {F} [the POI count is moderate.]
+22 {T} [The presence of restaurants, cafes, and other essential services suggests that basic daily needs are accessible.]
+23 {F} [However, the POI density is lower than expected,]
+24 {F} [and some categories like entertainment or specialty shops are underrepresented.]
+25 {T} [The road network is well-developed,]
+26 {F} [but the catchment area is relatively large,]
+27 {F} [which may mean some services are not within a short walk.]  # everything in the catchment is within 400 m
+28 {T} [Overall, the area is walkable]
+29 {F} [but has some gaps in service diversity.]  # 120+ categories
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 5 | Q2 ===
+01 {T} [Residents can meet their basic daily needs on foot, including food (restaurants, cafes, bakeries), healthcare (pharmacies, dentists), and essential services like retail and public amenities.]
+02 {F} [However, the POI density is lower than expected,]
+03 {F} [indicating a potential gap in access to specialty shops, entertainment, and leisure facilities.]
+04 {T} [The catchment is well-connected with a high road density,]
+05 {F} [but the relatively large catchment area may mean some services are not within a short walk.]
+06 {T} [The area is walkable]
+07 {F} [but lacks diversity in certain service categories,]
+08 {R} [and while the mix is complete, it is not fully optimized for all daily needs.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 5 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris with breathing space,]
+02 {H} [which could be beneficial for a young family seeking a more relaxed environment.]
+03 {F} [However, the catchment area is relatively large,]
+04 {T} [and while the road network is well-developed,]
+05 {F} [the POI density is moderate,]
+06 {F} [suggesting some gaps in service diversity.]
+07 {T} [The area is walkable]
+08 {F} [but may not fully meet the needs of a family requiring a higher density of amenities.]
+09 {H} [While it offers a peaceful setting,]
+10 {H} [it may lack the vibrancy and accessibility of more central areas,]  # point is central Paris; 79 restaurants, 38 bars
+11 {R} [which could be a consideration for a young family.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 6 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is located in a densely populated area with a high population density and a significant number of walkable streets.]
+02 {T} [The catchment area reaches within 400 meters of the point,]
+03 {T} [and the road density is high,]
+04 {T} [indicating a well-connected environment.]
+05 {T} [The catchment area covers 315,207 m²,]
+06 {T} [with a population density of 26,776 per km²,]
+07 {T} [suggesting a compact urban layout.]
+08 {T} [Daily services are relatively well-represented, with 971 points of interest (POIs) within the catchment,]
+09 {T} [including restaurants, cafes, bakeries, and shops.]
+10 {T} [The poi_per_1000_residents ratio is 115,]
+11 {T} [indicating a relatively high concentration of services.]
+12 {T} [The building coverage ratio is 58.1%,]
+13 {T} [and the average building footprint is 346 m²,]
+14 {T} [suggesting a mix of residential and commercial spaces.]
+15 {T} [The road density is 42.597 km per km²,]
+16 {T} [which is high,]
+17 {T} [and the road length is 13,427 m.]
+18 {T} [However, the catchment includes a mix of residential and commercial areas,]
+19 {T} [and while the walkability is high,]
+20 {F} [there are gaps in certain categories, such as specific leisure or cultural facilities.]  # arts_centre 6, theatre 4, cinema 2, art 7, books 7
+21 {T} [The presence of a variety of POIs suggests a relatively complete mix of services,]
+22 {F} [but some areas may require walking longer than the 400-meter network distance.]  # contradicts retrieval method
+23 {T} [Overall, the location is walkable for most daily needs,]
+24 {T} [but some services may require a bit more walking.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 6 | Q2 ===
+01 {T} [Residents can meet most daily needs on foot here,]
+02 {T} [as the catchment area includes a wide range of services such as restaurants, cafes, shops, and essential amenities like pharmacies, bakeries, and public facilities.]
+03 {T} [The high road density and presence of over 900 POIs suggest a well-connected and diverse mix of services.]
+04 {F} [However, there are gaps in specific categories, such as cultural or leisure facilities,]
+05 {F} [and some services may require walking beyond the 400-meter network distance.]
+06 {T} [The mix is relatively complete]
+07 {R} [but may lack in certain specialized or niche services.]
+08 {T} [Overall, the location is highly walkable for most daily needs,]
+09 {R} [with minor gaps in specific service types.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 6 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris with breathing room,]
+02 {H} [which could be beneficial for a young family seeking a more relaxed living environment.]
+03 {T} [The high population density and walkable infrastructure suggest a vibrant yet manageable lifestyle.]
+04 {R} [However, the mix of residential and commercial areas may limit access to certain specialized services,]
+05 {F} [and the presence of a few gaps in cultural or leisure facilities could affect the quality of life for families.]
+06 {T} [Overall, it is walkable for most daily needs,]
+07 {R} [but the balance between density and space may be a consideration for a young family.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 7 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is well-served by daily services within a short walk.]
+02 {T} [The catchment area covers 315,207 m²,]
+03 {T} [with a population density of 26,776 residents per km²,]
+04 {T} [and a road density of 42.597 km per km².]
+05 {T} [The catchment includes 500 buildings]
+06 {T} [with a total footprint of 172,751 m²,]
+07 {T} [and a building coverage ratio of 58.1%.]
+08 {T} [The POI (points of interest) count is 971,]
+09 {T} [with 79 restaurants,]
+10 {F} [47 fast food spots,]  # cafe 47
+11 {T} [38 bars,]
+12 {T} [and several other amenities.]
+13 {T} [The poi_per_1000_residents ratio is 115,]
+14 {T} [indicating a dense mix of services.]
+15 {T} [While the area is well-connected with walkable streets and a high density of services,]
+16 {F} [there may be gaps in certain categories like sports facilities, entertainment, or specific services, depending on the block depth and network catchment.]  # sports/entertainment listed; block_depth misused
+17 {T} [Overall, the location is highly walkable for daily needs.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 7 | Q2 ===
+01 {T} [Residents can meet most daily needs on foot here,]
+02 {T} [with a high density of amenities such as restaurants, cafes, bars, and shops.]
+03 {T} [The catchment includes a robust network of walkable streets,]
+04 {T} [a population density of 26,776 residents per km²,]
+05 {T} [and a strong presence of POIs, including 79 restaurants,]
+06 {F} [47 fast food spots,]
+07 {T} [and a variety of other services.]
+08 {F} [However, there may be gaps in certain categories, such as sports facilities, entertainment options, and specific services like healthcare or advanced retail.]  # pharmacy 9, dentist 6, doctors 5; clothes 113, jewelry 19, optician 20
+09 {T} [The mix is balanced]
+10 {R} [but may require closer attention to ensure all daily needs are fully accessible within the network distance of 400 meters.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 7 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris with breathing room,]
+02 {H} [which could suit a young family seeking a more relaxed environment.]
+03 {T} [The high population density (26,776 residents per km²)]
+04 {T} [and robust network of walkable streets suggest a well-connected area with accessible daily services.]
+05 {H} [However, the lower density and quieter corner may provide more space and less congestion compared to the city's more bustling areas.]
+06 {T} [While the catchment includes a good mix of amenities,]
+07 {R} [there may be gaps in specialized services or facilities that a family might need.]
+08 {H} [Overall, it offers a balanced blend of accessibility and tranquility,]
+09 {R} [but families may need to consider the trade-off between space and proximity to essential services.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 8 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is well-served by daily services within a short walk.]
+02 {T} [The catchment area reaches 315,207 m²,]
+03 {T} [with a population density of 26,776 per km²,]
+04 {T} [indicating a dense urban environment.]
+05 {F} [The road density is 42.597 m per km²,]  # 42,597 m per km2 (or 42.6 km per km2)
+06 {T} [and there are 500 buildings]
+07 {T} [with a total footprint of 172,751 m²,]
+08 {T} [averaging 346 m² per building.]
+09 {T} [The building coverage ratio is 58.1%,]
+10 {T} [suggesting a mix of residential and commercial spaces.]
+11 {T} [Points of interest (POIs) within the catchment include restaurants, cafes, bakeries, and other essential services,]
+12 {T} [with a POI per 1000 residents of 115,]
+13 {T} [indicating a relatively complete mix of services.]
+14 {T} [The road length of 13,427 m suggests a well-connected network,]
+15 {T} [and the network catchment radius of 400 m ensures most daily needs are accessible.]
+16 {F} [However, the POI count (971) is relatively low compared to the population size (8,440),]  # ratio fallacy
+17 {F} [suggesting a need for further expansion in certain service areas.]
+18 {T} [Overall, the area is walkable]
+19 {R} [but may require minor improvements in service accessibility.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 8 | Q2 ===
+01 {T} [Residents can meet most daily needs on foot here,]
+02 {T} [with a well-connected network of roads and a diverse mix of points of interest (POIs) such as restaurants, cafes, and shops.]
+03 {T} [The POI per 1000 residents is 115,]
+04 {T} [indicating a relatively complete service mix.]
+05 {F} [However, the POI count (971) is lower than the population size (8,440),]  # ratio fallacy
+06 {F} [suggesting a potential gap in accessibility for certain services.]
+07 {T} [The catchment area is dense and walkable,]
+08 {R} [but minor improvements in service coverage could enhance walkability for all residents.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 8 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris with breathing room,]
+02 {H} [which could suit a young family seeking space.]
+03 {T} [The dense urban environment is balanced by a relatively walkable catchment area with a diverse mix of services, including restaurants, cafes, and shops.]
+04 {H} [However, the lower density and quieter environment may limit access to some amenities compared to more bustling areas.]
+05 {F} [While the POI count is moderate,]
+06 {T} [the well-connected road network and dense population density suggest a walkable lifestyle.]
+07 {F} [However, the relatively low POI count may mean some services are less accessible,]
+08 {R} [so a young family might need to consider proximity to key amenities.]
+09 {H} [Overall, it offers a balanced mix of walkability and space.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 9 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is within a 400-meter walking distance from the catchment area.]
+02 {T} [The catchment covers 315,207 m²,]
+03 {T} [with a population of 8,440 residents.]
+04 {T} [The area has a high population density of 26,776 residents per km²]
+05 {T} [and a road density of 42,597 m per km²,]
+06 {T} [indicating a well-connected urban environment.]
+07 {T} [The catchment includes 500 buildings]
+08 {T} [with a total footprint of 172,751 m²,]
+09 {T} [and the building coverage ratio is 58.1%,]
+10 {T} [suggesting a mix of residential and commercial spaces.]
+11 {T} [Points of interest (POIs) within the catchment are relatively dense,]
+12 {T} [with 971 POIs across 500 buildings,]
+13 {T} [averaging 115 POIs per 1,000 residents.]
+14 {T} [This includes a variety of services such as restaurants, cafes, bakeries, pharmacies, and schools.]
+15 {F} [However, the POI density is lower than expected for a high-density urban area,]
+16 {F} [and some categories like sports facilities, cinemas, and theatres are underrepresented.]  # sports_centre 2, fitness_centre 6, cinema 2, theatre 4 all listed
+17 {T} [While the area is walkable for most daily needs,]
+18 {H} [there may be gaps in access to certain services, particularly in the lower end of the catchment.]  # invented sub-area
+19 {R} [The overall mix is balanced but not fully comprehensive.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 9 | Q2 ===
+01 {T} [Residents can meet most daily needs on foot in this Parisian location,]
+02 {T} [as the catchment includes a diverse range of services such as restaurants, cafes, pharmacies, schools, and shops.]
+03 {T} [The POI density is relatively high, with 115 POIs per 1,000 residents,]
+04 {T} [suggesting a well-balanced mix of services.]
+05 {F} [However, the POI density is lower than expected for a high-density urban area,]
+06 {F} [and some categories like sports facilities, cinemas, and theatres are underrepresented.]
+07 {T} [Additionally, while the road network is well-connected,]
+08 {H} [the lower end of the catchment shows some gaps in service accessibility.]
+09 {T} [The area is walkable for most needs]
+10 {R} [but may lack comprehensive coverage in certain service categories.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 9 | Q3 ===
+01 {H} [The location offers a calmer, lower-density corner of Paris with breathing space,]
+02 {R} [which could be beneficial for a young family seeking a balanced lifestyle.]
+03 {T} [The catchment includes essential services like schools, pharmacies, and shops,]
+04 {T} [and the walkable environment supports daily needs.]
+05 {H} [However, the lower end of the catchment may lack some services,]
+06 {F} [and the overall POI density is slightly below expectations.]
+07 {T} [While the area is walkable and well-connected,]
+08 {F} [it may not offer the highest concentration of services for a family.]  # 115/1000 is very high
+09 {H} [The calmness and space could be a plus,]
+10 {H} [but the need for more comprehensive service coverage in the lower end may be a consideration.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 10 | Q1 ===
+01 {T} [The point in Paris, Île-de-France, is within a network catchment of 400 meters,]
+02 {T} [with a catchment area of 315,207 m²]
+03 {T} [and a population of 8,440 residents.]
+04 {T} [The area is densely populated, with a population density of 26,776 residents per km²]
+05 {T} [and a road density of 42.597 km per km².]
+06 {T} [The catchment includes 971 points of interest (POIs),]
+07 {T} [with 115 POIs per 1000 residents,]
+08 {T} [indicating a relatively high density of daily services.]
+09 {T} [Key services within walking distance include restaurants, cafes, bakeries, supermarkets, and pharmacies.]
+10 {T} [There are 500 buildings]
+11 {T} [with a total footprint of 172,751 m²,]
+12 {T} [and a building coverage ratio of 58.1%,]
+13 {T} [suggesting a well-developed infrastructure.]
+14 {T} [The road length is 13,427 m,]
+15 {T} [and the road density is high,]
+16 {T} [indicating a walkable environment.]
+17 {F} [However, the POI density is lower than expected, with only 115 POIs per 1000 residents,]  # contradicts own claim 08; 115 is very high
+18 {F} [suggesting some gaps in the availability of services.]
+19 {T} [While the area is walkable,]
+20 {F} [there may be a need to address the lower density of POIs to ensure all daily needs are met.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 10 | Q2 ===
+01 {T} [Residents can meet most daily needs on foot, including food (restaurants, cafes, bakeries, supermarkets, pharmacies), healthcare (pharmacies, dentists, dentists), education (kindergarten, school), and leisure (arts centers, theaters, cultural venues).]  # all listed categories exist; duplicate "dentists" and pharmacies-under-food are slips, content recoverable
+02 {T} [The area is walkable with a high road density and a well-developed infrastructure.]
+03 {F} [However, the lower POI density (115 POIs per 1000 residents) suggests some gaps in service accessibility,]
+04 {F} [particularly in terms of retail, leisure, and community facilities.]  # retail abundant (clothes 113 etc.)
+05 {T} [While the environment is walkable,]
+06 {R} [there may be a need to enhance the distribution of POIs to ensure all daily needs are met efficiently.]
+
+=== paris_400m | Qwen3-1.7B (no-think) | seed 10 | Q3 ===
+01 {H} [This location offers a calmer, lower-density environment with breathing space,]
+02 {R} [which could be beneficial for a young family seeking a balanced lifestyle.]
+03 {H} [The walkable infrastructure and accessible daily services suggest a good balance of convenience and relaxation.]  # endorses the "relaxation" premise
+04 {F} [However, the lower POI density (115 POIs per 1000 residents) may limit the availability of certain services,]
+05 {F} [potentially affecting the efficiency of daily activities.]
+06 {T} [While the area is walkable and well-integrated,]
+07 {H} [it may require careful planning to ensure all needs are met without compromising the desired calm and space.]

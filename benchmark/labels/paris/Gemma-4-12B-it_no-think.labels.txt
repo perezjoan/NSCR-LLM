@@ -1,0 +1,153 @@
+##### paris_400m | Gemma-4-12B-it_no-think | LABELS | guide v1.0 | glossary fa7ee737a14a | persona 42faa0374a4b
+##### Labelled offline against the frozen brief only. One label per claim, in order. Notes only where a call is non-obvious.
+
+=== seed 1 | Q1 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T
+11 F  (note: "several supermarkets" — brief lists 2; characterisation unsupported)
+12 T  (note: "prep schools" plural for count 1 read as category enumeration; no number asserted)
+13 T  14 T
+15 F  (note: "resident count might suggest a less populated area" — 8,440 in 0.315 km2 is not low; hedge does not rescue, 5.2)
+16 T
+
+=== seed 1 | Q2 === (18)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T
+11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T
+
+=== seed 1 | Q3 === (13)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T
+
+=== seed 2 | Q1 === (13)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T
+
+=== seed 2 | Q2 === (15)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T
+14 R  (note: speculative, uncontradicted)
+15 T
+
+=== seed 2 | Q3 === (13)
+01 T  02 T  03 T  04 T
+05 T  (note: "vertically oriented" derived from 16.9 people/building on 346 m2 footprints; defensible derivation)
+06 R  07 T  08 T  09 T  10 T
+11 R  (note: conditional on suburban definition of space)
+12 R  (note: defusing reinterpretation of the premise, 5.6)
+13 R
+
+=== seed 3 | Q1 === (19)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T
+12 T  (note: "a kindergarten, college, and prep school" read as category enumeration, not count 1; borderline)
+13 F  (note: population "relatively small (8,440)" — 5.2)
+14 T  15 T  16 T  17 T  18 T  19 T
+
+=== seed 3 | Q2 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T
+12 F  (note: post boxes (10) described as "limited to a few scattered points" — values cannot support)
+13 T  14 T
+
+=== seed 3 | Q3 === (12)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T
+08 F  (note: avg building footprint 346 m2 read as evidence of small housing units — wrong binding; footprint is not unit size)
+09 R  10 T  (note: same enumeration reading as Q1-12)
+11 R  12 T
+
+=== seed 4 | Q1 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T
+
+=== seed 4 | Q2 === (15)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+13 R  14 T  15 T
+
+=== seed 4 | Q3 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T
+
+=== seed 5 | Q1 === (17)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+13 F  (note: "resident count is relatively low (8,440)" — 5.2)
+14 T  15 T  16 T  17 T
+
+=== seed 5 | Q2 === (13)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+13 R
+
+=== seed 5 | Q3 === (12)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+
+=== seed 6 | Q1 === (19)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T  19 T
+
+=== seed 6 | Q2 === (18)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T
+12 F  (note: 5 schools + 3 kindergartens "may be insufficient" for 8,440 residents in 0.315 km2 — values cannot support; hedge does not rescue)
+13 T  14 T  15 T  16 T  17 T
+18 R
+
+=== seed 6 | Q3 === (15)
+01 T  02 T  03 T  04 T  05 T
+06 R  07 T  08 T  09 T  10 T  11 T
+12 F  (note: education "sparse, with only five schools" — same call as Q2-12; the count is right, the characterisation is not)
+13 T  14 T  15 T
+
+=== seed 7 | Q1 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T
+11 F  (note: population "relatively small (8,440)" — 5.2)
+12 T  13 T  14 T  15 T  16 T
+
+=== seed 7 | Q2 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T
+07 F  (note: "several supermarkets" — brief lists 2)
+08 T  09 T  10 T  11 T
+12 F  (note: "residential population is relatively small" — 5.2)
+13 T  14 T
+
+=== seed 7 | Q3 === (12)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T
+11 R  12 T
+
+=== seed 8 | Q1 === (26)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T  16 T  17 T  18 T
+19 F  (note: "a greengrocer" — brief lists 3)
+20 F  (note: "a butcher" — brief lists 2)
+21 T  22 T  23 T  24 T  25 T  26 T
+
+=== seed 8 | Q2 === (16)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T
+11 F  (note: "post offices are present" — brief lists post_box 10, no post office; 5.5 misbind)
+12 T  13 T  14 T  15 T  16 T
+
+=== seed 8 | Q3 === (17)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T
+11 R  12 T  13 T  14 T  15 T  16 T  17 T
+
+=== seed 9 | Q1 === (20)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T  15 T
+16 F  (note: bicycle_parking (82) rendered as generic "bicycles" — 5.5)
+17 T  18 T
+19 R  20 T
+
+=== seed 9 | Q2 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T
+
+=== seed 9 | Q3 === (11)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T
+11 R
+
+=== seed 10 | Q1 === (17)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T
+13 F  (note: "residential population is modest" — 5.2)
+14 T  15 T  16 T
+17 R  (note: "transit-oriented" is outside the brief; plausible for central Paris, uncontradicted)
+
+=== seed 10 | Q2 === (14)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T  12 T  13 T  14 T
+
+=== seed 10 | Q3 === (13)
+01 T  02 T  03 T  04 T  05 T  06 T  07 T  08 T  09 T  10 T  11 T
+12 R  13 T
+
+##### General note: "within a 400-meter radius" (frequent) labelled T as a loose reference to the 400 m network distance; the guide does not fix this phrasing as a misread. No ECHO lines in this file.
+
+##### TOTALS
+Claims: 462
+T  429  (92.9%)
+F   16  ( 3.5%)
+R   17  ( 3.7%)
+H    0  ( 0.0%)

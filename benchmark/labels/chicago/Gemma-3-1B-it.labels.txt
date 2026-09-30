@@ -1,0 +1,53 @@
+chicago_800m | Gemma-3-1B-it | labels | guide version 1.0 | glossary sha256 fa7ee737a14a | persona sha256 e9ad438171dd
+Labels in claim order per section (ECHO lines excluded).
+
+seed 1 | Q1: T T F F
+seed 1 | Q2: T T T T T T R T T F R T F F R T T T T T F T R T T T
+seed 1 | Q3: R H H H H H F H R H R H H T
+
+seed 2 | Q1: T T T R T F F F F F T T F T
+seed 2 | Q2: T T F R T T T R F T T T F F R T R T F T R T F F T T R
+seed 2 | Q3: H H H H R H H H R H H R R
+
+seed 3 | Q1: T T T F F T F T F T T T T F T
+seed 3 | Q2: T F F F F F T R F T F T T T F F T T T F F T F T F
+seed 3 | Q3: H H H H R R R R R R R R R R H H
+
+seed 4 | Q1: T T T F F F T T T T T
+seed 4 | Q2: T T T T F R F R F F T T T T T T T R R F T T R
+seed 4 | Q3: H H R R R R R H R R H H R R
+
+seed 5 | Q1: T F T F T F F F F T T T F F
+seed 5 | Q2: T T T T T F F T F R T F T T F T T R T        (claims 01-18, 21)
+seed 5 | Q3: H H H H R H H R R R R T R R T H R H R R
+
+seed 6 | Q1: T T T F F F F F F T T T F
+seed 6 | Q2: T T T F F F F F T F F F T T T R R R T T R T
+seed 6 | Q3: R H R H H H H R H T R R H R R R R R
+
+seed 7 | Q1: F F F F T
+seed 7 | Q2: T T F T F T F T R R F F F T T F T R R T T R R R
+seed 7 | Q3: T H R H H H H H R H H R R R H R H R R R
+
+seed 8 | Q1: T F F F
+seed 8 | Q2: T T T F T T T T F F F F F T R T T R T R R T T T R        (claims 01-24, 26)
+seed 8 | Q3: H T H R H H H H T R R H H H T
+
+seed 9 | Q1: T F T F T T F T T R
+seed 9 | Q2: T T F T T R F F F R T F T F F T T T T T T F R
+seed 9 | Q3: H H R H H H R R H R H H H T H H R R R        (claims 01-17, 19, 20)
+
+seed 10 | Q1: T T T F T F T T T T T T
+seed 10 | Q2: T T T T T T T T F T T F T R R T T R T F T T T R R R R
+seed 10 | Q3: H H H R R H R H R R H H
+
+Selected notes:
+- s1 Q1 03-04: people_per_building 4.9 misbound as population (16 people) -> F.
+- s1 Q3 07, s7 Q1 04, s7 Q2 03/05/07: convenience stores relabelled as supermarkets / "3 grocery stores" -> F (brief has none).
+- s3 Q1 05, s3 Q2 05/15-16, s5 Q1 02, s9 Q1 02, s9 Q2 07: road_length_m 60718 misread as distance/radius/footprint -> F.
+- s3 Q1 09/14, s3 Q2 02/23, s5 Q1 14, s5 Q2 09: "high population density" / 7128 per km2 -> F per 5.2.
+- s4 Q1 04-06, s4 Q2 05/07/09: 43 convenience, 11 fast food, catchment area as retail space -> F.
+- s6 Q1/Q2, s8 Q1: fabricated footprints (40718, 296328), 1455 buildings as fast food, 16 locations, 13,645 m2, 49 residents, poi_per_1000 = 4.9 -> F.
+- All Q3 claims repeating/building on the supermarket premise -> H; generic statements about what supermarkets offer -> R; s7 Q3 10 "largely downtown" -> H (point is West Side, not the Loop).
+- s4 Q3 13-14 carry braces but are questions; labelled R (no assertion) - segmentation noted.
+- ECHO lines: 35, unlabelled.
