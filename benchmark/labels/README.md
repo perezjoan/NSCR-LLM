@@ -13,8 +13,7 @@ paper. Where there is no such block, count the labels directly.
 ## File formats
 
 The 48 files were produced in separate sessions and use six layouts. All carry the same
-information; a consolidation script is a planned addition (see the checklist in the root
-README). The layouts are:
+information. The layouts are:
 
 **A. Full sheet with labels in place** (claim text retained, optional `#` note after
 the claim):
