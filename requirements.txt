@@ -1,0 +1,36 @@
+# Pinned environment for code/network_catchment_demo.ipynb
+#
+# Versions are those reported by pip in the Google Colab sessions that produced
+# the paper's materials (Python 3.12, Linux x86_64, CUDA 12.8 GPU runtime):
+#   - 22-25 June 2026: Stage 1 session that generated the three frozen briefs
+#   - 7 and 28 July 2026: Stage 1 re-check and Stage 2/3 benchmark sessions
+# The Stage 1 packages were identical in June and July. For Stage 2, the pins
+# below are those of the last benchmark session (28 July 2026); runs earlier in
+# the 16-28 July window may have used the preceding patch releases noted inline.
+#
+# Install:
+#   pip install -r requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cu128
+
+# --- Stage 1: network catchment, open-data retrieval, spatial brief ---
+osmnx==2.1.0
+networkx==3.6.1
+geopandas==1.1.3
+shapely==2.1.2
+pyproj==3.7.2
+pyogrio==0.12.1
+rasterio==1.5.0
+affine==2.4.0
+numpy==2.0.2
+pandas==2.2.2
+requests==2.32.4
+ipyleaflet==0.20.0
+ipywidgets==7.7.1
+
+# --- Stage 2 and 3: local inference with open-weight models (4-bit NF4) ---
+torch==2.11.0              # Colab build 2.11.0+cu128
+transformers==5.14.1       # Gemma 4 needs >=5.10.1; Colab shipped 5.13.1 before the upgrade
+accelerate==1.14.0
+bitsandbytes==0.50.0       # 0.49.2 in the June session
+huggingface_hub==1.25.1    # Colab shipped 1.23.0 before the upgrade
+tokenizers==0.22.2
+safetensors==0.8.0
