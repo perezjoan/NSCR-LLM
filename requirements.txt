@@ -9,7 +9,7 @@
 # the 16-28 July window may have used the preceding patch releases noted inline.
 #
 # Install:
-#   pip install -r requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128
 
 # --- Stage 1: network catchment, open-data retrieval, spatial brief ---
 osmnx==2.1.0
