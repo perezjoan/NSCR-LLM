@@ -1,0 +1,45 @@
+NSCR-LLM
+Network-based Spatial Context Retrieval for Open-weight LLMs:
+A Faithfulness Benchmark for Grounded Geographic Reasoning
+https://github.com/perezjoan/NSCR-LLM
+
+Copyright 2026 Joan Perez (ORCID 0000-0003-3003-0895)
+Urban Geo Analytics, https://urbangeoanalytics.com
+Independent research and consulting practice focused on geospatial
+modeling, AI for cities, and open-source urban analytics.
+
+This product includes software and data developed for the paper of the
+same title. Code, documentation, annotation guides, claim-level labels
+and derived result tables are released under the Apache License,
+Version 2.0 (see LICENSE).
+
+Third-party data and content redistributed or referenced in this
+repository carry their own terms, which are unaffected by the Apache
+License:
+
+  * The three frozen spatial briefs (briefs/*.json) contain indicator
+    values derived from OpenStreetMap data retrieved on 25 June 2026.
+    (c) OpenStreetMap contributors, Open Database License (ODbL) 1.0.
+    https://www.openstreetmap.org/copyright
+
+  * Population figures in the briefs are derived from GHS-POP R2023A,
+    European Commission, Joint Research Centre (JRC), released under
+    CC BY 4.0. doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE
+
+  * Reverse-geocoded place names were obtained from Nominatim
+    (OpenStreetMap data, ODbL 1.0).
+
+  * The raw model outputs (benchmark/runs/**/*.jsonl) and the claim
+    sheets derived from them were generated with open-weight language
+    models whose weights are distributed under their own licences:
+    Qwen3 (Alibaba Cloud, Apache 2.0), Gemma 3 and Gemma 4 (Google,
+    Gemma Terms of Use), Llama 3.1 and Llama 3.2 (Meta, Llama Community
+    License). Generated text is redistributed here for research and
+    evaluation purposes; no model weights are included.
+
+  * The claim-level labels for seeds 2 to 10 were produced by a
+    language-model judge (Claude Fable 5.1, Anthropic) calibrated against
+    a human annotator on seed 1; see benchmark/seed1_human_vs_machine.
+
+  * The interactive figures (results/figures/*.html) load Chart.js
+    (MIT License) from the cdnjs content delivery network.
