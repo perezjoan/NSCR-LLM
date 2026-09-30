@@ -1,0 +1,61 @@
+{
+  "retrieval_method": {
+    "type": "network catchment (walking-distance along streets), NOT a circular buffer",
+    "network_distance_m": 800,
+    "block_depth_m": 40,
+    "note": "values aggregated over the filled catchment: the area reachable on foot within network_distance_m, expanded off the streets by block_depth_m to fill blocks"
+  },
+  "location": {
+    "country": "United States",
+    "region": "Illinois",
+    "city": "Chicago"
+  },
+  "point": {
+    "lat": 41.8819,
+    "lon": -87.7036
+  },
+  "population": {
+    "residents": 7128,
+    "source": "GHS-POP (modelled RESIDENTIAL population only)",
+    "caveat": "counts people who LIVE here, not daytime workers/visitors. In commercial or mixed-use districts the resident count (and any per-resident ratio) can be very low even where the area is busy and full of activity."
+  },
+  "road_length_m": 60718,
+  "poi_total": 119,
+  "poi_by_category": {
+    "parking": 38,
+    "place_of_worship": 14,
+    "school": 11,
+    "playground": 9,
+    "shelter": 8,
+    "bicycle_rental": 5,
+    "pitch": 4,
+    "convenience": 4,
+    "fuel": 3,
+    "track": 3,
+    "park": 3,
+    "post_box": 3,
+    "garden": 3,
+    "electronics": 1,
+    "fast_food": 1,
+    "hardware": 1,
+    "childcare": 1,
+    "social_facility": 1,
+    "art": 1,
+    "ticket_validator": 1,
+    "mobile_phone": 1,
+    "money_transfer": 1,
+    "variety_store": 1,
+    "garden_centre": 1
+  },
+  "indicators": {
+    "catchment_area_m2": 1364534,
+    "population_density_per_km2": 5224,
+    "building_count": 1455,
+    "building_footprint_m2": 255610,
+    "building_coverage_ratio": 0.197,
+    "avg_building_footprint_m2": 176,
+    "people_per_building": 4.9,
+    "road_density_m_per_km2": 44497,
+    "poi_per_1000_residents": 16.7
+  }
+}
