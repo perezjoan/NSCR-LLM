@@ -5,7 +5,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--3003--0895-a6ce39.svg)](https://orcid.org/0000-0003-3003-0895)
 [![Urban Geo Analytics](https://img.shields.io/badge/Urban_Geo_Analytics-urbangeoanalytics.com-1b6fd0.svg)](https://urbangeoanalytics.com)
-[![DOI](https://img.shields.io/badge/DOI-TODO_Zenodo-lightgrey.svg)](#citation)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23056312-1682d4.svg)](https://doi.org/10.5281/zenodo.23056312)
 
 Large language models hold a lot of latent geographic knowledge but reason poorly over
 space and are unreliable when queried from coordinates alone. Useful behaviour appears
@@ -201,8 +201,24 @@ urban analytics. 🌐 [urbangeoanalytics.com](https://urbangeoanalytics.com)
 
 ## Citation
 
-Until the paper is published, cite the repository:
+Until the paper is published, cite the archived release:
 
-> Perez, J. (2026). *Network-based Spatial Context Retrieval for Open-weight LLMs: A
-> Faithfulness Benchmark for Grounded Geographic Reasoning.* Version 1.0.0.
-> https://github.com/perezjoan/NSCR-LLM (Zenodo DOI: TODO)
+> Perez, J. (2026). *NSCR-LLM: Network-based Spatial Context Retrieval for Open-weight
+> LLMs. A Faithfulness Benchmark for Grounded Geographic Reasoning* (v1.0.0). Zenodo.
+> https://doi.org/10.5281/zenodo.23056312
+
+```bibtex
+@software{perez_2026_nscr_llm,
+  author    = {Perez, Joan},
+  title     = {NSCR-LLM: Network-based Spatial Context Retrieval for Open-weight LLMs.
+               A Faithfulness Benchmark for Grounded Geographic Reasoning},
+  year      = {2026},
+  version   = {v1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23056312},
+  url       = {https://doi.org/10.5281/zenodo.23056312}
+}
+```
+
+The release `v1.0.0` is the snapshot described in Section 3.7 of the paper. The
+development version lives at https://github.com/perezjoan/NSCR-LLM.
