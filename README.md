@@ -68,7 +68,7 @@ The HTML files can also be opened locally from `results/figures/` after cloning.
 ├── README.md                     this file
 ├── LICENSE                       Apache License 2.0
 ├── NOTICE                        third-party data and model attributions
-├── REPO_METADATA.md              title, GitHub description, topics, release checklist
+├── REPO_METADATA.md              title, GitHub description, topics, release notes
 ├── requirements.txt              Python dependencies for the notebook (unpinned)
 ├── requirements-lock.txt         exact versions used for the paper
 ├── code/
@@ -208,11 +208,3 @@ Until the paper is published, cite the repository:
 > Perez, J. (2026). *Network-based Spatial Context Retrieval for Open-weight LLMs: A
 > Faithfulness Benchmark for Grounded Geographic Reasoning.* Version 1.0.0.
 > https://github.com/perezjoan/NSCR-LLM (Zenodo DOI: TODO)
-
-## Before release (checklist)
-
-- [ ] Create the `v1.0.0` release and paste the Zenodo DOI into this file and
-      Section 3.7 of the paper (`[ZENODO-DOI]`, `[RELEASE-TAG]`).
-- [ ] Optionally consolidate `benchmark/labels/` into one CSV (the per-file formats are
-      heterogeneous; see `benchmark/labels/README.md`).
-- [ ] Optionally add Table C1 as a CSV under `results/`.
