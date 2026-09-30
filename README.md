@@ -68,9 +68,7 @@ The HTML files can also be opened locally from `results/figures/` after cloning.
 ├── README.md                     this file
 ├── LICENSE                       Apache License 2.0
 ├── NOTICE                        third-party data and model attributions
-├── REPO_METADATA.md              title, GitHub description, topics, release notes
-├── requirements.txt              Python dependencies for the notebook (unpinned)
-├── requirements-lock.txt         exact versions used for the paper
+├── requirements.txt              Python dependencies, pinned to the versions used for the paper
 ├── code/
 │   └── network_catchment_demo.ipynb   Stage 1 (catchment + brief), Stage 2 (LLM), Stage 3 (seed runner)
 ├── briefs/                       frozen inputs
@@ -164,7 +162,7 @@ responses. Those records are still present in `benchmark/runs/` with `"truncated
 ```bash
 git clone https://github.com/perezjoan/NSCR-LLM.git
 cd NSCR-LLM
-pip install -r requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cu128
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128
 jupyter lab code/network_catchment_demo.ipynb
 ```
 
