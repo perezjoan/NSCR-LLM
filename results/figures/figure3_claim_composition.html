@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Figure 3: claim composition by model and city | NSCR-LLM</title>
+<style>
+:root{--text-primary:#1a1a19;--text-secondary:#52514e;--text-muted:#888780;--text-accent:#1b6fd0;--border:#d9d8d0;--border-accent:#1b6fd0;--surface-2:#f6f5f0;--page:#ffffff}
+@media (prefers-color-scheme: dark){:root{--text-primary:#f2f1ea;--text-secondary:#c3c2b7;--text-muted:#898781;--text-accent:#7db4f5;--border:#3a3a37;--border-accent:#7db4f5;--surface-2:#242422;--page:#1a1a19}}
+html{background:var(--page)}
+body{margin:0 auto;padding:24px 16px 40px;max-width:1100px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text-primary);background:var(--page)}
+h1{font-size:18px;font-weight:600;margin:0 0 6px}
+p.cap{font-size:13px;color:var(--text-secondary);margin:0 0 18px;line-height:1.5}
+p.cap a{color:var(--text-accent)}
+button{font:inherit;font-size:12px;padding:4px 12px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text-secondary);cursor:pointer}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<h1>Figure 3. Brief-grounded versus training-sourced claims by model, family and size</h1>
+<p class="cap">Each bar shows how one model configuration's claims break down for (a) Chicago, (b) Paris, (c) Hanoi and (d) all three cities pooled, over ten seeds. Hover a bar for counts and shares.</p>
+<!-- figure body below is the original interactive figure, unchanged -->
+<h2 class="sr-only">Two by two layout of diverging stacked bars for Chicago, Paris, Hanoi and TOTAL, brief-sourced versus training-sourced claims per model.</h2>
+<div style="display:flex;flex-wrap:wrap;gap:20px;margin-bottom:10px;font-size:12px;color:var(--text-secondary);justify-content:center;">
+<span style="display:flex;gap:10px;align-items:center;"><span style="color:var(--text-primary)">Brief-sourced</span>
+<span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#E08163"></span>False</span>
+<span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#0F6E56"></span>True</span></span>
+<span style="display:flex;gap:10px;align-items:center;"><span style="color:var(--text-primary)">Training-sourced</span>
+<span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#5DCAA5"></span>Recall</span>
+<span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#A32D2D"></span>Hallucination</span></span>
+</div>
+<div style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px 10px;">
+<div><p style="font-size:13px;margin:0 0 2px;color:var(--text-primary)">(a) Chicago</p><div style="position:relative;height:430px"><canvas id="c0" role="img" aria-label="Panel a, Chicago">Chicago panel</canvas></div></div>
+<div><p style="font-size:13px;margin:0 0 2px;color:var(--text-primary)">(b) Paris</p><div style="position:relative;height:430px"><canvas id="c1" role="img" aria-label="Panel b, Paris">Paris panel</canvas></div></div>
+<div><p style="font-size:13px;margin:0 0 2px;color:var(--text-primary)">(c) Hanoi</p><div style="position:relative;height:430px"><canvas id="c2" role="img" aria-label="Panel c, Hanoi">Hanoi panel</canvas></div></div>
+<div><p style="font-size:13px;margin:0 0 2px;color:var(--text-primary)">(d) TOTAL</p><div style="position:relative;height:430px"><canvas id="c3" role="img" aria-label="Panel d, TOTAL, pooled counts across the three cities">TOTAL panel</canvas></div></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const M=[["Qwen3","14B",1],["Qwen3","14B",0],["Qwen3","8B",1],["Qwen3","8B",0],["Qwen3","4B",1],["Qwen3","4B",0],["Qwen3","1.7B",1],["Qwen3","1.7B",0],["Gemma-4","12B",1],["Gemma-4","12B",0],["Gemma-3","12B",0],["Gemma-3","4B",0],["Gemma-3","1B",0],["Llama-3.1","8B",0],["Llama-3.2","3B",0],["Llama-3.2","1B",0]];
+const CHI=[[233,49,74,3],[193,39,55,0],[302,33,80,0],[219,59,57,0],[357,50,65,2],[348,64,37,4],[326,56,0,8],[238,42,2,5],[286,0,46,0],[298,5,41,0],[224,40,28,29],[290,87,58,61],[197,110,116,81],[166,47,24,44],[215,67,51,45],[234,180,56,61]];
+const PAR=[[468,39,81,12],[289,10,54,27],[465,76,22,5],[329,16,40,3],[488,43,43,23],[418,24,70,16],[260,60,53,28],[241,70,30,34],[418,3,29,0],[429,16,17,0],[290,55,52,14],[311,93,188,38],[465,242,273,181],[402,53,131,23],[387,93,108,34],[335,232,173,232]];
+const HAN=[[353,44,49,0],[306,22,42,0],[323,76,26,1],[253,54,32,0],[335,116,41,3],[313,86,23,1],[179,123,20,0],[183,67,17,1],[300,52,5,1],[285,63,23,1],[235,39,55,1],[308,134,50,0],[329,200,209,65],[256,58,48,0],[222,112,52,9],[231,225,86,11]];
+const TOT=CHI.map((r,j)=>r.map((v,i)=>v+PAR[j][i]+HAN[j][i]));
+const PANELS=[CHI,PAR,HAN,TOT];
+const L=M.map(r=>r[0]+" "+r[1]+((r[0]==="Qwen3"||r[0]==="Gemma-4")?(r[2]?" T":" NT"):""));
+const K=["True","False","Recall","Hallucination"],C=["#0F6E56","#E08163","#5DCAA5","#A32D2D"],TXT=["#fff","#4A1B0C","#04342C","#fff"];
+const dark=matchMedia('(prefers-color-scheme: dark)').matches||document.documentElement.dataset.mode==='dark';
+const grid=dark?'#2c2c2a':'#e1e0d9',surf=dark?'#1a1a19':'#fcfcfb',muted='#898781';
+Chart.defaults.color=dark?'#c3c2b7':'#52514e';Chart.defaults.font.size=11;
+PANELS.forEach((CNT,p)=>{const N=CNT.map(c=>c.reduce((a,b)=>a+b,0)),PCT=CNT.map((c,j)=>c.map(v=>+(100*v/N[j]).toFixed(1))),left=p%2===0;
+const lab={id:'lab',afterDatasetsDraw(ch){const x=ch.ctx,a=ch.chartArea;x.save();x.font='11px sans-serif';x.textBaseline='middle';x.textAlign='center';
+ch.data.datasets.forEach((d,i)=>ch.getDatasetMeta(i).data.forEach((b,j)=>{const w=Math.abs(b.x-b.base),v=CNT[j][i];if(v&&w>(v>999?26:18)){x.fillStyle=TXT[i];x.fillText(v,(b.x+b.base)/2,b.y)}}));
+x.textAlign='left';x.fillStyle=muted;ch.getDatasetMeta(0).data.forEach((b,j)=>x.fillText('n='+N[j],a.right+6,b.y));x.restore();}};
+new Chart(document.getElementById('c'+p),{type:'bar',data:{labels:L,datasets:K.map((k,i)=>({label:k,data:PCT.map(v=>i<2?-v[i]:v[i]),backgroundColor:C[i],borderColor:surf,borderWidth:1,barThickness:17}))},plugins:[lab],
+options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,layout:{padding:{right:50}},plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label+': '+CNT[c.dataIndex][c.datasetIndex]+' ('+PCT[c.dataIndex][c.datasetIndex]+'%)'}}},
+scales:{x:{stacked:true,min:-100,max:50,grid:{color:c=>c.tick.value===0?'#888780':grid,lineWidth:c=>c.tick.value===0?1.5:1},ticks:{stepSize:25,maxRotation:0,callback:v=>Math.abs(v)+'%'}},y:{stacked:true,grid:{display:false},ticks:{display:left,font:{size:11}}}}}});});
+</script>
+<p class="cap" style="margin-top:22px">From: Perez J. (2026). Network-based Spatial Context Retrieval for Open-weight LLMs: A Faithfulness Benchmark for Grounded Geographic Reasoning. Data and code: <a href="https://github.com/perezjoan/NSCR-LLM">github.com/perezjoan/NSCR-LLM</a>.</p>
+</body>
+</html>
