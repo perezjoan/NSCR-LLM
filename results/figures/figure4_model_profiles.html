@@ -35,8 +35,11 @@ button{font:inherit;font-size:12px;padding:4px 12px;border-radius:8px;border:1px
 </div>
 <h2 style="font-size:16px;font-weight:500;margin:0 0 10px">Profile of each model</h2>
 <div id="grid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
+/* The chart library is loaded from here rather than by a script tag, so that the page also
+   works through HTML preview services, which do not load external script tags. */
+(function(){
+function drawFigure(){
 const D={"C":[[233,49,74,3,10,6.1,139,126.4],[193,39,55,0,10,3.6,132,57.5],[302,33,80,0,10,3.5,131,84.2],[219,59,57,0,10,3.1,136,30.7],[357,50,65,2,10,3.3,156,79.9],[348,64,37,4,7,5.1,163,31.9],[326,56,0,8,9.5,6.1,113,58.9],[238,42,2,5,8.5,5.1,110,14.9],[286,0,46,0,10,2.9,150,221.8],[298,5,41,0,10,3.1,151,61.6],[224,40,28,29,3.5,6.7,124,47.6],[289,87,59,61,1,7.1,274,45.1],[197,110,116,81,0.5,5.9,309,35.4],[166,47,24,44,0.5,6.8,131,28.8],[215,67,51,45,2,9.1,174,18.5],[234,180,56,61,1.5,10.2,224,11.2]],"P":[[468,39,81,12,5.5,3.7,166,264],[289,10,54,27,2,4.2,164,90.5],[465,22,76,5,9.5,2.9,149,129.6],[329,16,40,3,9.5,3.5,150,46.1],[488,43,43,23,6,4.6,173,196.8],[418,24,70,16,4.5,4.8,174,41.2],[260,60,53,28,3,7,120,84.9],[241,70,30,34,1,5.3,125,19.8],[418,3,29,0,10,2,168,321.2],[429,16,17,0,10,2.2,172,76.7],[290,55,52,14,0.5,4.5,152,75.6],[311,93,188,38,0,4.4,293,50.5],[465,242,273,181,0,8.9,483,61.9],[402,53,131,23,1.5,4.1,260,63.3],[387,93,108,34,4,6.8,270,34],[335,232,173,232,0.5,17.4,419,25.3]],"H":[[353,44,49,0,2,4.9,153,191.4],[306,22,42,0,8.5,3.5,153,75.9],[323,76,26,1,0.5,3.5,130,96.8],[253,54,32,0,0,3.9,132,35.7],[335,116,41,3,0.5,5.8,153,137.2],[313,86,23,1,0,4.2,148,33.2],[179,123,20,0,1.5,13,110,85.7],[183,67,17,1,0.5,7,97,15.6],[300,52,5,1,2.5,3.7,165,269.7],[285,63,23,1,3,4.8,169,67.2],[235,39,55,1,0,3.4,133,60.5],[308,134,50,0,0,2.8,205,36.2],[329,200,209,65,0.5,4.9,412,47.3],[256,58,48,0,0,3.8,167,35.7],[222,112,52,9,0.5,6,181,22.4],[231,225,86,11,2,7.8,254,13.5]],"T":[[1054,132,204,15,17.5,5.1,153,193.9],[788,71,151,27,20.5,3.9,150,74.6],[1090,131,182,6,20,3.4,137,103.5],[801,129,129,3,19.5,3.6,139,37.5],[1180,209,149,28,16.5,5,161,138],[1079,174,130,21,11.5,4.8,162,35.4],[765,239,73,36,14,9.7,114,76.5],[662,179,49,40,10,6,111,16.8],[1004,55,80,1,22.5,3.3,161,270.9],[1012,84,81,1,23,3.6,164,68.5],[749,134,135,44,4,5.4,136,61.2],[908,314,297,99,1,5.3,257,43.9],[991,552,598,327,1,6.8,401,48.2],[824,158,203,67,2,5.3,186,42.6],[824,272,211,88,6.5,7.5,208,25],[800,637,315,304,4,12.6,290,16.1]]};
 const M=[["Qwen3","14B","think"],["Qwen3","14B","no think"],["Qwen3","8B","think"],["Qwen3","8B","no think"],["Qwen3","4B","think"],["Qwen3","4B","no think"],["Qwen3","1.7B","think"],["Qwen3","1.7B","no think"],["Gemma-4","12B","think"],["Gemma-4","12B","no think"],["Gemma-3","12B",""],["Gemma-3","4B",""],["Gemma-3","1B",""],["Llama-3.1","8B",""],["Llama-3.2","3B",""],["Llama-3.2","1B",""]];
 const FAM={"Qwen3":"#6250d6","Gemma-4":"#1baf7a","Gemma-3":"#eda100","Llama-3.1":"#e87ba4","Llama-3.2":"#e87ba4"};
@@ -77,6 +80,14 @@ L.innerHTML=(mode==='pool'?[["Qwen3","#6250d6"],["Gemma-4","#1baf7a"],["Gemma-3"
 :CITY.map(([k,n,c,dash])=>`<span><svg width="22" height="8" aria-hidden="true"><line x1="1" y1="4" x2="21" y2="4" stroke="${c}" stroke-width="2" ${dash.length?`stroke-dasharray="${dash.join(',')}"`:''} stroke-linecap="round"/></svg>${n}</span>`).join(''))+medRow;}
 legend();
 document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll('[data-m]').forEach(x=>x.classList.toggle('on',x===b));P.forEach(p=>{charts[p.i].data.datasets=sets(p);charts[p.i].update()});legend();});
+}
+if(window.Chart){drawFigure();return;}
+var lib=document.createElement('script');
+lib.src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js';
+lib.onload=drawFigure;
+lib.onerror=function(){var w=document.createElement('p');w.className='cap';w.textContent='The chart library could not be loaded. Check your internet connection and reload the page.';document.body.insertBefore(w,document.body.children[2]||null);};
+document.head.appendChild(lib);
+})();
 </script>
 <p class="cap" style="margin-top:22px">From: Perez J. (2026). Network-based Spatial Context Retrieval for Open-weight LLMs: A Faithfulness Benchmark for Grounded Geographic Reasoning. Data and code: <a href="https://github.com/perezjoan/NSCR-LLM">github.com/perezjoan/NSCR-LLM</a>.</p>
 </body>
