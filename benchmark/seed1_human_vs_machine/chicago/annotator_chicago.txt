@@ -1,0 +1,13 @@
+Annotator
+
+Model: Claude Fable 5.1 (Anthropic), accessed through the Claude chat interface (claude.ai / Claude app). API model string: claude-fable-5-1. Fable 5.1 shares its underlying model with Claude Mythos 5.1, with additional safety measures applied.
+Knowledge cutoff: end of June 2026.
+Session date: 13 September 2026.
+
+Session conditions
+
+Single conversation, single pass; the annotation was produced in one turn after reading the guide and the pack, with no revisions to labels after the first write.
+Memory features were off (no memories of the user were available)
+Inputs: chicago_annotation_guide.md (v1.0, read in full from the chat context) and chicago_seed1_annotation_pack.txt (58,311 bytes, read in full from disk in one cat). No web search, no external sources; labels were produced against the brief and glossary only.
+Model responses in the pack were anonymised (M01–M16).
+Mechanics: I decided all labels by reading, then wrote them into a small Python script that inserted one letter per brace, checked that the label count matched the claim count in every section, and tallied per-model counts. Total 606 claims labelled, ECHO lines excluded.

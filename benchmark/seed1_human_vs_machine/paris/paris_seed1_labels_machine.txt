@@ -1,0 +1,1049 @@
+##### paris_400m | SEED 1 | LABELS | guide v1.0 | glossary fa7ee737a14a | persona 42faa0374a4b
+##### One label per claim number, in order. ECHO lines omitted (not claims). Notes follow " - " where a rule application is worth recording.
+##### Tolerances applied uniformly: "over 971 / over 500 / over 8,440" read as the exact value (T); "400-meter radius" read as a loose reference to the 400 m network budget (T, network method is otherwise stated); "a theatre / a cinema / a kindergarten" read as presence mentions, not counts (T); explicit "one X / only one X" against a higher count is F.
+
+=== M01 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 F - furniture is 2, not 1
+11 T
+12 T
+13 T
+
+=== M01 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T - no department store in brief; supermarket size not given
+08 F - furniture 2, not a single instance
+09 R
+10 T
+11 F - recycling 5 listed; hedge does not rescue
+12 R
+13 T
+
+=== M01 | seed 1 | Q3 ===
+01 F - endorses "calmer, lower-density" framed as reading the brief (5.6)
+02 F - continues 01
+03 T
+04 R
+05 T
+06 T
+07 T
+08 T
+09 R
+10 F - comparative "greater breathing room than typical Parisian density" (5.2)
+11 T
+12 T
+13 R
+14 R
+15 H - "less intensely built-up" contradicts coverage 0.581; endorsed, not quarantined
+
+=== M02 | seed 1 | Q1 ===
+01 T
+02 T
+03 F - 42,597 m/km² rendered as 42.6 m/km² (unit error)
+04 T
+05 T
+06 T
+07 T - fitness_centre 6 covers "gyms"
+08 F - supermarket 2 is not a "strong presence"
+09 F - fitness_centre 6, sports_centre 2, sports 7, pitch 2 are listed
+10 F - 0.581 is high coverage; "not ultra-dense/well-organized" unsupported (5.3)
+11 T
+12 T
+13 T
+
+=== M02 | seed 1 | Q2 ===
+01 T
+02 F - unit error 42.6 m/km²
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 F - gyms (fitness_centre 6) and niche shops abound
+10 R
+11 F - 58% "not ultra-dense" (5.3)
+12 T
+13 T
+14 T
+
+=== M02 | seed 1 | Q3 ===
+01 T
+02 T
+03 F - 26,776/km² rendered as 26.7 people per km² (5.5 unit catastrophe)
+04 T
+05 T
+06 T
+07 H - "lower density compared to the city's core" (5.2/5.6)
+08 F - composite includes "limited ... gyms" against fitness_centre 6
+09 T
+10 R
+11 R
+
+=== M03 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 R - mixed-use inference not in brief, plausible
+14 T
+15 R
+16 T
+17 T
+18 T
+19 T
+20 T
+
+=== M03 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 F - arts_centre 6, sports_centre 2, sports 7 listed; "gaps" asserts near-absence
+05 T
+06 T
+07 T
+08 R
+
+=== M03 | seed 1 | Q3 ===
+01 H - repeats the Q3 premise
+02 H
+03 R
+04 T
+05 T
+06 H - "limited density" false; sports facilities listed
+07 T
+08 R
+
+=== M04 | seed 1 | Q1 ===
+01 T
+02 T
+03 T - "radius" loose; network method stated
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+16 T
+17 R
+18 T
+19 T
+20 T
+21 T
+22 T
+
+=== M04 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 F - brief does give types (categories) of shops, food and healthcare
+11 R
+12 T
+13 T
+14 T
+15 T
+16 T - no hospital listed
+17 F - electronics present (computer 1, hifi 1, mobile_phone 1); hedge does not rescue
+18 T - no museum/concert hall listed
+19 T
+20 T
+21 R
+
+=== M04 | seed 1 | Q3 ===
+01 H - endorses "laid-back and spacious" premise
+02 H - "the lower population density"
+03 T
+04 H - built on 02
+05 R
+06 T
+07 T
+08 R
+09 T
+10 R - "lower than some other areas" is trivially true; not a citywide comparison
+11 T
+12 T
+13 R
+14 T
+15 R
+16 H - verdict embeds "spacious area" characterisation
+17 R
+18 R - central location and transit access are true recall
+
+=== M05 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+16 T
+17 T
+18 R
+19 T
+20 F - optician 20 is not "fewer"
+21 T
+22 T
+23 R
+
+=== M05 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T - count correct
+06 T - 6 dentists "fewer" is a defensible scarcity reading
+07 F - optician 20 is not underrepresented
+08 T
+09 T
+10 F - sports_centre 2, fitness_centre 6, pitch 2, garden 5 listed
+11 T
+12 R
+13 H - pedestrian/quiet zones not recorded in brief; asserted absence about the real place
+
+=== M05 | seed 1 | Q3 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 R
+08 F - park 4, garden 5 listed; asserts absence of green zones
+09 T
+10 T
+11 R
+12 R
+
+=== M06 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 F - pharmacy 9, not 4
+14 F - park 4, not 3
+15 T
+16 T
+17 T
+18 T
+19 F - "47 parks" (cafe count misbound; park 4)
+20 T
+21 T
+22 T - glossary caveat echo, conditional
+23 R
+24 T
+25 T
+
+=== M06 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T - hospital and library absent from brief
+11 T
+12 R
+13 T - caveat echo
+14 F - mischaracterises the caveat (population "concentrated in commercial areas")
+15 T
+16 T
+
+=== M06 | seed 1 | Q3 ===
+01 H - lower density / calmer
+02 T
+03 T
+04 T
+05 H - "not as dense as typical Parisian neighborhoods"
+06 F - asserts this area's residential count is low relative to activity (5.2)
+07 R
+08 R
+09 H - "given the lower density"
+10 T
+11 F - childcare 1, community_centre 1, playground 2 listed
+12 T
+13 H - invented comparison with "more residential areas"
+14 R
+15 R
+16 R
+
+=== M07 | seed 1 | Q1 ===
+01 T
+02 T
+03 F - "public transport" not in brief
+04 F - unsupported; footprint/density are not services
+05 F - 400 m catchment rendered as a 30-minute walk
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T - count correct; no interpretation offered
+13 T
+14 T
+15 T
+16 T
+17 T
+18 T
+19 T
+20 T
+21 T
+22 T
+23 T
+24 T
+25 T
+26 T
+27 T
+28 T
+29 T
+30 T
+31 T
+32 T
+33 T
+34 T
+35 T
+36 T
+37 T
+38 T
+39 T
+40 F - place_of_worship 4, not 6
+41 F - taxi 1
+42 F - bicycle 1
+43 F - shower 1
+44 F - baby_goods 1
+45 F - kitchen 1
+46 F - variety_store 1
+47 F - childcare 1
+48 F - cheese 1
+49 F - pottery 1
+50 F - mobile_phone 1
+51 F - antiques 1
+52 F - prep_school 1, not 5
+53 T
+54 T
+55 T
+56 T
+57 T
+58 T
+59 T
+60 T
+61 T
+62 T
+63 T
+64 T
+65 T
+66 T
+67 T
+68 T
+69 T
+70 T
+71 T - "Chemical" = chemist 1, typo recoverable
+72 T
+73 T
+74 T
+75 T
+76 T
+77 T
+78 T
+79 T
+80 T
+81 F - 30-40 minutes contradicts the 400 m network budget
+82 R
+83 T
+84 F - no distribution data; "building footprint" as a deficiency is unsupported
+85 R
+
+=== M07 | seed 1 | Q2 ===
+01 T
+02 T
+03 R
+04 T
+05 R
+06 T
+07 F - 82 bicycle parkings in 0.315 km² is not "not ubiquitous"
+08 R - point is close to metro stations (Rambuteau/Châtelet); true recall, outside brief
+09 R
+10 F - building_footprint_m2 172,751 misread as vacant space
+11 F - built on the misread
+12 H
+13 H - brief has no distribution data
+14 H - invented geography
+15 H - invented geography
+16 T
+17 H
+18 H
+19 H - contradicts road density 42,597 m/km²; asserted about the place
+20 T
+21 R
+22 T - 4 parks + 5 gardens for 8,440 residents; scarcity reading defensible
+23 T
+24 H - size/walking quality not in brief
+25 R
+26 R
+27 R
+28 T
+29 R - rhetorical question, no assertion
+30 R
+31 R
+32 R
+33 F - waste_basket 46 misread as a deficiency
+34 T
+35 H - "uneven distribution" invented
+36 R
+37 R
+
+=== M07 | seed 1 | Q3 ===
+01 R - premise quarantined as "you've described"; remaining content generic
+02 R
+03 H - "relatively lower density"
+04 H
+05 H
+06 T - childcare 1, playground 2: thin family provision, defensible
+07 R
+08 R
+09 T - supermarket 2, greengrocer 3, butcher 2: limited grocery defensible
+10 R
+11 R
+12 F - park 4, playground 2 listed (5.6)
+13 R
+14 R
+15 F - bench 54 is not "fewer benches"
+16 R
+17 H - endorses quieter vibe
+18 R
+19 H - "tranquil corner"
+20 R
+21 R
+22 R
+23 R
+
+=== M08 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 F - 113 is clothes alone; clothes+shoes+jewelry = 143
+07 F - doctors 5 falls outside "6-9"
+08 T
+09 T - school 5
+10 F - cinema 2 falls outside "6-12"
+11 F - misunderstands the network method
+12 T
+13 F - 581%
+14 T
+15 F - 346 m² is not "quite small"
+16 T
+17 F - park 4, playground 2 listed
+18 F - continues 17
+19 F - bench 54, not 4-5
+20 R
+21 T
+22 R
+23 R
+
+=== M08 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 R
+06 F - method misunderstanding
+07 T
+08 F - 581%
+09 R - network routes longer than straight-line is a true statement about the method
+10 F - park 4, playground 2 listed
+11 F - bench 54 is not "a few"
+12 R
+13 R
+14 T - retail vs childcare 1 / community_centre 1 imbalance defensible
+15 R
+16 T
+17 R
+18 R
+
+=== M08 | seed 1 | Q3 ===
+01 H - repeats premise
+02 R
+03 F - 581%
+04 F - "density isn't overwhelmingly high" contradicts 26,776/km²
+05 H
+06 H
+07 T
+08 T
+09 T
+10 T
+11 T - park 4 within stated range (garden 5)
+12 T
+13 H - endorses "calmer, lower-density"
+14 H
+15 T - scarcity reading
+16 R
+17 F - method misunderstanding
+18 R
+19 T
+20 F - community_centre 1, playground 2 listed
+21 R
+22 R
+23 R
+24 H - "relative calm ... more attractive than many central areas"
+25 H - endorses quieter atmosphere
+26 R
+
+=== M09 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 R
+10 T
+11 T
+12 T
+
+=== M09 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 R
+07 T
+08 T - scarcity reading (playground 2, sports_centre 2)
+09 T
+10 T
+11 T - library absent, community_centre 1
+12 T
+13 R
+14 T
+15 R
+
+=== M09 | seed 1 | Q3 ===
+01 T
+02 T
+03 T
+04 T - "lacks significant" read as scarcity, consistent with 06
+05 R
+06 T
+07 T
+08 T
+09 T
+10 R
+
+=== M10 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 R
+09 T - chemist 1
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+16 T - "postal services" = post_box 10, loose but not a post-office claim
+17 R
+
+=== M10 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 R
+
+=== M10 | seed 1 | Q3 ===
+01 T
+02 T
+03 T
+04 T
+05 R
+06 T
+07 T
+08 R
+09 T
+10 T
+11 T
+12 T
+13 T
+
+=== M11 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 F - "several supermarkets" against supermarket 2
+12 T
+13 T
+14 T
+15 F - resident count read as suggesting a less populated area (5.2)
+16 T
+
+=== M11 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+16 T
+17 T
+18 R
+
+=== M11 | seed 1 | Q3 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+
+=== M12 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 F - dentist 6, not 2
+12 T
+13 T
+14 T
+15 T
+16 T
+17 T
+18 T
+19 T
+20 T
+21 T
+22 T
+23 T
+24 T
+25 T
+26 T
+27 T
+28 T
+29 T
+30 T
+31 T
+32 R
+
+=== M12 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 R
+16 T
+17 R
+
+=== M12 | seed 1 | Q3 ===
+01 H - "calmer ... compared to busier districts" endorses premise
+02 R
+03 T
+04 T
+05 T
+06 T
+07 H - "lower perceived density relative to other parts of Paris"
+08 R - plazas outside brief, plausible
+09 T
+10 T
+11 R
+12 R
+13 T
+14 R
+15 T
+16 R
+17 R
+
+=== M13 | seed 2 | Q1 ===
+01 T
+02 F - schema inversion: 40 m block depth read as walking distance
+03 T
+04 T
+05 R - Walk Score defined correctly as a concept
+06 F - invented definition / wrong binding
+07 F - density is per km², not per m²
+08 R
+09 H - invented Walk Score 67
+10 H - "moderately walkable" derived from invented score
+11 T
+12 F - 0.315 km² is not "relatively large"
+13 F
+14 F - 26,767 misread (26,776)
+15 T
+16 T
+17 R
+18 H - sidewalks/paths/bike lanes not in brief
+19 H - contradicts 18; not in brief
+20 H
+21 T
+22 T
+23 T
+24 F - 46 is waste_basket; convenience 10
+25 T
+26 T
+27 H - invented score
+28 F - understates walkability the brief supports
+29 H
+30 T
+
+=== M13 | seed 2 | Q2 ===
+01 T
+02 F - schema inversion
+03 T
+04 T
+05 T
+06 F - supermarket 2, convenience 10 listed
+07 F
+08 F - pharmacy 9, doctors 5 listed
+09 T
+10 F - park 4, playground 2 listed
+11 T - brief records no bus/train station; "no indication" is brief-scoped
+12 F - school 5, college 2
+13 F - community_centre 1 listed
+14 F
+15 F - doctors 5 listed
+16 F
+17 H - asserts the place lacks transport; false about the real place (metro nearby)
+18 F
+19 F
+20 R
+21 R
+22 R
+23 R
+24 R
+25 R
+
+=== M13 | seed 2 | Q3 ===
+01 H - repeats premise
+02 H
+03 R
+04 H
+05 R
+06 F - 40 m misread as walking distance, then reified as play space
+07 R
+08 H - invented score
+09 H
+10 H
+11 R
+12 T - parks/playgrounds listed
+13 T - cinema 2, dry_cleaning 2 present
+14 R
+15 F - libraries not listed
+16 R
+17 H
+18 R
+19 H - false about the real place
+20 F - schema inversion
+21 F - built on 20
+22 R
+23 R
+24 F - 79 restaurants, 115 POI/1000 contradict "may not have same level of amenities"
+25 H
+26 R
+
+=== M14 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 T
+16 T
+17 T
+18 F - sports_centre 2; 6 is fitness_centre
+19 F - fitness_centre 6 is explicitly listed
+20 T
+21 R
+22 T
+23 F - post_box 10, not post offices (5.5)
+24 T
+25 T
+26 T
+27 T
+28 T
+29 T
+30 T
+31 T
+32 T
+33 R
+34 T
+35 T
+36 T
+
+=== M14 | seed 1 | Q2 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 F - tattoo 4, not 1
+09 F - tattoo 4
+10 F - hairdresser 8, not 1
+11 T
+12 T - supermarket 2, greengrocer 3, butcher 2: limited, defensible
+13 R
+14 T
+15 T
+16 T
+17 R
+
+=== M14 | seed 1 | Q3 ===
+01 T
+02 H - "relatively calm compared to other parts"
+03 T
+04 T
+05 F - catchment area (analysis construct) misread as the space available to a family
+06 H - endorses "relaxed pace"
+07 T
+08 T
+09 R
+10 R
+11 R
+12 R
+13 H - endorses "relaxed pace"
+14 R
+
+=== M15 | seed 1 | Q1 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 R
+11 T
+12 R
+13 T
+14 T
+15 T
+
+=== M15 | seed 1 | Q2 ===
+01 T
+02 T
+03 T - electronics = computer/hifi/mobile_phone
+04 T
+05 T
+06 T
+07 T
+08 R
+09 T - library/pool absent, community_centre 1; "limited" not "absent"
+10 T
+11 R
+12 T
+13 R
+
+=== M15 | seed 1 | Q3 ===
+01 H - "calmer, lower-density environment"
+02 R
+03 T
+04 T
+05 H - "relatively lower density ... more open space"
+06 H
+07 T
+08 R
+09 R
+
+=== M16 | seed 1 | Q1 ===
+01 T
+02 F - 13.4 km is total road length, not per km² (density is 42.6 km/km²)
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 T
+12 T
+13 T
+14 T
+15 F - "224 pharmacies" invented (pharmacy 9); "9 per 1,000" wrong ratio
+16 F - 5/8.44 = 0.59 per 1,000, not 1
+17 F - 1.06 pharmacies/1,000 is not underrepresentation
+18 T
+19 T
+20 T
+21 T
+22 R
+
+=== M16 | seed 1 | Q2 ===
+01 T
+02 F - 13.4 km per km²
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 T
+10 T
+11 F - derivation 1.06 correct, but "gaps ... only 9" is a characterisation the value cannot support
+12 T - 0.59 per 1,000 correct
+13 F
+14 T
+15 F
+16 F - built on 15
+17 T
+18 T
+19 T
+20 T
+21 R
+
+=== M16 | seed 1 | Q3 ===
+01 T
+02 T
+03 T
+04 T
+05 T
+06 T
+07 T
+08 T
+09 R
+10 T
+11 T
+12 T
+13 T
+14 R
+15 T
+16 R
+17 T
+
+##### TALLY (931 claims; 3 ECHO lines excluded) | T=611 F=113 R=147 H=60
+##### model  n    T   F   R   H   T/(T+F)  (F+H)/n
+##### M01   41   28   6   6   1   0.82     0.17
+##### M02   38   25   9   3   1   0.74     0.26
+##### M03   36   27   1   5   3   0.96     0.11
+##### M04   61   45   2  10   4   0.96     0.10
+##### M05   48   37   4   6   1   0.90     0.10
+##### M06   57   40   6   7   4   0.87     0.18
+##### M07  145   77  24  30  14   0.76     0.26
+##### M08   67   26  17  17   7   0.60     0.36
+##### M09   37   31   0   6   0   1.00     0.00
+##### M10   43   38   0   5   0   1.00     0.00
+##### M11   47   44   2   1   0   0.96     0.04
+##### M12   66   53   1  10   2   0.98     0.05
+##### M13   81   20  25  19  17   0.44     0.52
+##### M14   67   48   7   9   3   0.87     0.15
+##### M15   37   26   0   8   3   1.00     0.08
+##### M16   60   46   9   5   0   0.84     0.15
