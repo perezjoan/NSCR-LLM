@@ -1,8 +1,10 @@
-# Network-based Spatial Context Retrieval for Open-weight LLMs
+# NSCR-LLM: Network-based Spatial Context Retrieval for Open-weight LLMs
 
 ### A Faithfulness Benchmark for Grounded Geographic Reasoning
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--3003--0895-a6ce39.svg)](https://orcid.org/0000-0003-3003-0895)
+[![Urban Geo Analytics](https://img.shields.io/badge/Urban_Geo_Analytics-urbangeoanalytics.com-1b6fd0.svg)](https://urbangeoanalytics.com)
 [![DOI](https://img.shields.io/badge/DOI-TODO_Zenodo-lightgrey.svg)](#citation)
 
 Large language models hold a lot of latent geographic knowledge but reason poorly over
@@ -33,6 +35,32 @@ generation far more than by parameter count, and it is not a by-product of readi
 skill. Several models reproduce the brief faithfully and then abandon it the moment a
 confident user contradicts it.
 
+![Figure 1: the two-stage pipeline](results/figures/figure1_pipeline.png)
+
+*Figure 1. A clicked point defines a pedestrian network catchment; open data are
+retrieved and reduced in code to a compact spatial brief, which is injected into an
+open-weight LLM for questioning.*
+
+## Results at a glance
+
+The two result figures of the paper are provided as interactive pages. The previews
+below are static; **click a preview to open the interactive version** (hover for counts
+and values; Figure 4 switches between pooled and per-city profiles).
+
+[![Figure 3: claim composition by model and city](results/figures/figure3_claim_composition.png)](https://htmlpreview.github.io/?https://github.com/perezjoan/NSCR-LLM/blob/main/results/figures/figure3_claim_composition.html)
+
+*Figure 3. Brief-grounded versus training-sourced claims by model, family and size, for
+(a) Chicago, (b) Paris, (c) Hanoi and (d) all three cities pooled.
+[Interactive version](https://htmlpreview.github.io/?https://github.com/perezjoan/NSCR-LLM/blob/main/results/figures/figure3_claim_composition.html)*
+
+[![Figure 4: six-axis profile per model](results/figures/figure4_model_profiles.png)](https://htmlpreview.github.io/?https://github.com/perezjoan/NSCR-LLM/blob/main/results/figures/figure4_model_profiles.html)
+
+*Figure 4. Six-axis profile per model: grounding, hallucination, trap resistance,
+stability, concision and speed.
+[Interactive version](https://htmlpreview.github.io/?https://github.com/perezjoan/NSCR-LLM/blob/main/results/figures/figure4_model_profiles.html)*
+
+The HTML files can also be opened locally from `results/figures/` after cloning.
+
 ## Repository layout
 
 ```
@@ -42,7 +70,8 @@ confident user contradicts it.
 ├── NOTICE                        third-party data and model attributions
 ├── CITATION.cff                  citation metadata
 ├── REPO_METADATA.md              title, GitHub description, topics, release checklist
-├── requirements.txt              Python dependencies for the notebook
+├── requirements.txt              Python dependencies for the notebook (unpinned)
+├── requirements-lock.txt         exact versions used for the paper
 ├── code/
 │   └── network_catchment_demo.ipynb   Stage 1 (catchment + brief), Stage 2 (LLM), Stage 3 (seed runner)
 ├── briefs/                       frozen inputs
@@ -59,7 +88,7 @@ confident user contradicts it.
 │   ├── Q3_trap_scores.tsv        per-seed trap score with justification
 │   ├── seed_instability_*.tsv    per-seed category shares and instability summary
 │   ├── model_configs_specs.xlsx  Table 1 source (checkpoints, sampling parameters)
-│   └── figures/                  Figures 1 to 4 (png, svg, html)
+│   └── figures/                  Figures 1 to 4 (static images and interactive HTML)
 └── docs/
     └── preregistration_benchmark_protocol.md   original pre-registered protocol
 ```
@@ -76,7 +105,13 @@ Every subfolder has its own `README.md` describing file formats.
 
 Difficulty rises across the three: Chicago asks the model to notice an absence, Paris
 to interpret a number, Hanoi to hold a high resident count against a strong touristic
-prior and against the brief's own residential-population caveat.
+prior and against the brief's own residential-population caveat. The three briefs were
+retrieved and frozen on 25 June 2026.
+
+![Figure 2: the three network catchments](results/figures/figure2_catchments.png)
+
+*Figure 2. The three network catchments, Chicago (800 m), Paris (400 m) and Hanoi
+(300 m), as rendered in the selection widget.*
 
 ## The model grid
 
@@ -129,9 +164,16 @@ responses. Those records are still present in `benchmark/runs/` with `"truncated
 
 ## Reproducing
 
-- **A new brief.** Open `code/network_catchment_demo.ipynb`, run Stage 1, click a point,
-  set distance and block depth. Live OpenStreetMap and GHS-POP data are retrieved, so the
-  numbers will differ from the frozen briefs as the data evolve.
+```bash
+git clone https://github.com/perezjoan/NSCR-LLM.git
+cd NSCR-LLM
+pip install -r requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cu128
+jupyter lab code/network_catchment_demo.ipynb
+```
+
+- **A new brief.** Run Stage 1, click a point, set distance and block depth. Live
+  OpenStreetMap and GHS-POP data are retrieved, so the numbers will differ from the
+  frozen briefs as the data evolve.
 - **The frozen setting.** Paste a brief from `briefs/` into the notebook's load cell,
   load one of the sixteen configurations in Stage 2 (the frozen glossary is the built-in
   default), paste the persona and questions from `briefs/personas.txt` into the Stage 3
@@ -142,7 +184,9 @@ responses. Those records are still present in `benchmark/runs/` with `"truncated
   `results/seed_instability_per_seed_shares.tsv` (instability); response length and time
   come from the `answer` and `gen_seconds` fields in `benchmark/runs/`.
 
-See `code/README.md` for a cell-by-cell description of the notebook.
+See `code/README.md` for a cell-by-cell description of the notebook. The notebook also
+runs unchanged on Google Colab with a GPU runtime, which is how the paper's runs were
+made.
 
 ## Data sources and licences
 
@@ -152,22 +196,29 @@ contributors, ODbL 1.0) and GHS-POP R2023A (European Commission JRC, CC BY 4.0).
 outputs were generated with Qwen3 (Apache 2.0), Gemma 3 and Gemma 4 (Gemma Terms of Use)
 and Llama 3.1/3.2 (Llama Community License); no weights are redistributed. See `NOTICE`.
 
+## Author
+
+**Joan Perez** · [ORCID 0000-0003-3003-0895](https://orcid.org/0000-0003-3003-0895)
+
+[Urban Geo Analytics](https://urbangeoanalytics.com) is an independent research and
+consulting practice focused on geospatial modeling, AI for cities, and open-source
+urban analytics. 🌐 [urbangeoanalytics.com](https://urbangeoanalytics.com)
+
 ## Citation
 
-Until the paper is published, cite the archived release:
+Until the paper is published, cite the repository:
 
 > Perez, J. (2026). *Network-based Spatial Context Retrieval for Open-weight LLMs: A
-> Faithfulness Benchmark for Grounded Geographic Reasoning.* Version 1.0.0. Zenodo.
-> DOI: TODO
+> Faithfulness Benchmark for Grounded Geographic Reasoning.* Version 1.0.0.
+> https://github.com/perezjoan/NSCR-LLM (Zenodo DOI: TODO)
 
 Machine-readable metadata is in `CITATION.cff`.
 
 ## Before release (checklist)
 
-- [ ] Pin dependency versions (`requirements-lock.txt`).
-- [ ] Fill author list, ORCIDs, repository URL and Zenodo DOI in `CITATION.cff`,
-      `README.md` and Section 3.7 of the paper (`[GITHUB-URL]`, `[ZENODO-DOI]`,
-      `[RELEASE-TAG]`).
+- [ ] Create the `v1.0.0` release and paste the Zenodo DOI into this file,
+      `CITATION.cff` and Section 3.7 of the paper (`[ZENODO-DOI]`, `[RELEASE-TAG]`).
+- [ ] Add co-authors to `CITATION.cff` if the paper has any.
 - [ ] Optionally consolidate `benchmark/labels/` into one CSV (the per-file formats are
       heterogeneous; see `benchmark/labels/README.md`).
 - [ ] Optionally add Table C1 as a CSV under `results/`.
