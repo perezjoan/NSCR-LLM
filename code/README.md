@@ -74,13 +74,12 @@ identical.
 ## Environment
 
 ```bash
-pip install -r ../requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cu128
+pip install -r ../requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128
 jupyter lab network_catchment_demo.ipynb
 ```
 
-`requirements-lock.txt` pins the versions reported by pip in the Colab sessions that
-produced the paper's materials (Python 3.12, CUDA 12.8). `requirements.txt` lists the
-same packages unpinned for newer environments.
+`requirements.txt` pins the versions reported by pip in the Colab sessions that
+produced the paper's materials (Python 3.12, CUDA 12.8).
 
 Stage 1 needs internet access (Overpass, Nominatim, OpenLandMap). Nominatim asks for at
 most one request per second and a descriptive user agent. Stages 2 and 3 need a CUDA
