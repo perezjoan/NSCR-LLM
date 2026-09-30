@@ -164,7 +164,6 @@ Machine-readable metadata is in `CITATION.cff`.
 
 ## Before release (checklist)
 
-- [ ] Record the OpenStreetMap retrieval date per site in `briefs/README.md`.
 - [ ] Pin dependency versions (`requirements-lock.txt`).
 - [ ] Fill author list, ORCIDs, repository URL and Zenodo DOI in `CITATION.cff`,
       `README.md` and Section 3.7 of the paper (`[GITHUB-URL]`, `[ZENODO-DOI]`,
