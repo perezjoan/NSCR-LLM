@@ -68,7 +68,6 @@ The HTML files can also be opened locally from `results/figures/` after cloning.
 ├── README.md                     this file
 ├── LICENSE                       Apache License 2.0
 ├── NOTICE                        third-party data and model attributions
-├── CITATION.cff                  citation metadata
 ├── REPO_METADATA.md              title, GitHub description, topics, release checklist
 ├── requirements.txt              Python dependencies for the notebook (unpinned)
 ├── requirements-lock.txt         exact versions used for the paper
@@ -84,13 +83,11 @@ The HTML files can also be opened locally from `results/figures/` after cloning.
 │   ├── runs/<city>/*.jsonl       raw model outputs, one record per response (1,440)
 │   ├── claims/<city>/*.txt       responses segmented into atomic claims, unlabelled sheets
 │   └── labels/<city>/*.txt       judge labels for all ten seeds (T/F/R/H)
-├── results/
-│   ├── Q3_trap_scores.tsv        per-seed trap score with justification
-│   ├── seed_instability_*.tsv    per-seed category shares and instability summary
-│   ├── model_configs_specs.xlsx  Table 1 source (checkpoints, sampling parameters)
-│   └── figures/                  Figures 1 to 4 (static images and interactive HTML)
-└── docs/
-    └── preregistration_benchmark_protocol.md   original pre-registered protocol
+└── results/
+    ├── Q3_trap_scores.tsv        per-seed trap score with justification
+    ├── seed_instability_*.tsv    per-seed category shares and instability summary
+    ├── model_configs_specs.xlsx  Table 1 source (checkpoints, sampling parameters)
+    └── figures/                  Figures 1 to 4 (static images and interactive HTML)
 ```
 
 Every subfolder has its own `README.md` describing file formats.
@@ -212,13 +209,10 @@ Until the paper is published, cite the repository:
 > Faithfulness Benchmark for Grounded Geographic Reasoning.* Version 1.0.0.
 > https://github.com/perezjoan/NSCR-LLM (Zenodo DOI: TODO)
 
-Machine-readable metadata is in `CITATION.cff`.
-
 ## Before release (checklist)
 
-- [ ] Create the `v1.0.0` release and paste the Zenodo DOI into this file,
-      `CITATION.cff` and Section 3.7 of the paper (`[ZENODO-DOI]`, `[RELEASE-TAG]`).
-- [ ] Add co-authors to `CITATION.cff` if the paper has any.
+- [ ] Create the `v1.0.0` release and paste the Zenodo DOI into this file and
+      Section 3.7 of the paper (`[ZENODO-DOI]`, `[RELEASE-TAG]`).
 - [ ] Optionally consolidate `benchmark/labels/` into one CSV (the per-file formats are
       heterogeneous; see `benchmark/labels/README.md`).
 - [ ] Optionally add Table C1 as a CSV under `results/`.
