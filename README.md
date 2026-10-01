@@ -203,20 +203,4 @@ urban analytics. 🌐 [urbangeoanalytics.com](https://urbangeoanalytics.com)
 
 Until the paper is published, cite the preprint:
 
-> Perez, J. (2026). *Network-based Spatial Context Retrieval for Open-weight LLMs: A Faithfulness Benchmark for Grounded Geographic Reasoning*, ArXiv preprint, arXiv:2609.39437, 20 p.
-
-```bibtex
-@software{perez_2026_nscr_llm,
-  author    = {Perez, Joan},
-  title     = {NSCR-LLM: Network-based Spatial Context Retrieval for Open-weight LLMs.
-               A Faithfulness Benchmark for Grounded Geographic Reasoning},
-  year      = {2026},
-  version   = {v1.0.0},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.23056312},
-  url       = {https://doi.org/10.5281/zenodo.23056312}
-}
-```
-
-The release `v1.0.0` is the snapshot described in Section 3.7 of the paper. The
-development version lives at https://github.com/perezjoan/NSCR-LLM.
+> Perez, J. (2026). *Network-based Spatial Context Retrieval for Open-weight LLMs: A Faithfulness Benchmark for Grounded Geographic Reasoning*, ArXiv preprint, [arXiv:2609.39437](https://arxiv.org/abs/2609.39437), 20 p.
